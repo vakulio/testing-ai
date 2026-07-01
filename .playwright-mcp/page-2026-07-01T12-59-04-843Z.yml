@@ -1,0 +1,56 @@
+- generic [ref=f37e3]:
+  - banner [ref=f37e5]:
+    - generic [ref=f37e6]:
+      - link "Decoded Frontend" [ref=f37e7] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=f37e8]:
+        - link "YouTube" [ref=f37e9] [cursor=pointer]:
+          - /url: https://youtube.com/DecodedFrontend
+        - link "Blog" [ref=f37e10] [cursor=pointer]:
+          - /url: /tutorials
+        - link "Courses" [ref=f37e11] [cursor=pointer]:
+          - /url: /courses
+        - link "Recommendations" [ref=f37e12] [cursor=pointer]:
+          - /url: /recommendations
+  - main [ref=f37e13]:
+    - heading "First look at Signals in Angular" [level=1] [ref=f37e14]
+    - paragraph [ref=f37e15]:
+      - generic [ref=f37e16]: By Tom Kotlar
+      - generic [ref=f37e17]: /
+      - generic [ref=f37e18]: In Angular
+      - generic [ref=f37e19]: /
+      - generic [ref=f37e20]: 25 June
+      - generic [ref=f37e21]: /
+      - generic [ref=f37e22]: 6 Min Read
+      - generic [ref=f37e23]: /
+      - link "Add Comment" [ref=f37e24] [cursor=pointer]:
+        - /url: "#"
+    - figure [ref=f37e25]
+    - paragraph [ref=f37e26]: Signals are a new reactive primitive in Angular that let the framework track exactly which parts of your component depend on which pieces of state, enabling fine-grained change detection without zone.js.
+    - separator [ref=f37e27]
+    - generic [ref=f37e28]:
+      - generic [ref=f37e29]:
+        - heading "Creating a signal" [level=3] [ref=f37e30]
+        - paragraph [ref=f37e31]: A signal wraps a value and notifies consumers whenever that value changes. Reading a signal inside a template or a computed automatically subscribes that consumer to future updates.
+        - code [ref=f37e33]: "import { signal } from '@angular/core'; const count = signal(0); count.set(count() + 1);"
+      - generic [ref=f37e34]:
+        - heading "Derived state with computed" [level=3] [ref=f37e35]
+        - paragraph [ref=f37e36]: computed() lets you derive new signals from existing ones. The derived value is recalculated lazily and only when one of its dependencies actually changes, which keeps expensive calculations cheap.
+      - generic [ref=f37e37]:
+        - heading "Effects" [level=3] [ref=f37e38]
+        - paragraph [ref=f37e39]: effect() runs side effects whenever the signals it reads change, which is useful for syncing state to localStorage, logging, or triggering imperative DOM APIs outside of the render cycle.
+  - contentinfo [ref=f37e41]:
+    - generic [ref=f37e43]:
+      - generic [ref=f37e44]: Decoded Frontend
+      - paragraph [ref=f37e45]:
+        - text: Created by
+        - link "Dmytro Mezhenskyi" [ref=f37e46] [cursor=pointer]:
+          - /url: mailto:dmytro@decodedfrontend.io
+        - text: . All rights reserved.
+      - navigation [ref=f37e47]:
+        - link "Terms and Conditions" [ref=f37e48] [cursor=pointer]:
+          - /url: /terms
+        - link "Privacy Policy" [ref=f37e49] [cursor=pointer]:
+          - /url: /privacy
+        - link "Imprint" [ref=f37e50] [cursor=pointer]:
+          - /url: /imprint

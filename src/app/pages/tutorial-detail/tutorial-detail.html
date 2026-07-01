@@ -1,0 +1,46 @@
+<app-header />
+
+@if (tutorial && body) {
+  <main class="mx-auto max-w-3xl px-4 py-12 sm:px-6">
+    <h1 class="text-4xl font-bold tracking-tight text-neutral-900">{{ tutorial.title }}</h1>
+
+    <p class="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-neutral-500">
+      <span>By {{ tutorial.author }}</span>
+      <span>/</span>
+      <span>In {{ tutorial.categories.join(', ') }}</span>
+      <span>/</span>
+      <span>{{ tutorial.date }}</span>
+      <span>/</span>
+      <span>{{ tutorial.readTime }}</span>
+      <span>/</span>
+      <a href="#" class="text-orange-500 hover:text-orange-600" (click)="$event.preventDefault()">Add Comment</a>
+    </p>
+
+    <figure
+      class="mt-8 h-56 rounded-2xl bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 shadow-sm sm:h-72"
+      aria-hidden="true"
+    ></figure>
+
+    <p class="mt-8 text-lg text-neutral-700">{{ body.intro }}</p>
+
+    <hr class="my-8 border-neutral-200" />
+
+    <div class="flex flex-col gap-10">
+      @for (section of body.sections; track section.heading) {
+        <section>
+          <h3 class="text-2xl font-semibold text-neutral-900">{{ section.heading }}</h3>
+          <p class="mt-3 text-neutral-600">{{ section.paragraph }}</p>
+          @if (section.code) {
+            <pre class="mt-4 overflow-x-auto rounded bg-gray-900 p-4 text-sm text-gray-100"><code>{{ section.code }}</code></pre>
+          }
+        </section>
+      }
+    </div>
+  </main>
+} @else {
+  <main class="mx-auto max-w-3xl px-4 py-24 text-center sm:px-6">
+    <p class="text-lg text-neutral-600">Tutorial not found.</p>
+  </main>
+}
+
+<app-footer />

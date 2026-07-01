@@ -1,0 +1,677 @@
+- generic [active] [ref=f29e1]:
+  - dialog "cookieconsent" [ref=f29e2]:
+    - generic [ref=f29e3]:
+      - text: This website uses cookies to ensure you get the best experience on our website.
+      - button "learn more about cookies" [ref=f29e4] [cursor=pointer]: Learn more
+    - button "dismiss cookie message" [ref=f29e6] [cursor=pointer]: Got it!
+  - link "Skip to main content" [ref=f29e7] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f29e8]:
+    - generic [ref=f29e10]:
+      - link "Mezhenskyi Dmytro" [ref=f29e12] [cursor=pointer]:
+        - /url: /
+        - heading "Mezhenskyi Dmytro" [level=1] [ref=f29e13]
+      - navigation [ref=f29e14]:
+        - list [ref=f29e15]:
+          - listitem [ref=f29e16]:
+            - link "All Courses" [ref=f29e17] [cursor=pointer]:
+              - /url: /collections
+          - listitem [ref=f29e18]:
+            - link "Sign In" [ref=f29e19] [cursor=pointer]:
+              - /url: /users/sign_in
+  - main [ref=f29e20]:
+    - generic [ref=f29e23]:
+      - article [ref=f29e24]:
+        - generic [ref=f29e25]:
+          - heading "Angular Interview Hacking" [level=2] [ref=f29e26]
+          - paragraph [ref=f29e27]: Be prepared for the upcoming Angular Interview and increase a chance to get the desired job offer
+        - generic [ref=f29e29]:
+          - generic [ref=f29e30]:
+            - generic [ref=f29e31]: Select a pricing option
+            - combobox "Select a pricing option" [ref=f29e32]:
+              - option "€59,99" [selected]
+              - option "€199,99"
+              - option "€599,00"
+            - text: 
+          - link "Purchase" [ref=f29e33] [cursor=pointer]:
+            - /url: /enroll/1559756
+          - link "Free Preview" [ref=f29e34] [cursor=pointer]:
+            - /url: /enroll/1559756?et=free_trial
+      - generic [ref=f29e35]:
+        - img [ref=f29e36]
+        - generic [ref=f29e37]:
+          - button "Play video" [ref=f29e38]:
+            - generic [ref=f29e39]: 
+          - link "Watch Intro Video" [ref=f29e40] [cursor=pointer]:
+            - /url: javascript:void(0);
+    - generic [ref=f29e43]:
+      - generic [ref=f29e44]:
+        - heading "Why You Should Consider it" [level=2] [ref=f29e45]
+        - paragraph [ref=f29e46]: Enrolling in this course may dramatically increase your chance to get a job offer for a position you always wanted and this is how the course can help you with it
+      - article [ref=f29e47]:
+        - list [ref=f29e48]:
+          - listitem [ref=f29e49]:
+            - paragraph [ref=f29e50]:
+              - generic [ref=f29e51]: 
+              - text: Opportunity to Have a
+              - strong [ref=f29e52]: Mock-Interview with Google Developer Expert in Angular
+          - listitem [ref=f29e53]:
+            - paragraph [ref=f29e54]:
+              - generic [ref=f29e55]: 
+              - strong [ref=f29e56]: Constantly growing
+              - text: Database of the most popular Interview Questions (more then 90 questions)
+          - listitem [ref=f29e57]:
+            - paragraph [ref=f29e58]:
+              - generic [ref=f29e59]: 
+              - text: Extensive Answers to Questions
+              - strong [ref=f29e60]: with code Examples
+          - listitem [ref=f29e61]:
+            - paragraph [ref=f29e62]:
+              - generic [ref=f29e63]: 
+              - text: Covering of Possible Follow-Up Questions
+          - listitem [ref=f29e64]:
+            - paragraph [ref=f29e65]:
+              - generic [ref=f29e66]: 
+              - text: Included Possible RxJS and TypeScript Questions
+          - listitem [ref=f29e67]:
+            - paragraph [ref=f29e68]:
+              - generic [ref=f29e69]: 
+              - text: Recommendations From the Instructor Who Has Been on Both Sides as Interviewer and Interviewee
+          - listitem [ref=f29e70]:
+            - paragraph [ref=f29e71]:
+              - generic [ref=f29e72]: 
+              - text: Questions cover
+              - strong [ref=f29e73]: Junior, Middle and Senior Levels
+    - generic [ref=f29e75]:
+      - heading "Meet your Instructor" [level=2] [ref=f29e77]
+      - article [ref=f29e78]:
+        - list [ref=f29e79]:
+          - listitem [ref=f29e83]:
+            - generic [ref=f29e85]:
+              - generic [ref=f29e86]:
+                - heading "Google Developer Expert in Angular | Microsoft MVP | Author of Decoded Frontend" [level=3] [ref=f29e87]
+                - paragraph [ref=f29e88]: Dmytro Mezhenskyi
+              - generic [ref=f29e89]:
+                - text: My name is Dmytro Mezhenskyi. I have been working as a Frontend Developer since 2012 and I have experience with different projects, different scales, and frameworks. In 2020 I decided to run my YouTube channel
+                - strong [ref=f29e90]: "\"Decoded Frontend\""
+                - text: about Web Development where I share my knowledge. Teaching has inspired me a lot and I decided to continue with it also on other platforms in order to help hundreds of people to be better developers.
+          - text:  
+    - generic [ref=f29e92]:
+      - heading "Reviews About The Course" [level=2] [ref=f29e94]
+      - article [ref=f29e95]:
+        - list [ref=f29e96]:
+          - generic [ref=f29e98]:
+            - listitem [ref=f29e100]:
+              - generic [ref=f29e101]:
+                - generic [ref=f29e102]:
+                  - img "star" [ref=f29e103]: 
+                  - img "star" [ref=f29e104]: 
+                  - img "star" [ref=f29e105]: 
+                  - img "star" [ref=f29e106]: 
+                  - img "star" [ref=f29e107]: 
+                - generic [ref=f29e108]: 5 star rating
+                - heading "Angular interview hacking review" [level=3] [ref=f29e109]
+                - heading "Oleksandr Kumeiko" [level=4] [ref=f29e110]
+              - generic [ref=f29e112]:
+                - paragraph [ref=f29e113]: Thank you for the course, it helped me to pass the interview . Short recall of these questions before the interview was very useful. I had so many questions ...
+                - text: Read More
+            - listitem [ref=f29e115]:
+              - generic [ref=f29e116]:
+                - generic [ref=f29e117]:
+                  - img "star" [ref=f29e118]: 
+                  - img "star" [ref=f29e119]: 
+                  - img "star" [ref=f29e120]: 
+                  - img "star" [ref=f29e121]: 
+                  - img "star" [ref=f29e122]: 
+                - generic [ref=f29e123]: 5 star rating
+                - heading "Quality Content" [level=3] [ref=f29e124]
+                - heading "Cristian Leonardo Arango Daza" [level=4] [ref=f29e125]
+              - paragraph [ref=f29e128]: I have been studying with this course and my professional career is being boosted
+            - listitem [ref=f29e130]:
+              - generic [ref=f29e131]:
+                - generic [ref=f29e132]:
+                  - img "star" [ref=f29e133]: 
+                  - img "star" [ref=f29e134]: 
+                  - img "star" [ref=f29e135]: 
+                  - img "star" [ref=f29e136]: 
+                  - img "star" [ref=f29e137]: 
+                - generic [ref=f29e138]: 5 star rating
+                - heading "Course Structure and Explanation:" [level=3] [ref=f29e139]
+                - heading "Manish Boge" [level=4] [ref=f29e140]
+              - generic [ref=f29e142]:
+                - paragraph [ref=f29e143]: The way that the concepts explained are very great and easy to understand. Thanks for sharing the knowledge. I would surely suggest this course to my colle...
+                - text: Read More
+            - listitem [ref=f29e145]:
+              - generic [ref=f29e146]:
+                - generic [ref=f29e147]:
+                  - img "star" [ref=f29e148]: 
+                  - img "star" [ref=f29e149]: 
+                  - img "star" [ref=f29e150]: 
+                  - img "star" [ref=f29e151]: 
+                  - img "star" [ref=f29e152]: 
+                - generic [ref=f29e153]: 5 star rating
+                - heading "Perfect Course for Angular Interview Preparation" [level=3] [ref=f29e154]
+                - heading "Akshay Mhatre" [level=4] [ref=f29e155]
+              - generic [ref=f29e156]:
+                - generic:
+                  - paragraph
+            - listitem [ref=f29e158]:
+              - generic [ref=f29e159]:
+                - generic [ref=f29e160]:
+                  - img "star" [ref=f29e161]: 
+                  - img "star" [ref=f29e162]: 
+                  - img "star" [ref=f29e163]: 
+                  - img "star" [ref=f29e164]: 
+                  - img "star" [ref=f29e165]: 
+                - generic [ref=f29e166]: 5 star rating
+                - heading "Quality Content" [level=3] [ref=f29e167]
+                - heading "Cristian Leonardo Arango Daza" [level=4] [ref=f29e168]
+              - paragraph [ref=f29e171]: I have been studying with this course and my professional career is being boosted
+            - listitem [ref=f29e173]:
+              - generic [ref=f29e174]:
+                - generic [ref=f29e175]:
+                  - img "star" [ref=f29e176]: 
+                  - img "star" [ref=f29e177]: 
+                  - img "star" [ref=f29e178]: 
+                  - img "star" [ref=f29e179]: 
+                  - img "star" [ref=f29e180]: 
+                - generic [ref=f29e181]: 5 star rating
+                - heading "Useful content explained clearly" [level=3] [ref=f29e182]
+                - heading "Pedja Carapic" [level=4] [ref=f29e183]
+              - generic [ref=f29e185]:
+                - paragraph [ref=f29e186]: Dmytro covered various topics in an easy way to understand. I recommend this course to everyone. Learned a lot from it and I hope it will be extended in the ...
+                - text: Read More
+            - listitem [ref=f29e188]:
+              - generic [ref=f29e189]:
+                - generic [ref=f29e190]:
+                  - img "star" [ref=f29e191]: 
+                  - img "star" [ref=f29e192]: 
+                  - img "star" [ref=f29e193]: 
+                  - img "star" [ref=f29e194]: 
+                - generic [ref=f29e195]: 4 star rating
+                - heading "Content" [level=3] [ref=f29e196]
+                - heading "dheeraj joshi" [level=4] [ref=f29e197]
+              - generic [ref=f29e199]:
+                - paragraph [ref=f29e200]: The quality of the content is great but it feels like the quantity is somewhat less but still all the major topics are covered so its great came through you ...
+                - text: Read More
+            - listitem [ref=f29e202]:
+              - generic [ref=f29e203]:
+                - generic [ref=f29e204]:
+                  - img "star" [ref=f29e205]: 
+                  - img "star" [ref=f29e206]: 
+                  - img "star" [ref=f29e207]: 
+                  - img "star" [ref=f29e208]: 
+                  - img "star" [ref=f29e209]: 
+                - generic [ref=f29e210]: 5 star rating
+                - heading "Super Helpful" [level=3] [ref=f29e211]
+                - heading "Luis Haroldo Castro Cabrera" [level=4] [ref=f29e212]
+              - generic [ref=f29e214]:
+                - paragraph [ref=f29e215]: This is a great course that pretty much gives you some of the keys to kill that Angular interview. I have been asked at least 90% of the questions in here fo...
+                - text: Read More
+            - listitem [ref=f29e217]:
+              - generic [ref=f29e218]:
+                - generic [ref=f29e219]:
+                  - img "star" [ref=f29e220]: 
+                  - img "star" [ref=f29e221]: 
+                  - img "star" [ref=f29e222]: 
+                  - img "star" [ref=f29e223]: 
+                  - img "star" [ref=f29e224]: 
+                - generic [ref=f29e225]: 5 star rating
+                - heading "Awesome tips from junior to senior!" [level=3] [ref=f29e226]
+                - heading "Elia Pari" [level=4] [ref=f29e227]
+              - generic [ref=f29e229]:
+                - paragraph [ref=f29e230]: The course is really solid. It covers all the major topics regarding the framework. There are lots of useful tips for junior and senior developers. If you ar...
+                - text: Read More
+            - listitem [ref=f29e232]:
+              - generic [ref=f29e233]:
+                - generic [ref=f29e234]:
+                  - img "star" [ref=f29e235]: 
+                  - img "star" [ref=f29e236]: 
+                  - img "star" [ref=f29e237]: 
+                  - img "star" [ref=f29e238]: 
+                  - img "star" [ref=f29e239]: 
+                - generic [ref=f29e240]: 5 star rating
+                - heading "Got the job thanks to the course!" [level=3] [ref=f29e241]
+                - heading "Aleksander Kroworz" [level=4] [ref=f29e242]
+              - generic [ref=f29e244]:
+                - paragraph [ref=f29e245]: I was applying for mid angular developer position. The questions and topics, which were discussed in this course, in many cases they have occured e.g. Depend...
+                - text: Read More
+            - listitem [ref=f29e247]:
+              - generic [ref=f29e248]:
+                - generic [ref=f29e249]:
+                  - img "star" [ref=f29e250]: 
+                  - img "star" [ref=f29e251]: 
+                  - img "star" [ref=f29e252]: 
+                  - img "star" [ref=f29e253]: 
+                  - img "star" [ref=f29e254]: 
+                - generic [ref=f29e255]: 5 star rating
+                - heading "I love it! It is a great course so far" [level=3] [ref=f29e256]
+                - heading "Sam Velych" [level=4] [ref=f29e257]
+              - generic [ref=f29e259]:
+                - paragraph [ref=f29e260]: It is my 3rd course I bought from Dmyto and it is awesome again! Maybe I am biased but I really love what this guy is doing. I didn't finish the whole course...
+                - text: Read More
+            - listitem [ref=f29e262]:
+              - generic [ref=f29e263]:
+                - generic [ref=f29e264]:
+                  - img "star" [ref=f29e265]: 
+                  - img "star" [ref=f29e266]: 
+                  - img "star" [ref=f29e267]: 
+                  - img "star" [ref=f29e268]: 
+                  - img "star" [ref=f29e269]: 
+                - generic [ref=f29e270]: 5 star rating
+                - heading "Complete, Clear and Concise" [level=3] [ref=f29e271]
+                - heading "Florent Letendre" [level=4] [ref=f29e272]
+              - generic [ref=f29e274]:
+                - paragraph [ref=f29e275]: Although it is targeted for interview, I wish i saw this course when i started angular, i actually learned and adjusted many of angular concepts. RXJS chapt...
+                - text: Read More
+            - listitem [ref=f29e277]:
+              - generic [ref=f29e278]:
+                - generic [ref=f29e279]:
+                  - img "star" [ref=f29e280]: 
+                  - img "star" [ref=f29e281]: 
+                  - img "star" [ref=f29e282]: 
+                  - img "star" [ref=f29e283]: 
+                  - img "star" [ref=f29e284]: 
+                - generic [ref=f29e285]: 5 star rating
+                - heading "Angular interview hacking review" [level=3] [ref=f29e286]
+                - heading "Oleksandr Kumeiko" [level=4] [ref=f29e287]
+              - generic [ref=f29e289]:
+                - paragraph [ref=f29e290]: Thank you for the course, it helped me to pass the interview . Short recall of these questions before the interview was very useful. I had so many questions ...
+                - text: Read More
+            - listitem [ref=f29e292]:
+              - generic [ref=f29e293]:
+                - generic [ref=f29e294]:
+                  - img "star" [ref=f29e295]: 
+                  - img "star" [ref=f29e296]: 
+                  - img "star" [ref=f29e297]: 
+                  - img "star" [ref=f29e298]: 
+                  - img "star" [ref=f29e299]: 
+                - generic [ref=f29e300]: 5 star rating
+                - heading "Quality Content" [level=3] [ref=f29e301]
+                - heading "Cristian Leonardo Arango Daza" [level=4] [ref=f29e302]
+              - paragraph [ref=f29e305]: I have been studying with this course and my professional career is being boosted
+            - listitem [ref=f29e307]:
+              - generic [ref=f29e308]:
+                - generic [ref=f29e309]:
+                  - img "star" [ref=f29e310]: 
+                  - img "star" [ref=f29e311]: 
+                  - img "star" [ref=f29e312]: 
+                  - img "star" [ref=f29e313]: 
+                  - img "star" [ref=f29e314]: 
+                - generic [ref=f29e315]: 5 star rating
+                - heading "Course Structure and Explanation:" [level=3] [ref=f29e316]
+                - heading "Manish Boge" [level=4] [ref=f29e317]
+              - generic [ref=f29e319]:
+                - paragraph [ref=f29e320]: The way that the concepts explained are very great and easy to understand. Thanks for sharing the knowledge. I would surely suggest this course to my colle...
+                - text: Read More
+            - listitem [ref=f29e322]:
+              - generic [ref=f29e323]:
+                - generic [ref=f29e324]:
+                  - img "star" [ref=f29e325]: 
+                  - img "star" [ref=f29e326]: 
+                  - img "star" [ref=f29e327]: 
+                  - img "star" [ref=f29e328]: 
+                  - img "star" [ref=f29e329]: 
+                - generic [ref=f29e330]: 5 star rating
+                - heading "Perfect Course for Angular Interview Preparation" [level=3] [ref=f29e331]
+                - heading "Akshay Mhatre" [level=4] [ref=f29e332]
+              - generic [ref=f29e333]:
+                - generic:
+                  - paragraph
+            - listitem [ref=f29e335]:
+              - generic [ref=f29e336]:
+                - generic [ref=f29e337]:
+                  - img "star" [ref=f29e338]: 
+                  - img "star" [ref=f29e339]: 
+                  - img "star" [ref=f29e340]: 
+                  - img "star" [ref=f29e341]: 
+                  - img "star" [ref=f29e342]: 
+                - generic [ref=f29e343]: 5 star rating
+                - heading "Quality Content" [level=3] [ref=f29e344]
+                - heading "Cristian Leonardo Arango Daza" [level=4] [ref=f29e345]
+              - paragraph [ref=f29e348]: I have been studying with this course and my professional career is being boosted
+            - listitem [ref=f29e350]:
+              - generic [ref=f29e351]:
+                - generic [ref=f29e352]:
+                  - img "star" [ref=f29e353]: 
+                  - img "star" [ref=f29e354]: 
+                  - img "star" [ref=f29e355]: 
+                  - img "star" [ref=f29e356]: 
+                  - img "star" [ref=f29e357]: 
+                - generic [ref=f29e358]: 5 star rating
+                - heading "Useful content explained clearly" [level=3] [ref=f29e359]
+                - heading "Pedja Carapic" [level=4] [ref=f29e360]
+              - generic [ref=f29e362]:
+                - paragraph [ref=f29e363]: Dmytro covered various topics in an easy way to understand. I recommend this course to everyone. Learned a lot from it and I hope it will be extended in the ...
+                - text: Read More
+            - listitem [ref=f29e365]:
+              - generic [ref=f29e366]:
+                - generic [ref=f29e367]:
+                  - img "star" [ref=f29e368]: 
+                  - img "star" [ref=f29e369]: 
+                  - img "star" [ref=f29e370]: 
+                  - img "star" [ref=f29e371]: 
+                - generic [ref=f29e372]: 4 star rating
+                - heading "Content" [level=3] [ref=f29e373]
+                - heading "dheeraj joshi" [level=4] [ref=f29e374]
+              - generic [ref=f29e376]:
+                - paragraph [ref=f29e377]: The quality of the content is great but it feels like the quantity is somewhat less but still all the major topics are covered so its great came through you ...
+                - text: Read More
+            - listitem [ref=f29e379]:
+              - generic [ref=f29e380]:
+                - generic [ref=f29e381]:
+                  - img "star" [ref=f29e382]: 
+                  - img "star" [ref=f29e383]: 
+                  - img "star" [ref=f29e384]: 
+                  - img "star" [ref=f29e385]: 
+                  - img "star" [ref=f29e386]: 
+                - generic [ref=f29e387]: 5 star rating
+                - heading "Super Helpful" [level=3] [ref=f29e388]
+                - heading "Luis Haroldo Castro Cabrera" [level=4] [ref=f29e389]
+              - generic [ref=f29e391]:
+                - paragraph [ref=f29e392]: This is a great course that pretty much gives you some of the keys to kill that Angular interview. I have been asked at least 90% of the questions in here fo...
+                - text: Read More
+            - listitem [ref=f29e394]:
+              - generic [ref=f29e395]:
+                - generic [ref=f29e396]:
+                  - img "star" [ref=f29e397]: 
+                  - img "star" [ref=f29e398]: 
+                  - img "star" [ref=f29e399]: 
+                  - img "star" [ref=f29e400]: 
+                  - img "star" [ref=f29e401]: 
+                - generic [ref=f29e402]: 5 star rating
+                - heading "Awesome tips from junior to senior!" [level=3] [ref=f29e403]
+                - heading "Elia Pari" [level=4] [ref=f29e404]
+              - generic [ref=f29e406]:
+                - paragraph [ref=f29e407]: The course is really solid. It covers all the major topics regarding the framework. There are lots of useful tips for junior and senior developers. If you ar...
+                - text: Read More
+            - listitem [ref=f29e409]:
+              - generic [ref=f29e410]:
+                - generic [ref=f29e411]:
+                  - img "star" [ref=f29e412]: 
+                  - img "star" [ref=f29e413]: 
+                  - img "star" [ref=f29e414]: 
+                  - img "star" [ref=f29e415]: 
+                  - img "star" [ref=f29e416]: 
+                - generic [ref=f29e417]: 5 star rating
+                - heading "Got the job thanks to the course!" [level=3] [ref=f29e418]
+                - heading "Aleksander Kroworz" [level=4] [ref=f29e419]
+              - generic [ref=f29e421]:
+                - paragraph [ref=f29e422]: I was applying for mid angular developer position. The questions and topics, which were discussed in this course, in many cases they have occured e.g. Depend...
+                - text: Read More
+            - listitem [ref=f29e424]:
+              - generic [ref=f29e425]:
+                - generic [ref=f29e426]:
+                  - img "star" [ref=f29e427]: 
+                  - img "star" [ref=f29e428]: 
+                  - img "star" [ref=f29e429]: 
+                  - img "star" [ref=f29e430]: 
+                  - img "star" [ref=f29e431]: 
+                - generic [ref=f29e432]: 5 star rating
+                - heading "I love it! It is a great course so far" [level=3] [ref=f29e433]
+                - heading "Sam Velych" [level=4] [ref=f29e434]
+              - generic [ref=f29e436]:
+                - paragraph [ref=f29e437]: It is my 3rd course I bought from Dmyto and it is awesome again! Maybe I am biased but I really love what this guy is doing. I didn't finish the whole course...
+                - text: Read More
+            - listitem [ref=f29e439]:
+              - generic [ref=f29e440]:
+                - generic [ref=f29e441]:
+                  - img "star" [ref=f29e442]: 
+                  - img "star" [ref=f29e443]: 
+                  - img "star" [ref=f29e444]: 
+                  - img "star" [ref=f29e445]: 
+                  - img "star" [ref=f29e446]: 
+                - generic [ref=f29e447]: 5 star rating
+                - heading "Complete, Clear and Concise" [level=3] [ref=f29e448]
+                - heading "Florent Letendre" [level=4] [ref=f29e449]
+              - generic [ref=f29e451]:
+                - paragraph [ref=f29e452]: Although it is targeted for interview, I wish i saw this course when i started angular, i actually learned and adjusted many of angular concepts. RXJS chapt...
+                - text: Read More
+          - generic:
+            - button "Previous" [ref=f29e453] [cursor=pointer]:
+              - img [ref=f29e454]: 
+            - button "Next" [ref=f29e455] [cursor=pointer]:
+              - img [ref=f29e456]: 
+    - article [ref=f29e459]:
+      - list [ref=f29e460]:
+        - generic [ref=f29e462]:
+          - listitem [ref=f29e464]:
+            - heading "Huge thanks" [level=3] [ref=f29e465]
+            - paragraph [ref=f29e466]: by Bence
+            - generic [ref=f29e467]: Just took your Angular Interview Hacking course on the weekend, it highlighted what I was missing. The explanations were clear, the content was well structured, but my favorite was the "Monkey Patching" explanation. I had an interview today for a senior angular developer role, which I breezed through thanks to your course (and YouTube channel).
+          - listitem [ref=f29e469]:
+            - heading "Thank you :-)" [level=3] [ref=f29e470]
+            - paragraph [ref=f29e471]: by Akshay Mhatre
+            - generic [ref=f29e472]: Currently, I have enrolled for Angular Interview Hacking and I think it's the best way to brush up on all the concepts and learn what all Interview questions expect.
+          - listitem [ref=f29e474]:
+            - heading "I would recommend the course" [level=3] [ref=f29e475]
+            - paragraph [ref=f29e476]: Hiền Phạm Hữu
+            - generic [ref=f29e477]:
+              - text: Whether you're an interviewer or interviewee, or just wanna recap your Angular knowledge, I would
+              - link "recommend this course" [ref=f29e478] [cursor=pointer]:
+                - /url: https://twitter.com/HienHuuPham/status/1596028995472003072
+              - text: from @DecodedFrontend
+          - listitem [ref=f29e480]:
+            - heading "The Best Source to Look For!" [level=3] [ref=f29e481]
+            - paragraph [ref=f29e482]: Pooria Faghfoori
+            - generic [ref=f29e483]: The best source to look for is a series of "Angular Interview Questions" when you are short of time to study Angular and are looking for a great resource to cover the main Angular topics. The topics are given to you in detail and you will get acquainted with Angular from beginner to advanced level.
+          - listitem [ref=f29e485]:
+            - heading "Huge thanks" [level=3] [ref=f29e486]
+            - paragraph [ref=f29e487]: by Bence
+            - generic [ref=f29e488]: Just took your Angular Interview Hacking course on the weekend, it highlighted what I was missing. The explanations were clear, the content was well structured, but my favorite was the "Monkey Patching" explanation. I had an interview today for a senior angular developer role, which I breezed through thanks to your course (and YouTube channel).
+          - listitem [ref=f29e490]:
+            - heading "Thank you :-)" [level=3] [ref=f29e491]
+            - paragraph [ref=f29e492]: by Akshay Mhatre
+            - generic [ref=f29e493]: Currently, I have enrolled for Angular Interview Hacking and I think it's the best way to brush up on all the concepts and learn what all Interview questions expect.
+          - listitem [ref=f29e495]:
+            - heading "I would recommend the course" [level=3] [ref=f29e496]
+            - paragraph [ref=f29e497]: Hiền Phạm Hữu
+            - generic [ref=f29e498]:
+              - text: Whether you're an interviewer or interviewee, or just wanna recap your Angular knowledge, I would
+              - link "recommend this course" [ref=f29e499] [cursor=pointer]:
+                - /url: https://twitter.com/HienHuuPham/status/1596028995472003072
+              - text: from @DecodedFrontend
+          - listitem [ref=f29e501]:
+            - heading "The Best Source to Look For!" [level=3] [ref=f29e502]
+            - paragraph [ref=f29e503]: Pooria Faghfoori
+            - generic [ref=f29e504]: The best source to look for is a series of "Angular Interview Questions" when you are short of time to study Angular and are looking for a great resource to cover the main Angular topics. The topics are given to you in detail and you will get acquainted with Angular from beginner to advanced level.
+        - generic:
+          - button "Previous" [ref=f29e505] [cursor=pointer]:
+            - img [ref=f29e506]: 
+          - button "Next" [ref=f29e507] [cursor=pointer]:
+            - img [ref=f29e508]: 
+    - generic [ref=f29e510]:
+      - generic [ref=f29e511]:
+        - heading "Interview Topics" [level=2] [ref=f29e512]
+        - paragraph [ref=f29e513]: Each Topic Has 1-8 Questions Sorted From Junior to Senior
+      - article [ref=f29e514]:
+        - list [ref=f29e515]:
+          - listitem [ref=f29e516]:
+            - generic [ref=f29e517]:
+              - generic [ref=f29e518]: "1"
+              - generic [ref=f29e519] [cursor=pointer]:
+                - heading "Before You Send CV" [level=3] [ref=f29e520]
+                - button "Show Content" [ref=f29e522]
+              - list [ref=f29e523]:
+                - listitem [ref=f29e524]:
+                  - link "Intro FREE PREVIEW" [ref=f29e525] [cursor=pointer]:
+                    - /url: /enroll/1559756?et=free_trial
+                    - generic [ref=f29e526]: 
+                    - generic [ref=f29e527]:
+                      - paragraph [ref=f29e528]: Intro
+                      - generic [ref=f29e529]: FREE PREVIEW
+                - listitem [ref=f29e530]:
+                  - link "Prepare your CV FREE PREVIEW" [ref=f29e531] [cursor=pointer]:
+                    - /url: /enroll/1559756?et=free_trial
+                    - generic [ref=f29e532]: 
+                    - generic [ref=f29e533]:
+                      - paragraph [ref=f29e534]: Prepare your CV
+                      - generic [ref=f29e535]: FREE PREVIEW
+                - listitem [ref=f29e536]:
+                  - generic [ref=f29e537]:
+                    - generic [ref=f29e538]: 
+                    - paragraph [ref=f29e540]: Prepare Social Media Profiles
+                - listitem [ref=f29e541]:
+                  - generic [ref=f29e542]:
+                    - generic [ref=f29e543]: 
+                    - paragraph [ref=f29e545]: Do Company Research
+                - listitem [ref=f29e546]:
+                  - generic [ref=f29e547]:
+                    - generic [ref=f29e548]: 
+                    - paragraph [ref=f29e550]: What to expect during phone screening interview?
+          - listitem [ref=f29e551]:
+            - generic [ref=f29e552]:
+              - generic [ref=f29e553]: "2"
+              - generic [ref=f29e554] [cursor=pointer]:
+                - heading "Angular Essential Questions" [level=3] [ref=f29e555]
+                - button "Show Content" [ref=f29e557]
+              - text:                          
+          - listitem [ref=f29e558]:
+            - generic [ref=f29e559]:
+              - generic [ref=f29e560]: "3"
+              - generic [ref=f29e561] [cursor=pointer]:
+                - heading "TypeScript Questions" [level=3] [ref=f29e562]
+                - button "Show Content" [ref=f29e564]
+              - text:          
+          - listitem [ref=f29e565]:
+            - generic [ref=f29e566]:
+              - generic [ref=f29e567]: "4"
+              - generic [ref=f29e568] [cursor=pointer]:
+                - heading "RxJs Questions" [level=3] [ref=f29e569]
+                - button "Show Content" [ref=f29e571]
+              - text:         
+          - listitem [ref=f29e572]:
+            - generic [ref=f29e573]:
+              - generic [ref=f29e574]: "5"
+              - generic [ref=f29e575] [cursor=pointer]:
+                - heading "Outro" [level=3] [ref=f29e576]
+                - button "Show Content" [ref=f29e578]
+              - text:  
+    - generic [ref=f29e581]:
+      - generic [ref=f29e582]:
+        - heading "Pricing options" [level=2] [ref=f29e583]
+        - paragraph [ref=f29e584]: Pick only what you actually need
+      - article [ref=f29e585]:
+        - list [ref=f29e586]:
+          - listitem [ref=f29e587]:
+            - generic [ref=f29e588]:
+              - paragraph [ref=f29e589]: €59,99
+              - paragraph [ref=f29e590]: Regular price
+            - link "Get started now" [ref=f29e591] [cursor=pointer]:
+              - /url: /enroll/1559756
+              - text: Get started now 
+          - listitem [ref=f29e592]:
+            - generic [ref=f29e593]:
+              - paragraph [ref=f29e594]: €199,99
+              - paragraph [ref=f29e595]: Basic | With Mock-Interview
+            - link "Get started now" [ref=f29e596] [cursor=pointer]:
+              - /url: /cart/add_product/1559756?price_id=2175992
+              - text: Get started now 
+          - listitem [ref=f29e597]:
+            - generic [ref=f29e598]:
+              - paragraph [ref=f29e599]: €599,00
+              - paragraph [ref=f29e600]: Advanced | + 5h of Mentoring
+            - link "Get started now" [ref=f29e601] [cursor=pointer]:
+              - /url: /cart/add_product/1559756?price_id=2175989
+              - text: Get started now 
+    - generic [ref=f29e603]:
+      - heading "More About Price Options" [level=2] [ref=f29e605]
+      - article [ref=f29e606]:
+        - list [ref=f29e608]:
+          - listitem [ref=f29e609]:
+            - heading "Regular" [level=3] [ref=f29e610]
+            - paragraph [ref=f29e611]: This option gives you lifetime access to all video lectures for the course including also all updates
+          - listitem [ref=f29e612]:
+            - text: Top Deal
+            - heading "Basic" [level=3] [ref=f29e613]
+            - paragraph [ref=f29e614]:
+              - text: You get everything from the 1st option and additionally
+              - strong [ref=f29e615]: 1 Mock Interview + Detailed Feedback
+              - text: . It is the best way to find out your level and expose knowledge gaps
+              - strong [ref=f29e616]: before
+              - text: the real Angular interview!
+          - listitem [ref=f29e617]:
+            - heading "Advanced" [level=3] [ref=f29e618]
+            - paragraph [ref=f29e619]:
+              - text: If you are looking for the best and personalized experience - this option is for you! It includes everything from the previous 2 options and additionally
+              - strong [ref=f29e620]: 5 hours of personalized training & mentoring sessions
+              - text: . Warning! It may drastically increase your chances of getting a job offer
+    - generic [ref=f29e623]:
+      - heading "FAQ" [level=2] [ref=f29e625]
+      - article [ref=f29e626]:
+        - list [ref=f29e627]:
+          - listitem [ref=f29e628]:
+            - checkbox "Expand or collapse" [checked] [ref=f29e629] [cursor=pointer]
+            - strong [ref=f29e630]: Would be the course useful for Architects and Principal Devs?
+            - paragraph: This course is focused on Junior, Middle, and Senior levels. Principals and Architects most probably won't benefit from the course too much
+          - listitem [ref=f29e631]:
+            - checkbox "Expand or collapse" [checked] [ref=f29e632] [cursor=pointer]
+            - strong [ref=f29e633]: Is the any guarantee that I will get a job after the course?
+            - paragraph: No, it is NOT guaranteed that you eventually get a job offer but it can drastically increase your chances.
+          - listitem [ref=f29e634]:
+            - checkbox "Expand or collapse" [checked] [ref=f29e635] [cursor=pointer]
+            - strong [ref=f29e636]: What if I am not satisfied with the course?
+            - paragraph:
+              - text: Sorry to hear that... Sure thing that you can request your money back within 14 Days after Purchase and if your course progress is less than 70% and you didn't have mock-interview yet. In order to request a refund, write to
+              - link "dmytro@decodedfrontend.io" [ref=f29e637] [cursor=pointer]:
+                - /url: mailto:dmytro@decodedfrontend.io
+          - listitem [ref=f29e638]:
+            - checkbox "Expand or collapse" [checked] [ref=f29e639] [cursor=pointer]
+            - strong [ref=f29e640]: How I can book a Mock-Interview?
+            - paragraph: In the "Welcome" email you will get a link to Calendly with open time slots, so you can pick a date and time which works for you
+          - listitem [ref=f29e641]:
+            - checkbox "Expand or collapse" [checked] [ref=f29e642] [cursor=pointer]
+            - strong [ref=f29e643]: Does the course include questions about Algorithms & Data Structures
+            - paragraph: No, these topics are dropped in this course
+    - generic [ref=f29e645]:
+      - generic [ref=f29e646]:
+        - heading "🏆 Complete Angular Mastery Bundle" [level=2] [ref=f29e647]:
+          - generic [ref=f29e648]: 🏆
+          - text: Complete Angular Mastery Bundle
+        - paragraph [ref=f29e649]:
+          - text: 6 Premium Courses → €466 €220
+          - generic [ref=f29e650]: (50% OFF)
+      - article [ref=f29e651]:
+        - list [ref=f29e652]:
+          - listitem [ref=f29e653]:
+            - generic [ref=f29e654]: 
+            - generic [ref=f29e655]:
+              - heading "€220,00" [level=3] [ref=f29e656]
+              - generic [ref=f29e657]:
+                - heading "All-in-One Bundle" [level=3] [ref=f29e658]
+                - generic [ref=f29e659]:
+                  - text: Master Angular from Forms to Testing to Nx Workspaces — everything you need in one package.
+                  - link "Learn more" [ref=f29e660] [cursor=pointer]:
+                    - /url: https://courses.decodedfrontend.io/bundles/all-in-one-angular-bundle
+            - link "Get Instant Access" [ref=f29e662] [cursor=pointer]:
+              - /url: /cart/add_product/3633211?price_id=4573461
+    - generic [ref=f29e665]:
+      - heading "🛡️ 14-Day Money-Back Guarantee" [level=2] [ref=f29e667]
+      - article [ref=f29e668]:
+        - paragraph [ref=f29e670]: Lifetime Access • Course updates included
+  - contentinfo [ref=f29e671]:
+    - article [ref=f29e673]:
+      - list [ref=f29e674]:
+        - listitem [ref=f29e675]:
+          - link "Terms & Conditions" [ref=f29e676] [cursor=pointer]:
+            - /url: https://www.decodedfrontend.io/terms-and-conditions/
+        - listitem [ref=f29e677]:
+          - link "Imprint" [ref=f29e678] [cursor=pointer]:
+            - /url: https://www.decodedfrontend.io/imprint/
+        - listitem [ref=f29e679]:
+          - link "Privacy Policy" [ref=f29e680] [cursor=pointer]:
+            - /url: https://www.decodedfrontend.io/privacy-policy/
+      - list [ref=f29e681]:
+        - listitem [ref=f29e682]:
+          - link "https://twitter.com/DecodedFrontend (Open in a new window)" [ref=f29e683] [cursor=pointer]:
+            - /url: https://twitter.com/DecodedFrontend
+            - generic "https://twitter.com/DecodedFrontend (Open in a new window)" [ref=f29e684]: 
+        - listitem [ref=f29e685]:
+          - link "https://youtube.com/DecodedFrontend (Open in a new window)" [ref=f29e686] [cursor=pointer]:
+            - /url: https://youtube.com/DecodedFrontend
+            - generic "https://youtube.com/DecodedFrontend (Open in a new window)" [ref=f29e687]: 
+        - listitem [ref=f29e688]:
+          - link "https://facebook.com/DecodedFrontend (Open in a new window)" [ref=f29e689] [cursor=pointer]:
+            - /url: https://facebook.com/DecodedFrontend
+            - generic "https://facebook.com/DecodedFrontend (Open in a new window)" [ref=f29e690]: 
+      - generic [ref=f29e692]: © Copyright Mezhenskyi Dmytro 2026

@@ -1,0 +1,521 @@
+- generic [active] [ref=f17e1]:
+  - dialog "cookieconsent" [ref=f17e2]:
+    - generic [ref=f17e3]:
+      - text: This website uses cookies to ensure you get the best experience on our website.
+      - button "learn more about cookies" [ref=f17e4] [cursor=pointer]: Learn more
+    - button "dismiss cookie message" [ref=f17e6] [cursor=pointer]: Got it!
+  - link "Skip to main content" [ref=f17e7] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f17e8]:
+    - generic [ref=f17e10]:
+      - link "Mezhenskyi Dmytro" [ref=f17e12] [cursor=pointer]:
+        - /url: /
+        - heading "Mezhenskyi Dmytro" [level=1] [ref=f17e13]
+      - navigation [ref=f17e14]:
+        - list [ref=f17e15]:
+          - listitem [ref=f17e16]:
+            - link "All Courses" [ref=f17e17] [cursor=pointer]:
+              - /url: /collections
+          - listitem [ref=f17e18]:
+            - link "Sign In" [ref=f17e19] [cursor=pointer]:
+              - /url: /users/sign_in
+  - main [ref=f17e20]:
+    - article [ref=f17e24]:
+      - generic [ref=f17e25]:
+        - heading "Advanced Angular Courses" [level=2] [ref=f17e26]
+        - paragraph [ref=f17e27]: Become an expert in Angular and related technologies
+        - generic [ref=f17e28]: 👇
+    - generic [ref=f17e30]:
+      - heading "Check Out All My Courses 👇" [level=2] [ref=f17e32]
+      - article [ref=f17e33]:
+        - list [ref=f17e34]:
+          - listitem [ref=f17e35]:
+            - link "All Courses Advanced Angular Forms star star star star star (84) 5.0 average rating 176 Lessons €99,00" [ref=f17e36] [cursor=pointer]:
+              - /url: /courses/advanced-angular-forms
+              - generic [ref=f17e37]:
+                - paragraph [ref=f17e38]: All Courses
+                - heading "Advanced Angular Forms" [level=3] [ref=f17e39]
+                - generic [ref=f17e40]:
+                  - generic [ref=f17e41]:
+                    - img "star" [ref=f17e42]: 
+                    - img "star" [ref=f17e43]: 
+                    - img "star" [ref=f17e44]: 
+                    - img "star" [ref=f17e45]: 
+                    - img "star" [ref=f17e46]: 
+                  - generic [ref=f17e47]: (84)
+                  - generic [ref=f17e48]: 5.0 average rating
+              - generic [ref=f17e49]:
+                - strong [ref=f17e51]: 176 Lessons
+                - strong [ref=f17e53]: €99,00
+          - listitem [ref=f17e55]:
+            - link "All Courses Nx Workspaces star star star star star (4) 4.8 average rating 86 Lessons €99,00" [ref=f17e56] [cursor=pointer]:
+              - /url: /courses/nx-workspaces
+              - generic [ref=f17e57]:
+                - paragraph [ref=f17e58]: All Courses
+                - heading "Nx Workspaces" [level=3] [ref=f17e59]
+                - generic [ref=f17e60]:
+                  - generic [ref=f17e61]:
+                    - img "star" [ref=f17e62]: 
+                    - img "star" [ref=f17e63]: 
+                    - img "star" [ref=f17e64]: 
+                    - img "star" [ref=f17e65]: 
+                    - img "star" [ref=f17e66]: 
+                  - generic [ref=f17e67]: (4)
+                  - generic [ref=f17e68]: 4.8 average rating
+              - generic [ref=f17e69]:
+                - strong [ref=f17e71]: 86 Lessons
+                - strong [ref=f17e73]: €99,00
+          - listitem [ref=f17e75]:
+            - link "All Courses Conscious Angular Testing star star star star star (8) 5.0 average rating 93 Lessons €99,00" [ref=f17e76] [cursor=pointer]:
+              - /url: /courses/conscious-angular-testing
+              - generic [ref=f17e77]:
+                - paragraph [ref=f17e78]: All Courses
+                - heading "Conscious Angular Testing" [level=3] [ref=f17e79]
+                - generic [ref=f17e80]:
+                  - generic [ref=f17e81]:
+                    - img "star" [ref=f17e82]: 
+                    - img "star" [ref=f17e83]: 
+                    - img "star" [ref=f17e84]: 
+                    - img "star" [ref=f17e85]: 
+                    - img "star" [ref=f17e86]: 
+                  - generic [ref=f17e87]: (8)
+                  - generic [ref=f17e88]: 5.0 average rating
+              - generic [ref=f17e89]:
+                - strong [ref=f17e91]: 93 Lessons
+                - strong [ref=f17e93]: €99,00
+          - listitem [ref=f17e95]:
+            - link "All Courses Angular Interview Hacking star star star star star (34) 4.9 average rating 52 Lessons €59,99" [ref=f17e96] [cursor=pointer]:
+              - /url: /courses/angular-interview-hacking
+              - generic [ref=f17e97]:
+                - paragraph [ref=f17e98]: All Courses
+                - heading "Angular Interview Hacking" [level=3] [ref=f17e99]
+                - generic [ref=f17e100]:
+                  - generic [ref=f17e101]:
+                    - img "star" [ref=f17e102]: 
+                    - img "star" [ref=f17e103]: 
+                    - img "star" [ref=f17e104]: 
+                    - img "star" [ref=f17e105]: 
+                    - img "star" [ref=f17e106]: 
+                  - generic [ref=f17e107]: (34)
+                  - generic [ref=f17e108]: 4.9 average rating
+              - generic [ref=f17e109]:
+                - strong [ref=f17e111]: 52 Lessons
+                - strong [ref=f17e113]: €59,99
+          - listitem [ref=f17e115]:
+            - link "All Courses Angular Material Theming Course (In-Depth) star star star star star (17) 4.8 average rating 66 Lessons €59,99" [ref=f17e116] [cursor=pointer]:
+              - /url: /courses/angular-material-theming-workshop
+              - generic [ref=f17e117]:
+                - paragraph [ref=f17e118]: All Courses
+                - heading "Angular Material Theming Course (In-Depth)" [level=3] [ref=f17e119]
+                - generic [ref=f17e120]:
+                  - generic [ref=f17e121]:
+                    - img "star" [ref=f17e122]: 
+                    - img "star" [ref=f17e123]: 
+                    - img "star" [ref=f17e124]: 
+                    - img "star" [ref=f17e125]: 
+                    - img "star" [ref=f17e126]: 
+                  - generic [ref=f17e127]: (17)
+                  - generic [ref=f17e128]: 4.8 average rating
+              - generic [ref=f17e129]:
+                - strong [ref=f17e131]: 66 Lessons
+                - strong [ref=f17e133]: €59,99
+          - listitem [ref=f17e135]:
+            - link "All Courses Performant Graphql Backend in 1 Day by Using Hasura Engine star star star star star (5) 5.0 average rating 86 Lessons €49,99" [ref=f17e136] [cursor=pointer]:
+              - /url: /courses/performant-graphql-backend-just-in-few-days-with-hasura
+              - generic [ref=f17e137]:
+                - paragraph [ref=f17e138]: All Courses
+                - heading "Performant Graphql Backend in 1 Day by Using Hasura Engine" [level=3] [ref=f17e139]
+                - generic [ref=f17e140]:
+                  - generic [ref=f17e141]:
+                    - img "star" [ref=f17e142]: 
+                    - img "star" [ref=f17e143]: 
+                    - img "star" [ref=f17e144]: 
+                    - img "star" [ref=f17e145]: 
+                    - img "star" [ref=f17e146]: 
+                  - generic [ref=f17e147]: (5)
+                  - generic [ref=f17e148]: 5.0 average rating
+              - generic [ref=f17e149]:
+                - strong [ref=f17e151]: 86 Lessons
+                - strong [ref=f17e153]: €49,99
+          - listitem [ref=f17e155]:
+            - link "All Courses All-in-One Bundle €220,00 6 Courses" [ref=f17e156] [cursor=pointer]:
+              - /url: /bundles/all-in-one-angular-bundle
+              - generic [ref=f17e157]:
+                - paragraph [ref=f17e158]: All Courses
+                - heading "All-in-One Bundle" [level=3] [ref=f17e159]
+              - strong [ref=f17e162]: €220,00
+              - generic [ref=f17e164]:
+                - generic [ref=f17e165]: 
+                - text: 6 Courses
+    - generic [ref=f17e167]:
+      - heading "What People Say About Courses" [level=2] [ref=f17e169]
+      - article [ref=f17e170]:
+        - list [ref=f17e171]:
+          - generic [ref=f17e173]:
+            - listitem [ref=f17e175]:
+              - generic [ref=f17e176]:
+                - generic [ref=f17e177]:
+                  - img "star" [ref=f17e178]: 
+                  - img "star" [ref=f17e179]: 
+                  - img "star" [ref=f17e180]: 
+                  - img "star" [ref=f17e181]: 
+                  - img "star" [ref=f17e182]: 
+                - generic [ref=f17e183]: 5 star rating
+                - heading "Amazing course to understand Hasura in depth" [level=3] [ref=f17e184]
+                - heading "Afzal Ahmad" [level=4] [ref=f17e185]
+              - generic [ref=f17e187]:
+                - paragraph [ref=f17e188]: This is the best course I have ever attended, I can imagine the effort to convey the knowledge which was in-depth. Couldn't be better than this. Would love t...
+                - text: Read More
+            - listitem [ref=f17e190]:
+              - generic [ref=f17e191]:
+                - generic [ref=f17e192]:
+                  - img "star" [ref=f17e193]: 
+                  - img "star" [ref=f17e194]: 
+                  - img "star" [ref=f17e195]: 
+                  - img "star" [ref=f17e196]: 
+                  - img "star" [ref=f17e197]: 
+                - generic [ref=f17e198]: 5 star rating
+                - heading "Complete, Clear and Concise" [level=3] [ref=f17e199]
+                - heading "Florent Letendre" [level=4] [ref=f17e200]
+              - generic [ref=f17e202]:
+                - paragraph [ref=f17e203]: Although it is targeted for interview, I wish i saw this course when i started angular, i actually learned and adjusted many of angular concepts. RXJS chapt...
+                - text: Read More
+            - listitem [ref=f17e205]:
+              - generic [ref=f17e206]:
+                - generic [ref=f17e207]:
+                  - img "star" [ref=f17e208]: 
+                  - img "star" [ref=f17e209]: 
+                  - img "star" [ref=f17e210]: 
+                  - img "star" [ref=f17e211]: 
+                  - img "star" [ref=f17e212]: 
+                - generic [ref=f17e213]: 5 star rating
+                - heading "This course is something incredible!" [level=3] [ref=f17e214]
+                - heading "Kostiantyn Kifor" [level=4] [ref=f17e215]
+              - generic [ref=f17e217]:
+                - paragraph [ref=f17e218]: In my opinion, Dmitry currently creates the best Angular content. He explains everything very clearly. After this course, you will master all the skills and ...
+                - text: Read More
+            - listitem [ref=f17e220]:
+              - generic [ref=f17e221]:
+                - generic [ref=f17e222]:
+                  - img "star" [ref=f17e223]: 
+                  - img "star" [ref=f17e224]: 
+                  - img "star" [ref=f17e225]: 
+                  - img "star" [ref=f17e226]: 
+                  - img "star" [ref=f17e227]: 
+                - generic [ref=f17e228]: 5 star rating
+                - heading "Awesome tips from junior to senior!" [level=3] [ref=f17e229]
+                - heading "Elia Pari" [level=4] [ref=f17e230]
+              - generic [ref=f17e232]:
+                - paragraph [ref=f17e233]: The course is really solid. It covers all the major topics regarding the framework. There are lots of useful tips for junior and senior developers. If you ar...
+                - text: Read More
+            - listitem [ref=f17e235]:
+              - generic [ref=f17e236]:
+                - generic [ref=f17e237]:
+                  - img "star" [ref=f17e238]: 
+                  - img "star" [ref=f17e239]: 
+                  - img "star" [ref=f17e240]: 
+                  - img "star" [ref=f17e241]: 
+                  - img "star" [ref=f17e242]: 
+                - generic [ref=f17e243]: 5 star rating
+                - heading "Dmytro is a very talented tutor" [level=3] [ref=f17e244]
+                - heading "shah zaman" [level=4] [ref=f17e245]
+              - paragraph [ref=f17e248]: Dmytro is a very talented tutor! He explained each topic very thoroughly. I would defiantly recommend this course. Really Thanks, Dmytro!
+            - listitem [ref=f17e250]:
+              - generic [ref=f17e251]:
+                - generic [ref=f17e252]:
+                  - img "star" [ref=f17e253]: 
+                  - img "star" [ref=f17e254]: 
+                  - img "star" [ref=f17e255]: 
+                  - img "star" [ref=f17e256]: 
+                  - img "star" [ref=f17e257]: 
+                - generic [ref=f17e258]: 5 star rating
+                - heading "Much more than excellent" [level=3] [ref=f17e259]
+                - heading "Антон Gonza" [level=4] [ref=f17e260]
+              - paragraph [ref=f17e263]: Highly recommend the course!
+            - listitem [ref=f17e265]:
+              - generic [ref=f17e266]:
+                - generic [ref=f17e267]:
+                  - img "star" [ref=f17e268]: 
+                  - img "star" [ref=f17e269]: 
+                  - img "star" [ref=f17e270]: 
+                  - img "star" [ref=f17e271]: 
+                  - img "star" [ref=f17e272]: 
+                - generic [ref=f17e273]: 5 star rating
+                - heading "An Excellent Resource for Advanced Angular Forms" [level=3] [ref=f17e274]
+                - heading "Aurora Shehu" [level=4] [ref=f17e275]
+              - generic [ref=f17e277]:
+                - paragraph [ref=f17e278]: I recently took the Advanced Angular Forms video course and was thoroughly impressed. The course was well-organized and easy to follow, with clear explanatio...
+                - text: Read More
+            - listitem [ref=f17e280]:
+              - generic [ref=f17e281]:
+                - generic [ref=f17e282]:
+                  - img "star" [ref=f17e283]: 
+                  - img "star" [ref=f17e284]: 
+                  - img "star" [ref=f17e285]: 
+                  - img "star" [ref=f17e286]: 
+                  - img "star" [ref=f17e287]: 
+                - generic [ref=f17e288]: 5 star rating
+                - heading "The best courses about Angular Forms" [level=3] [ref=f17e289]
+                - heading "Ral Oliver" [level=4] [ref=f17e290]
+              - paragraph [ref=f17e293]: I have done a lot of courses about Angular in the last 5 years, and this one is the best one.
+            - listitem [ref=f17e295]:
+              - generic [ref=f17e296]:
+                - generic [ref=f17e297]:
+                  - img "star" [ref=f17e298]: 
+                  - img "star" [ref=f17e299]: 
+                  - img "star" [ref=f17e300]: 
+                  - img "star" [ref=f17e301]: 
+                  - img "star" [ref=f17e302]: 
+                - generic [ref=f17e303]: 5 star rating
+                - heading "Recommended for all Angular developers" [level=3] [ref=f17e304]
+                - heading "Giorgi Merabishvili" [level=4] [ref=f17e305]
+              - generic [ref=f17e307]:
+                - paragraph [ref=f17e308]: Absolutely brilliant workshop. Gives you a solid understanding of SCSS and helps you to understand how Angular material theming works under the hood to exten...
+                - text: Read More
+            - listitem [ref=f17e310]:
+              - generic [ref=f17e311]:
+                - generic [ref=f17e312]:
+                  - img "star" [ref=f17e313]: 
+                  - img "star" [ref=f17e314]: 
+                  - img "star" [ref=f17e315]: 
+                  - img "star" [ref=f17e316]: 
+                  - img "star" [ref=f17e317]: 
+                - generic [ref=f17e318]: 5 star rating
+                - heading "Absolutely fantastic course" [level=3] [ref=f17e319]
+                - heading "James Evans" [level=4] [ref=f17e320]
+              - generic [ref=f17e322]:
+                - paragraph [ref=f17e323]: This is an incredible course, it is the most in-depth angular forms course I have ever seen and I have seen quite a few. Dmytro goes into so much detail on e...
+                - text: Read More
+            - listitem [ref=f17e325]:
+              - generic [ref=f17e326]:
+                - generic [ref=f17e327]:
+                  - img "star" [ref=f17e328]: 
+                  - img "star" [ref=f17e329]: 
+                  - img "star" [ref=f17e330]: 
+                  - img "star" [ref=f17e331]: 
+                  - img "star" [ref=f17e332]: 
+                - generic [ref=f17e333]: 5 star rating
+                - heading "Got the job thanks to the course!" [level=3] [ref=f17e334]
+                - heading "Aleksander Kroworz" [level=4] [ref=f17e335]
+              - generic [ref=f17e337]:
+                - paragraph [ref=f17e338]: I was applying for mid angular developer position. The questions and topics, which were discussed in this course, in many cases they have occured e.g. Depend...
+                - text: Read More
+            - listitem [ref=f17e340]:
+              - generic [ref=f17e341]:
+                - generic [ref=f17e342]:
+                  - img "star" [ref=f17e343]: 
+                  - img "star" [ref=f17e344]: 
+                  - img "star" [ref=f17e345]: 
+                  - img "star" [ref=f17e346]: 
+                  - img "star" [ref=f17e347]: 
+                - generic [ref=f17e348]: 5 star rating
+                - heading "Amazing course to understand Hasura in depth" [level=3] [ref=f17e349]
+                - heading "Afzal Ahmad" [level=4] [ref=f17e350]
+              - generic [ref=f17e352]:
+                - paragraph [ref=f17e353]: This is the best course I have ever attended, I can imagine the effort to convey the knowledge which was in-depth. Couldn't be better than this. Would love t...
+                - text: Read More
+            - listitem [ref=f17e355]:
+              - generic [ref=f17e356]:
+                - generic [ref=f17e357]:
+                  - img "star" [ref=f17e358]: 
+                  - img "star" [ref=f17e359]: 
+                  - img "star" [ref=f17e360]: 
+                  - img "star" [ref=f17e361]: 
+                  - img "star" [ref=f17e362]: 
+                - generic [ref=f17e363]: 5 star rating
+                - heading "Complete, Clear and Concise" [level=3] [ref=f17e364]
+                - heading "Florent Letendre" [level=4] [ref=f17e365]
+              - generic [ref=f17e367]:
+                - paragraph [ref=f17e368]: Although it is targeted for interview, I wish i saw this course when i started angular, i actually learned and adjusted many of angular concepts. RXJS chapt...
+                - text: Read More
+            - listitem [ref=f17e370]:
+              - generic [ref=f17e371]:
+                - generic [ref=f17e372]:
+                  - img "star" [ref=f17e373]: 
+                  - img "star" [ref=f17e374]: 
+                  - img "star" [ref=f17e375]: 
+                  - img "star" [ref=f17e376]: 
+                  - img "star" [ref=f17e377]: 
+                - generic [ref=f17e378]: 5 star rating
+                - heading "This course is something incredible!" [level=3] [ref=f17e379]
+                - heading "Kostiantyn Kifor" [level=4] [ref=f17e380]
+              - generic [ref=f17e382]:
+                - paragraph [ref=f17e383]: In my opinion, Dmitry currently creates the best Angular content. He explains everything very clearly. After this course, you will master all the skills and ...
+                - text: Read More
+            - listitem [ref=f17e385]:
+              - generic [ref=f17e386]:
+                - generic [ref=f17e387]:
+                  - img "star" [ref=f17e388]: 
+                  - img "star" [ref=f17e389]: 
+                  - img "star" [ref=f17e390]: 
+                  - img "star" [ref=f17e391]: 
+                  - img "star" [ref=f17e392]: 
+                - generic [ref=f17e393]: 5 star rating
+                - heading "Awesome tips from junior to senior!" [level=3] [ref=f17e394]
+                - heading "Elia Pari" [level=4] [ref=f17e395]
+              - generic [ref=f17e397]:
+                - paragraph [ref=f17e398]: The course is really solid. It covers all the major topics regarding the framework. There are lots of useful tips for junior and senior developers. If you ar...
+                - text: Read More
+            - listitem [ref=f17e400]:
+              - generic [ref=f17e401]:
+                - generic [ref=f17e402]:
+                  - img "star" [ref=f17e403]: 
+                  - img "star" [ref=f17e404]: 
+                  - img "star" [ref=f17e405]: 
+                  - img "star" [ref=f17e406]: 
+                  - img "star" [ref=f17e407]: 
+                - generic [ref=f17e408]: 5 star rating
+                - heading "Dmytro is a very talented tutor" [level=3] [ref=f17e409]
+                - heading "shah zaman" [level=4] [ref=f17e410]
+              - paragraph [ref=f17e413]: Dmytro is a very talented tutor! He explained each topic very thoroughly. I would defiantly recommend this course. Really Thanks, Dmytro!
+            - listitem [ref=f17e415]:
+              - generic [ref=f17e416]:
+                - generic [ref=f17e417]:
+                  - img "star" [ref=f17e418]: 
+                  - img "star" [ref=f17e419]: 
+                  - img "star" [ref=f17e420]: 
+                  - img "star" [ref=f17e421]: 
+                  - img "star" [ref=f17e422]: 
+                - generic [ref=f17e423]: 5 star rating
+                - heading "Much more than excellent" [level=3] [ref=f17e424]
+                - heading "Антон Gonza" [level=4] [ref=f17e425]
+              - paragraph [ref=f17e428]: Highly recommend the course!
+            - listitem [ref=f17e430]:
+              - generic [ref=f17e431]:
+                - generic [ref=f17e432]:
+                  - img "star" [ref=f17e433]: 
+                  - img "star" [ref=f17e434]: 
+                  - img "star" [ref=f17e435]: 
+                  - img "star" [ref=f17e436]: 
+                  - img "star" [ref=f17e437]: 
+                - generic [ref=f17e438]: 5 star rating
+                - heading "An Excellent Resource for Advanced Angular Forms" [level=3] [ref=f17e439]
+                - heading "Aurora Shehu" [level=4] [ref=f17e440]
+              - generic [ref=f17e442]:
+                - paragraph [ref=f17e443]: I recently took the Advanced Angular Forms video course and was thoroughly impressed. The course was well-organized and easy to follow, with clear explanatio...
+                - text: Read More
+            - listitem [ref=f17e445]:
+              - generic [ref=f17e446]:
+                - generic [ref=f17e447]:
+                  - img "star" [ref=f17e448]: 
+                  - img "star" [ref=f17e449]: 
+                  - img "star" [ref=f17e450]: 
+                  - img "star" [ref=f17e451]: 
+                  - img "star" [ref=f17e452]: 
+                - generic [ref=f17e453]: 5 star rating
+                - heading "The best courses about Angular Forms" [level=3] [ref=f17e454]
+                - heading "Ral Oliver" [level=4] [ref=f17e455]
+              - paragraph [ref=f17e458]: I have done a lot of courses about Angular in the last 5 years, and this one is the best one.
+            - listitem [ref=f17e460]:
+              - generic [ref=f17e461]:
+                - generic [ref=f17e462]:
+                  - img "star" [ref=f17e463]: 
+                  - img "star" [ref=f17e464]: 
+                  - img "star" [ref=f17e465]: 
+                  - img "star" [ref=f17e466]: 
+                  - img "star" [ref=f17e467]: 
+                - generic [ref=f17e468]: 5 star rating
+                - heading "Recommended for all Angular developers" [level=3] [ref=f17e469]
+                - heading "Giorgi Merabishvili" [level=4] [ref=f17e470]
+              - generic [ref=f17e472]:
+                - paragraph [ref=f17e473]: Absolutely brilliant workshop. Gives you a solid understanding of SCSS and helps you to understand how Angular material theming works under the hood to exten...
+                - text: Read More
+            - listitem [ref=f17e475]:
+              - generic [ref=f17e476]:
+                - generic [ref=f17e477]:
+                  - img "star" [ref=f17e478]: 
+                  - img "star" [ref=f17e479]: 
+                  - img "star" [ref=f17e480]: 
+                  - img "star" [ref=f17e481]: 
+                  - img "star" [ref=f17e482]: 
+                - generic [ref=f17e483]: 5 star rating
+                - heading "Absolutely fantastic course" [level=3] [ref=f17e484]
+                - heading "James Evans" [level=4] [ref=f17e485]
+              - generic [ref=f17e487]:
+                - paragraph [ref=f17e488]: This is an incredible course, it is the most in-depth angular forms course I have ever seen and I have seen quite a few. Dmytro goes into so much detail on e...
+                - text: Read More
+            - listitem [ref=f17e490]:
+              - generic [ref=f17e491]:
+                - generic [ref=f17e492]:
+                  - img "star" [ref=f17e493]: 
+                  - img "star" [ref=f17e494]: 
+                  - img "star" [ref=f17e495]: 
+                  - img "star" [ref=f17e496]: 
+                  - img "star" [ref=f17e497]: 
+                - generic [ref=f17e498]: 5 star rating
+                - heading "Got the job thanks to the course!" [level=3] [ref=f17e499]
+                - heading "Aleksander Kroworz" [level=4] [ref=f17e500]
+              - generic [ref=f17e502]:
+                - paragraph [ref=f17e503]: I was applying for mid angular developer position. The questions and topics, which were discussed in this course, in many cases they have occured e.g. Depend...
+                - text: Read More
+            - listitem [ref=f17e505]:
+              - generic [ref=f17e506]:
+                - generic [ref=f17e507]:
+                  - img "star" [ref=f17e508]: 
+                  - img "star" [ref=f17e509]: 
+                  - img "star" [ref=f17e510]: 
+                  - img "star" [ref=f17e511]: 
+                  - img "star" [ref=f17e512]: 
+                - generic [ref=f17e513]: 5 star rating
+                - heading "Amazing course to understand Hasura in depth" [level=3] [ref=f17e514]
+                - heading "Afzal Ahmad" [level=4] [ref=f17e515]
+              - generic [ref=f17e517]:
+                - paragraph [ref=f17e518]: This is the best course I have ever attended, I can imagine the effort to convey the knowledge which was in-depth. Couldn't be better than this. Would love t...
+                - text: Read More
+          - generic:
+            - button "Previous" [ref=f17e519] [cursor=pointer]:
+              - img [ref=f17e520]: 
+            - button "Next" [ref=f17e521] [cursor=pointer]:
+              - img [ref=f17e522]: 
+    - generic [ref=f17e524]:
+      - generic [ref=f17e525]:
+        - heading "🏆 Complete Angular Mastery Bundle." [level=2] [ref=f17e526]:
+          - generic [ref=f17e527]: 🏆
+          - text: Complete Angular Mastery Bundle.
+        - paragraph [ref=f17e528]:
+          - text: 6 Premium Courses → €466 €220
+          - generic [ref=f17e529]: (50% OFF)
+      - article [ref=f17e530]:
+        - list [ref=f17e531]:
+          - listitem [ref=f17e532]:
+            - generic [ref=f17e533]: 
+            - generic [ref=f17e534]:
+              - heading "€220,00" [level=3] [ref=f17e535]
+              - generic [ref=f17e536]:
+                - heading "All-in-One Bundle" [level=3] [ref=f17e537]
+                - generic [ref=f17e538]:
+                  - text: Master Angular from Forms to Testing to Nx Workspaces — everything you need in one package.
+                  - link "Learn more" [ref=f17e539] [cursor=pointer]:
+                    - /url: https://courses.decodedfrontend.io/bundles/all-in-one-angular-bundle
+            - link "Get Instant Access" [ref=f17e541] [cursor=pointer]:
+              - /url: /cart/add_product/3633211?price_id=4573461
+    - generic [ref=f17e544]:
+      - heading "🛡️ 14-Day Money-Back Guarantee" [level=2] [ref=f17e546]
+      - article [ref=f17e547]:
+        - paragraph [ref=f17e549]: Lifetime Access • Course updates included
+  - contentinfo [ref=f17e550]:
+    - article [ref=f17e552]:
+      - list [ref=f17e553]:
+        - listitem [ref=f17e554]:
+          - link "Terms & Conditions" [ref=f17e555] [cursor=pointer]:
+            - /url: https://www.decodedfrontend.io/terms-and-conditions/
+        - listitem [ref=f17e556]:
+          - link "Imprint" [ref=f17e557] [cursor=pointer]:
+            - /url: https://www.decodedfrontend.io/imprint/
+        - listitem [ref=f17e558]:
+          - link "Privacy Policy" [ref=f17e559] [cursor=pointer]:
+            - /url: https://www.decodedfrontend.io/privacy-policy/
+      - list [ref=f17e560]:
+        - listitem [ref=f17e561]:
+          - link "https://twitter.com/DecodedFrontend (Open in a new window)" [ref=f17e562] [cursor=pointer]:
+            - /url: https://twitter.com/DecodedFrontend
+            - generic "https://twitter.com/DecodedFrontend (Open in a new window)" [ref=f17e563]: 
+        - listitem [ref=f17e564]:
+          - link "https://youtube.com/DecodedFrontend (Open in a new window)" [ref=f17e565] [cursor=pointer]:
+            - /url: https://youtube.com/DecodedFrontend
+            - generic "https://youtube.com/DecodedFrontend (Open in a new window)" [ref=f17e566]: 
+        - listitem [ref=f17e567]:
+          - link "https://facebook.com/DecodedFrontend (Open in a new window)" [ref=f17e568] [cursor=pointer]:
+            - /url: https://facebook.com/DecodedFrontend
+            - generic "https://facebook.com/DecodedFrontend (Open in a new window)" [ref=f17e569]: 
+      - generic [ref=f17e571]: © Copyright Mezhenskyi Dmytro 2026

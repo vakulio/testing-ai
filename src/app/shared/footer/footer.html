@@ -1,0 +1,45 @@
+<footer class="border-t border-neutral-200 bg-white">
+  <div class="mx-auto max-w-6xl px-4 py-10 sm:px-6">
+    @if (variant() === 'blog') {
+      <div class="flex flex-col items-center gap-3 text-center">
+        <span class="text-lg font-semibold tracking-tight text-neutral-900">Decoded Frontend</span>
+        <p class="text-sm text-neutral-500">
+          Created by
+          <a href="mailto:dmytro@decodedfrontend.io" class="font-medium text-neutral-700 hover:text-orange-500">Dmytro Mezhenskyi</a>
+          . All rights reserved.
+        </p>
+        <nav class="flex flex-wrap items-center justify-center gap-4 text-sm text-neutral-500">
+          <a routerLink="/terms" class="hover:text-orange-500">Terms and Conditions</a>
+          <a routerLink="/privacy" class="hover:text-orange-500">Privacy Policy</a>
+          <a routerLink="/imprint" class="hover:text-orange-500">Imprint</a>
+        </nav>
+      </div>
+    } @else {
+      <div class="flex flex-col items-center gap-4 text-center">
+        <nav class="flex flex-wrap items-center justify-center gap-4 text-sm text-neutral-500">
+          <a routerLink="/terms" class="hover:text-orange-500">Terms &amp; Conditions</a>
+          <a routerLink="/imprint" class="hover:text-orange-500">Imprint</a>
+          <a routerLink="/privacy" class="hover:text-orange-500">Privacy Policy</a>
+        </nav>
+        <div class="flex items-center gap-4 text-neutral-500">
+          <a href="https://twitter.com/DecodedFrontend" target="_blank" rel="noopener" aria-label="Twitter" class="hover:text-orange-500">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </a>
+          <a href="https://youtube.com/DecodedFrontend" target="_blank" rel="noopener" aria-label="YouTube" class="hover:text-orange-500">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+              <path d="M23.5 6.2a3.02 3.02 0 0 0-2.12-2.14C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.38.56A3.02 3.02 0 0 0 .5 6.2 31.6 31.6 0 0 0 0 12a31.6 31.6 0 0 0 .5 5.8 3.02 3.02 0 0 0 2.12 2.14C4.5 20.5 12 20.5 12 20.5s7.5 0 9.38-.56a3.02 3.02 0 0 0 2.12-2.14A31.6 31.6 0 0 0 24 12a31.6 31.6 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.4 3.6-6.4 3.6Z" />
+            </svg>
+          </a>
+          <a href="https://facebook.com/DecodedFrontend" target="_blank" rel="noopener" aria-label="Facebook" class="hover:text-orange-500">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5">
+              <path d="M13.5 21v-8.1h2.72l.41-3.15h-3.13V7.75c0-.91.25-1.53 1.56-1.53h1.67V3.4A22.3 22.3 0 0 0 14.3 3.25c-2.4 0-4.05 1.47-4.05 4.16v2.44H7.5v3.15h2.75V21h3.25Z" />
+            </svg>
+          </a>
+        </div>
+        <p class="text-sm text-neutral-500">&copy; Copyright Mezhenskyi Dmytro 2026</p>
+      </div>
+    }
+  </div>
+</footer>

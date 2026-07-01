@@ -1,0 +1,44 @@
+<app-header />
+
+<section class="border-b border-neutral-200 bg-gradient-to-br from-orange-50 via-white to-neutral-50">
+  <div class="mx-auto max-w-6xl px-4 py-16 text-center sm:px-6 sm:py-24">
+    <h1 class="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl">Decoded Frontend</h1>
+    <p class="mx-auto mt-4 max-w-2xl text-lg text-neutral-600">
+      Blog about advanced Frontend Development focused on Angular &amp; GraphQL
+    </p>
+    <div
+      class="mx-auto mt-10 h-48 max-w-3xl rounded-2xl bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 shadow-sm sm:h-64"
+      aria-hidden="true"
+    ></div>
+  </div>
+</section>
+
+<main class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+  <div class="grid grid-cols-1 gap-10 lg:grid-cols-3">
+    <div class="lg:col-span-2">
+      <h3 class="mb-6 text-2xl font-semibold text-neutral-900">Latest Tutorials</h3>
+
+      <div class="flex flex-col gap-6">
+        @for (t of tutorials(); track t.slug) {
+          <app-tutorial-card [tutorial]="t" />
+        }
+      </div>
+
+      <div class="mt-10 flex justify-center">
+        <button
+          type="button"
+          disabled
+          class="cursor-not-allowed rounded-full border border-neutral-300 px-6 py-2.5 text-sm font-medium text-neutral-400"
+        >
+          Load More
+        </button>
+      </div>
+    </div>
+
+    <div>
+      <app-sidebar />
+    </div>
+  </div>
+</main>
+
+<app-footer />

@@ -1,0 +1,36 @@
+<aside class="flex flex-col gap-8">
+  <div>
+    <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-900">Search</h3>
+    <form class="flex gap-2" (submit)="$event.preventDefault()">
+      <input
+        type="text"
+        placeholder="Type here to search..."
+        class="w-full rounded-md border border-neutral-300 px-3 py-2 text-sm text-neutral-700 outline-none focus:border-orange-400"
+      />
+      <button
+        type="submit"
+        (click)="onSearch()"
+        class="shrink-0 rounded-md bg-orange-500 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-orange-600"
+      >
+        Search
+      </button>
+    </form>
+  </div>
+
+  <div>
+    <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-900">Tags</h3>
+    <ul class="flex flex-wrap gap-2">
+      @for (tag of tags; track tag.slug) {
+        <li>
+          <a
+            [routerLink]="['/tutorials']"
+            [queryParams]="{ tag: tag.slug }"
+            class="inline-block rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-xs font-medium text-neutral-600 transition-colors hover:border-orange-300 hover:text-orange-500"
+          >
+            {{ tag.label }} ({{ tag.count }})
+          </a>
+        </li>
+      }
+    </ul>
+  </div>
+</aside>

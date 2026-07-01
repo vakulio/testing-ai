@@ -1,0 +1,56 @@
+<app-header variant="courses" />
+
+<section class="border-b border-neutral-200 bg-gradient-to-br from-orange-50 via-white to-neutral-50">
+  <div class="mx-auto max-w-6xl px-4 py-16 text-center sm:px-6 sm:py-24">
+    <h2 class="text-4xl font-bold tracking-tight text-neutral-900 sm:text-5xl">Advanced Angular Courses</h2>
+    <p class="mx-auto mt-4 max-w-2xl text-lg text-neutral-600">
+      Become an expert in Angular and related technologies
+    </p>
+    <p class="mt-6 text-3xl" aria-hidden="true">👇</p>
+  </div>
+</section>
+
+<main class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+  <section>
+    <h2 class="text-2xl font-semibold text-neutral-900">Check Out All My Courses 👇</h2>
+
+    <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      @for (c of courses(); track c.slug) {
+        <app-course-card [course]="c" />
+      }
+    </div>
+  </section>
+
+  <section class="mt-20">
+    <h2 class="text-2xl font-semibold text-neutral-900">What People Say About Courses</h2>
+
+    <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      @for (t of testimonials(); track t.title + t.author) {
+        <app-testimonial-card [testimonial]="t" />
+      }
+    </div>
+  </section>
+
+  <section class="mt-20 overflow-hidden rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 px-8 py-12 text-center text-white sm:px-16">
+    <h2 class="text-3xl font-bold">🏆 Complete Angular Mastery Bundle.</h2>
+    <p class="mt-3 text-xl font-semibold">
+      6 Premium Courses &rarr; <span class="line-through opacity-70">€466</span> €220 (50% OFF)
+    </p>
+    <p class="mx-auto mt-3 max-w-2xl text-orange-50">
+      Master Angular from Forms to Testing to Nx Workspaces — everything you need in one package.
+    </p>
+    <a
+      routerLink="/courses/all-in-one-angular-bundle"
+      class="mt-8 inline-block rounded-full bg-white px-8 py-3 font-semibold text-orange-600 shadow-sm transition-transform hover:-translate-y-0.5"
+    >
+      Get Instant Access
+    </a>
+  </section>
+
+  <section class="mt-10 rounded-2xl border border-neutral-200 bg-white px-8 py-8 text-center">
+    <h3 class="text-xl font-semibold text-neutral-900">🛡️ 14-Day Money-Back Guarantee</h3>
+    <p class="mt-2 text-neutral-500">Lifetime Access &bull; Course updates included</p>
+  </section>
+</main>
+
+<app-footer variant="courses" />

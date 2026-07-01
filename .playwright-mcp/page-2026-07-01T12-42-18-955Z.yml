@@ -1,0 +1,148 @@
+- generic [active] [ref=f9e1]:
+  - banner [ref=f9e2]:
+    - generic [ref=f9e3]:
+      - link "Decoded Frontend" [ref=f9e7] [cursor=pointer]:
+        - /url: https://decodedfrontend.io/
+        - img "Decoded Frontend" [ref=f9e8]
+      - generic [ref=f9e9]:
+        - list [ref=f9e10]:
+          - listitem [ref=f9e11]:
+            - link "YouTube" [ref=f9e12] [cursor=pointer]:
+              - /url: https://youtube.com/DecodedFrontend
+          - listitem [ref=f9e13]:
+            - link "Blog" [ref=f9e14] [cursor=pointer]:
+              - /url: https://decodedfrontend.io/tutorials/
+          - listitem [ref=f9e15]:
+            - link "Courses" [ref=f9e16] [cursor=pointer]:
+              - /url: https://courses.decodedfrontend.io
+          - listitem [ref=f9e17]:
+            - link "Recommendations" [ref=f9e18] [cursor=pointer]:
+              - /url: https://decodedfrontend.io/recommendations/
+        - list [ref=f9e19]:
+          - listitem [ref=f9e20]:
+            - generic [ref=f9e22] [cursor=pointer]: 
+  - generic [ref=f9e24]:
+    - article [ref=f9e27]:
+      - heading "I recommend" [level=1] [ref=f9e29]
+      - generic [ref=f9e30]:
+        - paragraph [ref=f9e31]: Here, you can find a list of courses, events, and sources that I personally used and can recommend you as a great source for certain topics
+        - heading "Events" [level=2] [ref=f9e32]
+        - paragraph [ref=f9e33]:
+          - text: Get a unique chance to attend the world’s leading event for developers with our exclusive discount code
+          - mark [ref=f9e34]:
+            - text: “
+            - strong [ref=f9e35]: WWC_DecodedFrontend15
+            - text: ”
+          - text: for 15% off.
+        - figure [ref=f9e36]:
+          - link [ref=f9e37] [cursor=pointer]:
+            - /url: https://worldcongress.dev/
+        - paragraph [ref=f9e38]:
+          - strong [ref=f9e39]: WeAreDevelopers World Congress
+          - text: is the world’s leading event for developers from 17-19 July 2024 in Berlin. WeAreDevelopers is welcoming 15,000+ developers and 500+ speakers for an unforgettable event this summer.
+        - paragraph [ref=f9e40]: "The speaker line-up includes: Scott Hanselman, Scott Farquhar, Douglas Crockford, Thomas Dohmke, Demetris Cheatham, John & Brenda Romero, Prashanth Chandrasekar, Madona Wambua, Jonas Andrulis, Denis Yarats, Scott Chacon and many more!"
+        - paragraph [ref=f9e41]:
+          - emphasis [ref=f9e42]:
+            - text: Secure your spot at
+            - link "worldcongress.dev" [ref=f9e43] [cursor=pointer]:
+              - /url: https://worldcongress.dev/
+        - heading "Courses" [level=2] [ref=f9e44]
+        - generic [ref=f9e45]:
+          - figure [ref=f9e46]:
+            - link [ref=f9e47] [cursor=pointer]:
+              - /url: https://click.linksynergy.com/link?id=B64PT5XHyKU&offerid=507388.756150&type=2&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-guide-to-angular-2%2F
+          - generic [ref=f9e48]:
+            - heading "Angular – The complete guide (2021 Edition)" [level=5] [ref=f9e49]:
+              - strong [ref=f9e50]:
+                - link "Angular – The complete guide (2021 Edition)" [ref=f9e51] [cursor=pointer]:
+                  - /url: https://click.linksynergy.com/link?id=B64PT5XHyKU&offerid=507388.756150&type=2&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-guide-to-angular-2%2F
+            - paragraph [ref=f9e52]: It was my starting point many years ago when I started to learn Angular, and this course stays great and up-to-date
+        - generic [ref=f9e53]:
+          - figure [ref=f9e54]:
+            - link [ref=f9e55] [cursor=pointer]:
+              - /url: https://click.linksynergy.com/link?id=B64PT5XHyKU&offerid=507388.851712&type=2&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F
+          - generic [ref=f9e56]:
+            - heading "The Complete JavaScript Course 2022" [level=5] [ref=f9e57]:
+              - link "The Complete JavaScript Course 2022" [ref=f9e58] [cursor=pointer]:
+                - /url: https://click.linksynergy.com/link?id=B64PT5XHyKU&offerid=507388.851712&type=2&murl=https%3A%2F%2Fwww.udemy.com%2Fcourse%2Fthe-complete-javascript-course%2F
+                - strong [ref=f9e59]: The Complete JavaScript Course 2022
+            - paragraph [ref=f9e60]: I was not a beginner in JavaScript when I bought this course,e, but I found a lot of things about JS I didn’t know before,e, and it allowed me to structure my knowledge. Great recommendation for beginners!
+        - heading "Useful readings" [level=2] [ref=f9e61]
+        - generic [ref=f9e62]:
+          - figure [ref=f9e63]:
+            - link [ref=f9e64] [cursor=pointer]:
+              - /url: https://www.danywalls.com
+          - generic [ref=f9e65]:
+            - heading "Danywalls | Angular ♥ Web" [level=5] [ref=f9e66]:
+              - link "Danywalls |" [ref=f9e67] [cursor=pointer]:
+                - /url: https://www.danywalls.com/
+                - strong [ref=f9e68]: Danywalls |
+              - strong [ref=f9e69]:
+                - link "Angular ♥ Web" [ref=f9e70] [cursor=pointer]:
+                  - /url: https://www.danywalls.com/
+            - paragraph [ref=f9e71]: Dany Paredes is a senior front-end developer at Angular GDE. He posts high-quality articles about Angular and surrounding technologies that I can recommend for reading
+        - paragraph
+    - contentinfo [ref=f9e72]:
+      - generic [ref=f9e77]:
+        - img "Decoded Frontend" [ref=f9e78]
+        - paragraph [ref=f9e79]:
+          - text: Created by
+          - link "Dmytro Mezhenskyi" [ref=f9e80] [cursor=pointer]:
+            - /url: mailto:dmytro@decodedfrontend.io
+          - text: All rights reserved
+        - generic [ref=f9e81]:
+          - link "Terms and Conditions" [ref=f9e82] [cursor=pointer]:
+            - /url: https://decodedfrontend.io/terms-and-conditions
+          - text: "|"
+          - link "Privacy Policy" [ref=f9e83] [cursor=pointer]:
+            - /url: https://decodedfrontend.io/privacy-policy
+          - text: "|"
+          - link "Imprint" [ref=f9e84] [cursor=pointer]:
+            - /url: https://decodedfrontend.io/imprint
+  - generic [ref=f9e85]:
+    - generic [ref=f9e87]:
+      - link "Decoded Frontend" [ref=f9e90] [cursor=pointer]:
+        - /url: https://decodedfrontend.io/
+        - img "Decoded Frontend" [ref=f9e91]
+      - generic [ref=f9e93] [cursor=pointer]: 
+    - generic [ref=f9e94]:
+      - heading "Search" [level=4] [ref=f9e95]
+      - generic [ref=f9e96]:
+        - textbox "Type here to search..." [ref=f9e97]
+        - button "Search" [ref=f9e98] [cursor=pointer]
+    - generic [ref=f9e99]:
+      - heading "Tags" [level=4] [ref=f9e100]
+      - generic [ref=f9e101]:
+        - link "angular (12 items)" [ref=f9e102] [cursor=pointer]:
+          - /url: https://decodedfrontend.io/tag/angular/
+          - text: angular (12)
+        - link "angular builder (1 item)" [ref=f9e103] [cursor=pointer]:
+          - /url: https://decodedfrontend.io/tag/angular-builder/
+          - text: angular builder (1)
+        - link "angular cdk (3 items)" [ref=f9e104] [cursor=pointer]:
+          - /url: https://decodedfrontend.io/tag/angular-cdk/
+          - text: angular cdk (3)
+        - link "angular cli (1 item)" [ref=f9e105] [cursor=pointer]:
+          - /url: https://decodedfrontend.io/tag/angular-cli/
+          - text: angular cli (1)
+        - link "angular hint (1 item)" [ref=f9e106] [cursor=pointer]:
+          - /url: https://decodedfrontend.io/tag/angular-hint/
+          - text: angular hint (1)
+        - link "angular overlay (1 item)" [ref=f9e107] [cursor=pointer]:
+          - /url: https://decodedfrontend.io/tag/angular-overlay/
+          - text: angular overlay (1)
+        - link "angular portal (1 item)" [ref=f9e108] [cursor=pointer]:
+          - /url: https://decodedfrontend.io/tag/angular-portal/
+          - text: angular portal (1)
+        - link "PWA (1 item)" [ref=f9e109] [cursor=pointer]:
+          - /url: https://decodedfrontend.io/tag/pwa/
+          - text: PWA (1)
+        - link "rxjs (3 items)" [ref=f9e110] [cursor=pointer]:
+          - /url: https://decodedfrontend.io/tag/rxjs/
+          - text: rxjs (3)
+        - link "Service Worker (1 item)" [ref=f9e111] [cursor=pointer]:
+          - /url: https://decodedfrontend.io/tag/service-worker/
+          - text: Service Worker (1)
+        - link "signals (2 items)" [ref=f9e112] [cursor=pointer]:
+          - /url: https://decodedfrontend.io/tag/signals/
+          - text: signals (2)

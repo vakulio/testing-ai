@@ -1,0 +1,399 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - heading "Decoded Frontend" [level=1] [ref=e6]:
+        - link "Decoded Frontend" [ref=e7] [cursor=pointer]:
+          - /url: https://decodedfrontend.io/
+          - img "Decoded Frontend" [ref=e8]
+      - generic [ref=e9]:
+        - list [ref=e10]:
+          - listitem [ref=e11]:
+            - link "YouTube" [ref=e12] [cursor=pointer]:
+              - /url: https://youtube.com/DecodedFrontend
+          - listitem [ref=e13]:
+            - link "Blog" [ref=e14] [cursor=pointer]:
+              - /url: https://decodedfrontend.io/tutorials/
+          - listitem [ref=e15]:
+            - link "Courses" [ref=e16] [cursor=pointer]:
+              - /url: https://courses.decodedfrontend.io
+          - listitem [ref=e17]:
+            - link "Recommendations" [ref=e18] [cursor=pointer]:
+              - /url: https://decodedfrontend.io/recommendations/
+        - list [ref=e19]:
+          - listitem [ref=e20]:
+            - generic [ref=e22] [cursor=pointer]: 
+  - generic [ref=e24]:
+    - banner [ref=e26]:
+      - heading "Decoded Frontend" [level=1] [ref=e27]
+      - paragraph [ref=e28]: Blog about advanced Frontend Development focused on Angular & GraphQL
+    - img [ref=e30]
+  - generic [ref=e31]:
+    - generic [ref=e32]:
+      - heading "Latest Tutorials" [level=3] [ref=e34]
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - article [ref=e37]:
+            - generic [ref=e38]:
+              - heading "Mastering Service Workers and PWAs in Angular" [level=2] [ref=e39]:
+                - link "Mastering Service Workers and PWAs in Angular" [ref=e40] [cursor=pointer]:
+                  - /url: https://decodedfrontend.io/mastering-service-workers-and-pwas-in-angular/
+              - generic [ref=e41]:
+                - generic [ref=e42]:
+                  - text: By
+                  - link "Jakub Kita" [ref=e45] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/author/jakubk198/
+                  - text: /
+                - generic [ref=e46]:
+                  - text: In
+                  - link "Angular" [ref=e47] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/category/angular/
+                  - text: /
+                - generic [ref=e48]: 9 Min Read
+              - generic [ref=e49]:
+                - generic [ref=e50]: "20"
+                - text: November
+            - paragraph [ref=e52]: Did you know that you can make your interactive web app work completely offline and even install it as a native application on your laptop or smartphone? All of this is possible thanks to service workers — and today, I’ll show you how.In simple...
+            - generic [ref=e53]:
+              - link "Read on" [ref=e54] [cursor=pointer]:
+                - /url: https://decodedfrontend.io/mastering-service-workers-and-pwas-in-angular/
+              - link " Read later" [ref=e55] [cursor=pointer]:
+                - /url: javascript:void(0);
+                - generic [ref=e56]: 
+                - text: Read later
+          - article [ref=e57]:
+            - generic [ref=e58]:
+              - heading "First look at Signals in Angular" [level=2] [ref=e59]:
+                - link "First look at Signals in Angular" [ref=e60] [cursor=pointer]:
+                  - /url: https://decodedfrontend.io/first-look-at-signals-in-angular/
+              - generic [ref=e61]:
+                - generic [ref=e62]:
+                  - text: By
+                  - link "Tom Kotlar" [ref=e65] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/author/t-kotlar/
+                  - text: /
+                - generic [ref=e66]:
+                  - text: In
+                  - link "Angular" [ref=e67] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/category/angular/
+                  - text: /
+                - generic [ref=e68]: 6 Min Read
+              - generic [ref=e69]:
+                - generic [ref=e70]: "25"
+                - text: June
+            - paragraph [ref=e72]: Welcome to your first glimpse into the reactive universe of Angular Signals. As part of Angular’s renaissance, this guide introduces powerful tools which help you build reactive signal-based applications. According to the Angular...
+            - generic [ref=e73]:
+              - link "Read on" [ref=e74] [cursor=pointer]:
+                - /url: https://decodedfrontend.io/first-look-at-signals-in-angular/
+              - link " Read later" [ref=e75] [cursor=pointer]:
+                - /url: javascript:void(0);
+                - generic [ref=e76]: 
+                - text: Read later
+          - article [ref=e77]:
+            - generic [ref=e78]:
+              - heading "Structural vs. Attribute Directives" [level=2] [ref=e79]:
+                - link "Structural vs. Attribute Directives" [ref=e80] [cursor=pointer]:
+                  - /url: https://decodedfrontend.io/directives-structural-vs-attribute/
+              - generic [ref=e81]:
+                - generic [ref=e82]:
+                  - text: By
+                  - link "Michał Grzegorczyk" [ref=e85] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/author/michalgrzegorczyk/
+                  - text: /
+                - generic [ref=e86]:
+                  - text: In
+                  - link "Angular" [ref=e87] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/category/angular/
+                  - text: /
+                - generic [ref=e88]: 6 Min Read
+              - generic [ref=e89]:
+                - generic [ref=e90]: "29"
+                - text: February
+            - paragraph [ref=e92]: "Directives in Angular are fundamental building blocks that allow you to add special features to elements in your Angular application. There are two types: structural and attribute directives, which I will elaborate on in this blog post..."
+            - generic [ref=e93]:
+              - link "Read on" [ref=e94] [cursor=pointer]:
+                - /url: https://decodedfrontend.io/directives-structural-vs-attribute/
+              - link " Read later" [ref=e95] [cursor=pointer]:
+                - /url: javascript:void(0);
+                - generic [ref=e96]: 
+                - text: Read later
+          - article [ref=e97]:
+            - generic [ref=e98]:
+              - heading "RxJS – Streams Analogs in Real Life" [level=2] [ref=e99]:
+                - link "RxJS – Streams Analogs in Real Life" [ref=e100] [cursor=pointer]:
+                  - /url: https://decodedfrontend.io/rxjs-streams-analogs-in-real-life/
+              - generic [ref=e101]:
+                - generic [ref=e102]:
+                  - text: By
+                  - link "Tom Kotlar" [ref=e105] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/author/t-kotlar/
+                  - text: /
+                - generic [ref=e106]:
+                  - text: In
+                  - link "Angular" [ref=e107] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/category/angular/
+                  - text: ","
+                  - link "RxJS" [ref=e108] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/category/rxjs/
+                  - text: /
+                - generic [ref=e109]: 6 Min Read
+              - generic [ref=e110]:
+                - generic [ref=e111]: "30"
+                - text: October
+            - paragraph [ref=e113]: Every Angular developer encounters RxJS in their codebase. A frequently common challenge for new Angular developers involves grasping RxJS concepts, including Observable, Observer, and Subject. Working with RxJS might not feel intuitive initially...
+            - generic [ref=e114]:
+              - link "Read on" [ref=e115] [cursor=pointer]:
+                - /url: https://decodedfrontend.io/rxjs-streams-analogs-in-real-life/
+              - link " Read later" [ref=e116] [cursor=pointer]:
+                - /url: javascript:void(0);
+                - generic [ref=e117]: 
+                - text: Read later
+          - article [ref=e118]:
+            - generic [ref=e119]:
+              - heading "Tackling Angular Subscriptions with RxJS" [level=2] [ref=e120]:
+                - link "Tackling Angular Subscriptions with RxJS" [ref=e121] [cursor=pointer]:
+                  - /url: https://decodedfrontend.io/tackling-angular-subscriptions-with-rxjs/
+              - generic [ref=e122]:
+                - generic [ref=e123]:
+                  - text: By
+                  - link "Michał Grzegorczyk" [ref=e126] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/author/michalgrzegorczyk/
+                  - text: /
+                - generic [ref=e127]:
+                  - text: In
+                  - link "Angular" [ref=e128] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/category/angular/
+                  - text: ","
+                  - link "RxJS" [ref=e129] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/category/rxjs/
+                  - text: /
+                - generic [ref=e130]: 5 Min Read
+              - generic [ref=e131]:
+                - generic [ref=e132]: "11"
+                - text: June
+            - paragraph [ref=e134]: Welcome to another session where we discuss pretty interesting facets of Angular. In this post, we are going to explore some common patterns and pitfalls related to unsubscription from RxJS streams, a scenario that arises when a component...
+            - generic [ref=e135]:
+              - link "Read on" [ref=e136] [cursor=pointer]:
+                - /url: https://decodedfrontend.io/tackling-angular-subscriptions-with-rxjs/
+              - link " Read later" [ref=e137] [cursor=pointer]:
+                - /url: javascript:void(0);
+                - generic [ref=e138]: 
+                - text: Read later
+          - article [ref=e139]:
+            - generic [ref=e140]:
+              - 'heading "Beyond Subscriptions: Exploring the Power of Angular’s Async Pipe" [level=2] [ref=e141]':
+                - 'link "Beyond Subscriptions: Exploring the Power of Angular’s Async Pipe" [ref=e142] [cursor=pointer]':
+                  - /url: https://decodedfrontend.io/beyond-subscriptions-exploring-the-power-of-angulars-async-pipe/
+              - generic [ref=e143]:
+                - generic [ref=e144]:
+                  - text: By
+                  - link "Michał Grzegorczyk" [ref=e147] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/author/michalgrzegorczyk/
+                  - text: /
+                - generic [ref=e148]:
+                  - text: In
+                  - link "Angular" [ref=e149] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/category/angular/
+                  - text: ","
+                  - link "RxJS" [ref=e150] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/category/rxjs/
+                  - text: /
+                - generic [ref=e151]: 5 Min Read
+              - generic [ref=e152]:
+                - generic [ref=e153]: "08"
+                - text: June
+            - paragraph [ref=e155]: Before we start, it’s important to know that Angular, a widely-used framework developed by Google, has many powerful tools and functionalities baked into it. These tools allow developers to build responsive, high-performing, and sophisticated...
+            - generic [ref=e156]:
+              - link "Read on" [ref=e157] [cursor=pointer]:
+                - /url: https://decodedfrontend.io/beyond-subscriptions-exploring-the-power-of-angulars-async-pipe/
+              - link " Read later" [ref=e158] [cursor=pointer]:
+                - /url: javascript:void(0);
+                - generic [ref=e159]: 
+                - text: Read later
+          - article [ref=e160]:
+            - generic [ref=e161]:
+              - heading "improve debugging skills in Angular – Part 1" [level=2] [ref=e162]:
+                - link "improve debugging skills in Angular – Part 1" [ref=e163] [cursor=pointer]:
+                  - /url: https://decodedfrontend.io/improve-debugging-skills-in-angular-part-1/
+              - generic [ref=e164]:
+                - generic [ref=e165]:
+                  - text: By
+                  - link "Predrag Carapic" [ref=e168] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/author/pero0904/
+                  - text: /
+                - generic [ref=e169]:
+                  - text: In
+                  - link "Angular" [ref=e170] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/category/angular/
+                  - text: /
+                - generic [ref=e171]: 4 Min Read
+              - generic [ref=e172]:
+                - generic [ref=e173]: "11"
+                - text: May
+            - paragraph [ref=e175]: Today’s topic is well-known to all of us since it is a core skill every developer should have. Let’s explore how we could get the most out of it and level up our debugging skills. This is part one of small series dedicated to the topic...
+            - generic [ref=e176]:
+              - link "Read on" [ref=e177] [cursor=pointer]:
+                - /url: https://decodedfrontend.io/improve-debugging-skills-in-angular-part-1/
+              - link " Read later" [ref=e178] [cursor=pointer]:
+                - /url: javascript:void(0);
+                - generic [ref=e179]: 
+                - text: Read later
+          - article [ref=e180]:
+            - generic [ref=e181]:
+              - heading "Hot vs Cold Observable in RxJS" [level=2] [ref=e182]:
+                - link "Hot vs Cold Observable in RxJS" [ref=e183] [cursor=pointer]:
+                  - /url: https://decodedfrontend.io/hot-vs-cold-observable-in-rxjs/
+              - generic [ref=e184]:
+                - generic [ref=e185]:
+                  - text: By
+                  - link "Predrag Carapic" [ref=e188] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/author/pero0904/
+                  - text: /
+                - generic [ref=e189]:
+                  - text: In
+                  - link "Angular" [ref=e190] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/category/angular/
+                  - text: ","
+                  - link "RxJS" [ref=e191] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/category/rxjs/
+                  - text: /
+                - generic [ref=e192]: 5 Min Read
+              - generic [ref=e193]:
+                - generic [ref=e194]: "29"
+                - text: March
+            - paragraph [ref=e196]: Hot vs Cold Observables As Angular developers, we tend to work with RxJS and observables on a daily basis. In this article, I am going to explain hot and cold observables and the differences between them. First, let’s take a look at a couple of...
+            - generic [ref=e197]:
+              - link "Read on" [ref=e198] [cursor=pointer]:
+                - /url: https://decodedfrontend.io/hot-vs-cold-observable-in-rxjs/
+              - link " Read later" [ref=e199] [cursor=pointer]:
+                - /url: javascript:void(0);
+                - generic [ref=e200]: 
+                - text: Read later
+          - article [ref=e201]:
+            - generic [ref=e202]:
+              - heading "Anatomy of Angular Builders" [level=2] [ref=e203]:
+                - link "Anatomy of Angular Builders" [ref=e204] [cursor=pointer]:
+                  - /url: https://decodedfrontend.io/anatomy-of-angular-builders/
+              - generic [ref=e205]:
+                - generic [ref=e206]:
+                  - text: By
+                  - link "Dmytro Mezhenskyi" [ref=e209] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/author/dmytro-mezhenskyi/
+                  - text: /
+                - generic [ref=e210]:
+                  - text: In
+                  - link "Angular" [ref=e211] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/category/angular/
+                  - text: /
+                - generic [ref=e212]: 4 Min Read
+              - generic [ref=e213]:
+                - generic [ref=e214]: "16"
+                - text: December
+            - paragraph [ref=e216]: Essentially, Angular builders are NodeJS scripts executed by Angular CLI and perform different tasks like application build, running unit tests, and many other useful things. Even if you hear first time about them, in fact, you use them every day...
+            - generic [ref=e217]:
+              - link "Read on" [ref=e218] [cursor=pointer]:
+                - /url: https://decodedfrontend.io/anatomy-of-angular-builders/
+              - link " Read later" [ref=e219] [cursor=pointer]:
+                - /url: javascript:void(0);
+                - generic [ref=e220]: 
+                - text: Read later
+          - article [ref=e221]:
+            - generic [ref=e222]:
+              - heading "How to provide data to ComponentPortal using Dependency injection" [level=2] [ref=e223]:
+                - link "How to provide data to ComponentPortal using Dependency injection" [ref=e224] [cursor=pointer]:
+                  - /url: https://decodedfrontend.io/how-to-provide-data-to-component-portal-using-dependency-injection/
+              - generic [ref=e225]:
+                - generic [ref=e226]:
+                  - text: By
+                  - link "Dmytro Mezhenskyi" [ref=e229] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/author/dmytro-mezhenskyi/
+                  - text: /
+                - generic [ref=e230]:
+                  - text: In
+                  - link "Angular" [ref=e231] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/category/angular/
+                  - text: ","
+                  - link "Angular CDK" [ref=e232] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/category/angular/angular-cdk/
+                  - text: ","
+                  - link "Off-topic" [ref=e233] [cursor=pointer]:
+                    - /url: https://decodedfrontend.io/category/off-topic/
+                  - text: /
+                - generic [ref=e234]: 4 Min Read
+              - generic [ref=e235]:
+                - generic [ref=e236]: "11"
+                - text: June
+            - paragraph [ref=e238]: "Some time ago I published a video that in detail showed how to use the Angular CDK Portal module and in which use cases it might be useful. Almost immediately in the comments, I got a question: “How to provide data to the ComponentPortal..."
+            - generic [ref=e239]:
+              - link "Read on" [ref=e240] [cursor=pointer]:
+                - /url: https://decodedfrontend.io/how-to-provide-data-to-component-portal-using-dependency-injection/
+              - link " Read later" [ref=e241] [cursor=pointer]:
+                - /url: javascript:void(0);
+                - generic [ref=e242]: 
+                - text: Read later
+        - navigation [ref=e244]:
+          - link "Load More" [ref=e245] [cursor=pointer]:
+            - /url: https://decodedfrontend.io/page/2/
+    - contentinfo [ref=e251]:
+      - generic [ref=e256]:
+        - img "Decoded Frontend" [ref=e257]
+        - paragraph [ref=e258]:
+          - text: Created by
+          - link "Dmytro Mezhenskyi" [ref=e259] [cursor=pointer]:
+            - /url: mailto:dmytro@decodedfrontend.io
+          - text: All rights reserved
+        - generic [ref=e260]:
+          - link "Terms and Conditions" [ref=e261] [cursor=pointer]:
+            - /url: https://decodedfrontend.io/terms-and-conditions
+          - text: "|"
+          - link "Privacy Policy" [ref=e262] [cursor=pointer]:
+            - /url: https://decodedfrontend.io/privacy-policy
+          - text: "|"
+          - link "Imprint" [ref=e263] [cursor=pointer]:
+            - /url: https://decodedfrontend.io/imprint
+  - generic [ref=e264]:
+    - generic [ref=e266]:
+      - link "Decoded Frontend" [ref=e269] [cursor=pointer]:
+        - /url: https://decodedfrontend.io/
+        - img "Decoded Frontend" [ref=e270]
+      - generic [ref=e272] [cursor=pointer]: 
+    - generic [ref=e273]:
+      - heading "Search" [level=4] [ref=e274]
+      - generic [ref=e275]:
+        - textbox "Type here to search..." [ref=e276]
+        - button "Search" [ref=e277] [cursor=pointer]
+    - generic [ref=e278]:
+      - heading "Tags" [level=4] [ref=e279]
+      - generic [ref=e280]:
+        - link "angular (12 items)" [ref=e281] [cursor=pointer]:
+          - /url: https://decodedfrontend.io/tag/angular/
+          - text: angular (12)
+        - link "angular builder (1 item)" [ref=e282] [cursor=pointer]:
+          - /url: https://decodedfrontend.io/tag/angular-builder/
+          - text: angular builder (1)
+        - link "angular cdk (3 items)" [ref=e283] [cursor=pointer]:
+          - /url: https://decodedfrontend.io/tag/angular-cdk/
+          - text: angular cdk (3)
+        - link "angular cli (1 item)" [ref=e284] [cursor=pointer]:
+          - /url: https://decodedfrontend.io/tag/angular-cli/
+          - text: angular cli (1)
+        - link "angular hint (1 item)" [ref=e285] [cursor=pointer]:
+          - /url: https://decodedfrontend.io/tag/angular-hint/
+          - text: angular hint (1)
+        - link "angular overlay (1 item)" [ref=e286] [cursor=pointer]:
+          - /url: https://decodedfrontend.io/tag/angular-overlay/
+          - text: angular overlay (1)
+        - link "angular portal (1 item)" [ref=e287] [cursor=pointer]:
+          - /url: https://decodedfrontend.io/tag/angular-portal/
+          - text: angular portal (1)
+        - link "PWA (1 item)" [ref=e288] [cursor=pointer]:
+          - /url: https://decodedfrontend.io/tag/pwa/
+          - text: PWA (1)
+        - link "rxjs (3 items)" [ref=e289] [cursor=pointer]:
+          - /url: https://decodedfrontend.io/tag/rxjs/
+          - text: rxjs (3)
+        - link "Service Worker (1 item)" [ref=e290] [cursor=pointer]:
+          - /url: https://decodedfrontend.io/tag/service-worker/
+          - text: Service Worker (1)
+        - link "signals (2 items)" [ref=e291] [cursor=pointer]:
+          - /url: https://decodedfrontend.io/tag/signals/
+          - text: signals (2)

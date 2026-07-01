@@ -1,0 +1,5 @@
+[    4967ms] [LOG] JQMIGRATE: Migrate is installed with logging active, version 3.3.1 @ https://cdn.thinkific.com/assets/jquery-migrate/3.3.1/jquery-migrate.js:68
+[    5710ms] [WARNING] JQMIGRATE: jQuery.fn.submit() event shorthand is deprecated @ https://cdn.thinkific.com/assets/jquery-migrate/3.3.1/jquery-migrate.js:99
+[    5712ms] [WARNING] JQMIGRATE: jQuery.fn.resize() event shorthand is deprecated @ https://cdn.thinkific.com/assets/jquery-migrate/3.3.1/jquery-migrate.js:99
+[    5713ms] [WARNING] JQMIGRATE: jQuery.type is deprecated @ https://cdn.thinkific.com/assets/jquery-migrate/3.3.1/jquery-migrate.js:99
+[    5913ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://courses.decodedfrontend.io/:0

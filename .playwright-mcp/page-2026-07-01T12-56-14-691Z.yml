@@ -1,0 +1,43 @@
+- main [ref=f32e3]:
+  - generic [ref=f32e4]:
+    - generic [ref=f32e5]:
+      - img [ref=f32e6]
+      - heading "Hello, ai" [level=1] [ref=f32e10]
+      - paragraph [ref=f32e11]: Congratulations! Your app is running. 🎉
+    - separator "Divider" [ref=f32e12]
+    - generic [ref=f32e13]:
+      - generic [ref=f32e14]:
+        - link "Explore the Docs" [ref=f32e15] [cursor=pointer]:
+          - /url: https://angular.dev
+          - generic [ref=f32e16]: Explore the Docs
+          - img [ref=f32e17]
+        - link "Learn with Tutorials" [ref=f32e19] [cursor=pointer]:
+          - /url: https://angular.dev/tutorials
+          - generic [ref=f32e20]: Learn with Tutorials
+          - img [ref=f32e21]
+        - link "Prompt and best practices for AI" [ref=f32e23] [cursor=pointer]:
+          - /url: https://angular.dev/ai/develop-with-ai
+          - generic [ref=f32e24]: Prompt and best practices for AI
+          - img [ref=f32e25]
+        - link "CLI Docs" [ref=f32e27] [cursor=pointer]:
+          - /url: https://angular.dev/tools/cli
+          - generic [ref=f32e28]: CLI Docs
+          - img [ref=f32e29]
+        - link "Angular Language Service" [ref=f32e31] [cursor=pointer]:
+          - /url: https://angular.dev/tools/language-service
+          - generic [ref=f32e32]: Angular Language Service
+          - img [ref=f32e33]
+        - link "Angular DevTools" [ref=f32e35] [cursor=pointer]:
+          - /url: https://angular.dev/tools/devtools
+          - generic [ref=f32e36]: Angular DevTools
+          - img [ref=f32e37]
+      - generic [ref=f32e39]:
+        - link "Github" [ref=f32e40] [cursor=pointer]:
+          - /url: https://github.com/angular/angular
+          - img [ref=f32e41]
+        - link "X" [ref=f32e43] [cursor=pointer]:
+          - /url: https://x.com/angular
+          - img [ref=f32e44]
+        - link "Youtube" [ref=f32e46] [cursor=pointer]:
+          - /url: https://www.youtube.com/channel/UCbn1OgGei-DV7aSRo_HaAiw
+          - img [ref=f32e47]

@@ -1,0 +1,244 @@
+- generic [ref=f34e2]:
+  - main [ref=f34e3]:
+    - generic [ref=f34e4]:
+      - generic [ref=f34e5]:
+        - img [ref=f34e6]
+        - heading "Hello, ai" [level=1] [ref=f34e10]
+        - paragraph [ref=f34e11]: Congratulations! Your app is running. 🎉
+      - separator "Divider" [ref=f34e12]
+      - generic [ref=f34e13]:
+        - generic [ref=f34e14]:
+          - link "Explore the Docs" [ref=f34e15] [cursor=pointer]:
+            - /url: https://angular.dev
+            - generic [ref=f34e16]: Explore the Docs
+            - img [ref=f34e17]
+          - link "Learn with Tutorials" [ref=f34e19] [cursor=pointer]:
+            - /url: https://angular.dev/tutorials
+            - generic [ref=f34e20]: Learn with Tutorials
+            - img [ref=f34e21]
+          - link "Prompt and best practices for AI" [ref=f34e23] [cursor=pointer]:
+            - /url: https://angular.dev/ai/develop-with-ai
+            - generic [ref=f34e24]: Prompt and best practices for AI
+            - img [ref=f34e25]
+          - link "CLI Docs" [ref=f34e27] [cursor=pointer]:
+            - /url: https://angular.dev/tools/cli
+            - generic [ref=f34e28]: CLI Docs
+            - img [ref=f34e29]
+          - link "Angular Language Service" [ref=f34e31] [cursor=pointer]:
+            - /url: https://angular.dev/tools/language-service
+            - generic [ref=f34e32]: Angular Language Service
+            - img [ref=f34e33]
+          - link "Angular DevTools" [ref=f34e35] [cursor=pointer]:
+            - /url: https://angular.dev/tools/devtools
+            - generic [ref=f34e36]: Angular DevTools
+            - img [ref=f34e37]
+        - generic [ref=f34e39]:
+          - link "Github" [ref=f34e40] [cursor=pointer]:
+            - /url: https://github.com/angular/angular
+            - img [ref=f34e41]
+          - link "X" [ref=f34e43] [cursor=pointer]:
+            - /url: https://x.com/angular
+            - img [ref=f34e44]
+          - link "Youtube" [ref=f34e46] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UCbn1OgGei-DV7aSRo_HaAiw
+            - img [ref=f34e47]
+  - generic [ref=f34e49]:
+    - banner [ref=f34e51]:
+      - generic [ref=f34e52]:
+        - link "Decoded Frontend" [ref=f34e53] [cursor=pointer]:
+          - /url: /
+        - navigation [ref=f34e54]:
+          - link "YouTube" [ref=f34e55] [cursor=pointer]:
+            - /url: https://youtube.com/DecodedFrontend
+          - link "Blog" [ref=f34e56] [cursor=pointer]:
+            - /url: /tutorials
+          - link "Courses" [ref=f34e57] [cursor=pointer]:
+            - /url: /courses
+          - link "Recommendations" [ref=f34e58] [cursor=pointer]:
+            - /url: /recommendations
+    - generic [ref=f34e60]:
+      - heading "Decoded Frontend" [level=1] [ref=f34e61]
+      - paragraph [ref=f34e62]: Blog about advanced Frontend Development focused on Angular & GraphQL
+    - main [ref=f34e64]:
+      - generic [ref=f34e65]:
+        - generic [ref=f34e66]:
+          - heading "Latest Tutorials" [level=3] [ref=f34e67]
+          - generic [ref=f34e68]:
+            - article [ref=f34e70]:
+              - heading "Mastering Service Workers and PWAs in Angular" [level=2] [ref=f34e71]:
+                - link "Mastering Service Workers and PWAs in Angular" [ref=f34e72] [cursor=pointer]:
+                  - /url: /tutorials/mastering-service-workers-and-pwas-in-angular
+              - paragraph [ref=f34e73]: By Jakub Kita / In Angular / 9 Min Read
+              - paragraph [ref=f34e74]: 20 November
+              - paragraph [ref=f34e75]: Did you know that you can make your interactive web app work completely offline and even install it as a native application on your laptop or smartphone? All of this is possible thanks to service workers — and today, I'll show you how. In simple terms...
+              - generic [ref=f34e76]:
+                - link "Read on" [ref=f34e77] [cursor=pointer]:
+                  - /url: /tutorials/mastering-service-workers-and-pwas-in-angular
+                - link "Read later" [ref=f34e78] [cursor=pointer]:
+                  - /url: "#"
+            - article [ref=f34e80]:
+              - heading "First look at Signals in Angular" [level=2] [ref=f34e81]:
+                - link "First look at Signals in Angular" [ref=f34e82] [cursor=pointer]:
+                  - /url: /tutorials/first-look-at-signals-in-angular
+              - paragraph [ref=f34e83]: By Tom Kotlar / In Angular / 6 Min Read
+              - paragraph [ref=f34e84]: 25 June
+              - paragraph [ref=f34e85]: Welcome to your first glimpse into the reactive universe of Angular Signals. As part of Angular's renaissance, this guide introduces powerful tools which help you build reactive signal-based applications.
+              - generic [ref=f34e86]:
+                - link "Read on" [ref=f34e87] [cursor=pointer]:
+                  - /url: /tutorials/first-look-at-signals-in-angular
+                - link "Read later" [ref=f34e88] [cursor=pointer]:
+                  - /url: "#"
+            - article [ref=f34e90]:
+              - heading "Structural vs. Attribute Directives" [level=2] [ref=f34e91]:
+                - link "Structural vs. Attribute Directives" [ref=f34e92] [cursor=pointer]:
+                  - /url: /tutorials/directives-structural-vs-attribute
+              - paragraph [ref=f34e93]: By Michał Grzegorczyk / In Angular / 6 Min Read
+              - paragraph [ref=f34e94]: 29 February
+              - paragraph [ref=f34e95]: "Directives in Angular are fundamental building blocks that allow you to add special features to elements in your Angular application. There are two types: structural and attribute directives."
+              - generic [ref=f34e96]:
+                - link "Read on" [ref=f34e97] [cursor=pointer]:
+                  - /url: /tutorials/directives-structural-vs-attribute
+                - link "Read later" [ref=f34e98] [cursor=pointer]:
+                  - /url: "#"
+            - article [ref=f34e100]:
+              - heading "RxJS – Streams Analogs in Real Life" [level=2] [ref=f34e101]:
+                - link "RxJS – Streams Analogs in Real Life" [ref=f34e102] [cursor=pointer]:
+                  - /url: /tutorials/rxjs-streams-analogs-in-real-life
+              - paragraph [ref=f34e103]: By Tom Kotlar / In Angular, RxJS / 6 Min Read
+              - paragraph [ref=f34e104]: 30 October
+              - paragraph [ref=f34e105]: Every Angular developer encounters RxJS in their codebase. A frequently common challenge for new Angular developers involves grasping RxJS concepts, including Observable, Observer, and Subject.
+              - generic [ref=f34e106]:
+                - link "Read on" [ref=f34e107] [cursor=pointer]:
+                  - /url: /tutorials/rxjs-streams-analogs-in-real-life
+                - link "Read later" [ref=f34e108] [cursor=pointer]:
+                  - /url: "#"
+            - article [ref=f34e110]:
+              - heading "Tackling Angular Subscriptions with RxJS" [level=2] [ref=f34e111]:
+                - link "Tackling Angular Subscriptions with RxJS" [ref=f34e112] [cursor=pointer]:
+                  - /url: /tutorials/tackling-angular-subscriptions-with-rxjs
+              - paragraph [ref=f34e113]: By Michał Grzegorczyk / In Angular, RxJS / 5 Min Read
+              - paragraph [ref=f34e114]: 11 June
+              - paragraph [ref=f34e115]: Welcome to another session where we discuss pretty interesting facets of Angular. In this post, we explore common patterns and pitfalls related to unsubscription from RxJS streams.
+              - generic [ref=f34e116]:
+                - link "Read on" [ref=f34e117] [cursor=pointer]:
+                  - /url: /tutorials/tackling-angular-subscriptions-with-rxjs
+                - link "Read later" [ref=f34e118] [cursor=pointer]:
+                  - /url: "#"
+            - article [ref=f34e120]:
+              - 'heading "Beyond Subscriptions: Exploring the Power of Angular''s Async Pipe" [level=2] [ref=f34e121]':
+                - 'link "Beyond Subscriptions: Exploring the Power of Angular''s Async Pipe" [ref=f34e122] [cursor=pointer]':
+                  - /url: /tutorials/beyond-subscriptions-exploring-the-power-of-angulars-async-pipe
+              - paragraph [ref=f34e123]: By Michał Grzegorczyk / In Angular, RxJS / 5 Min Read
+              - paragraph [ref=f34e124]: 08 June
+              - paragraph [ref=f34e125]: Before we start, it's important to know that Angular, a widely-used framework developed by Google, has many powerful tools and functionalities baked into it.
+              - generic [ref=f34e126]:
+                - link "Read on" [ref=f34e127] [cursor=pointer]:
+                  - /url: /tutorials/beyond-subscriptions-exploring-the-power-of-angulars-async-pipe
+                - link "Read later" [ref=f34e128] [cursor=pointer]:
+                  - /url: "#"
+            - article [ref=f34e130]:
+              - heading "improve debugging skills in Angular – Part 1" [level=2] [ref=f34e131]:
+                - link "improve debugging skills in Angular – Part 1" [ref=f34e132] [cursor=pointer]:
+                  - /url: /tutorials/improve-debugging-skills-in-angular-part-1
+              - paragraph [ref=f34e133]: By Predrag Carapic / In Angular / 4 Min Read
+              - paragraph [ref=f34e134]: 11 May
+              - paragraph [ref=f34e135]: Today's topic is well-known to all of us since it is a core skill every developer should have. Let's explore how we could get the most out of it and level up our debugging skills. Part one of a small series.
+              - generic [ref=f34e136]:
+                - link "Read on" [ref=f34e137] [cursor=pointer]:
+                  - /url: /tutorials/improve-debugging-skills-in-angular-part-1
+                - link "Read later" [ref=f34e138] [cursor=pointer]:
+                  - /url: "#"
+            - article [ref=f34e140]:
+              - heading "Hot vs Cold Observable in RxJS" [level=2] [ref=f34e141]:
+                - link "Hot vs Cold Observable in RxJS" [ref=f34e142] [cursor=pointer]:
+                  - /url: /tutorials/hot-vs-cold-observable-in-rxjs
+              - paragraph [ref=f34e143]: By Predrag Carapic / In Angular, RxJS / 5 Min Read
+              - paragraph [ref=f34e144]: 29 March
+              - paragraph [ref=f34e145]: As Angular developers, we tend to work with RxJS and observables on a daily basis. In this article, I explain hot and cold observables and the differences between them.
+              - generic [ref=f34e146]:
+                - link "Read on" [ref=f34e147] [cursor=pointer]:
+                  - /url: /tutorials/hot-vs-cold-observable-in-rxjs
+                - link "Read later" [ref=f34e148] [cursor=pointer]:
+                  - /url: "#"
+            - article [ref=f34e150]:
+              - heading "Anatomy of Angular Builders" [level=2] [ref=f34e151]:
+                - link "Anatomy of Angular Builders" [ref=f34e152] [cursor=pointer]:
+                  - /url: /tutorials/anatomy-of-angular-builders
+              - paragraph [ref=f34e153]: By Dmytro Mezhenskyi / In Angular / 4 Min Read
+              - paragraph [ref=f34e154]: 16 December
+              - paragraph [ref=f34e155]: Essentially, Angular builders are NodeJS scripts executed by Angular CLI and perform different tasks like application build, running unit tests, and many other useful things.
+              - generic [ref=f34e156]:
+                - link "Read on" [ref=f34e157] [cursor=pointer]:
+                  - /url: /tutorials/anatomy-of-angular-builders
+                - link "Read later" [ref=f34e158] [cursor=pointer]:
+                  - /url: "#"
+            - article [ref=f34e160]:
+              - heading "How to provide data to ComponentPortal using Dependency injection" [level=2] [ref=f34e161]:
+                - link "How to provide data to ComponentPortal using Dependency injection" [ref=f34e162] [cursor=pointer]:
+                  - /url: /tutorials/how-to-provide-data-to-component-portal-using-dependency-injection
+              - paragraph [ref=f34e163]: By Dmytro Mezhenskyi / In Angular, Angular CDK, Off-topic / 4 Min Read
+              - paragraph [ref=f34e164]: 11 June
+              - paragraph [ref=f34e165]: "Some time ago I published a video that showed how to use the Angular CDK Portal module. Almost immediately I got a question: how to provide data to the ComponentPortal using dependency injection."
+              - generic [ref=f34e166]:
+                - link "Read on" [ref=f34e167] [cursor=pointer]:
+                  - /url: /tutorials/how-to-provide-data-to-component-portal-using-dependency-injection
+                - link "Read later" [ref=f34e168] [cursor=pointer]:
+                  - /url: "#"
+          - button "Load More" [disabled] [ref=f34e170]
+        - complementary [ref=f34e173]:
+          - generic [ref=f34e174]:
+            - heading "Search" [level=3] [ref=f34e175]
+            - generic [ref=f34e176]:
+              - textbox "Type here to search..." [ref=f34e177]
+              - button "Search" [ref=f34e178]
+          - generic [ref=f34e179]:
+            - heading "Tags" [level=3] [ref=f34e180]
+            - list [ref=f34e181]:
+              - listitem [ref=f34e182]:
+                - link "angular (12)" [ref=f34e183] [cursor=pointer]:
+                  - /url: /tutorials?tag=angular
+              - listitem [ref=f34e184]:
+                - link "angular builder (1)" [ref=f34e185] [cursor=pointer]:
+                  - /url: /tutorials?tag=angular-builder
+              - listitem [ref=f34e186]:
+                - link "angular cdk (3)" [ref=f34e187] [cursor=pointer]:
+                  - /url: /tutorials?tag=angular-cdk
+              - listitem [ref=f34e188]:
+                - link "angular cli (1)" [ref=f34e189] [cursor=pointer]:
+                  - /url: /tutorials?tag=angular-cli
+              - listitem [ref=f34e190]:
+                - link "angular hint (1)" [ref=f34e191] [cursor=pointer]:
+                  - /url: /tutorials?tag=angular-hint
+              - listitem [ref=f34e192]:
+                - link "angular overlay (1)" [ref=f34e193] [cursor=pointer]:
+                  - /url: /tutorials?tag=angular-overlay
+              - listitem [ref=f34e194]:
+                - link "angular portal (1)" [ref=f34e195] [cursor=pointer]:
+                  - /url: /tutorials?tag=angular-portal
+              - listitem [ref=f34e196]:
+                - link "PWA (1)" [ref=f34e197] [cursor=pointer]:
+                  - /url: /tutorials?tag=pwa
+              - listitem [ref=f34e198]:
+                - link "rxjs (3)" [ref=f34e199] [cursor=pointer]:
+                  - /url: /tutorials?tag=rxjs
+              - listitem [ref=f34e200]:
+                - link "Service Worker (1)" [ref=f34e201] [cursor=pointer]:
+                  - /url: /tutorials?tag=service-worker
+              - listitem [ref=f34e202]:
+                - link "signals (2)" [ref=f34e203] [cursor=pointer]:
+                  - /url: /tutorials?tag=signals
+    - contentinfo [ref=f34e205]:
+      - generic [ref=f34e207]:
+        - generic [ref=f34e208]: Decoded Frontend
+        - paragraph [ref=f34e209]:
+          - text: Created by
+          - link "Dmytro Mezhenskyi" [ref=f34e210] [cursor=pointer]:
+            - /url: mailto:dmytro@decodedfrontend.io
+          - text: . All rights reserved.
+        - navigation [ref=f34e211]:
+          - link "Terms and Conditions" [ref=f34e212] [cursor=pointer]:
+            - /url: /terms
+          - link "Privacy Policy" [ref=f34e213] [cursor=pointer]:
+            - /url: /privacy
+          - link "Imprint" [ref=f34e214] [cursor=pointer]:
+            - /url: /imprint
