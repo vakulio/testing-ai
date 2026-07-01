@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, computed, input } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { Tutorial } from '../../data/tutorials';
 
@@ -9,4 +9,7 @@ import { Tutorial } from '../../data/tutorials';
 })
 export class TutorialCardComponent {
   tutorial = input.required<Tutorial>();
+
+  protected readonly day = computed(() => this.tutorial().date.split(' ')[0]);
+  protected readonly month = computed(() => this.tutorial().date.split(' ')[1]);
 }

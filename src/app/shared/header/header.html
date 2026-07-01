@@ -1,28 +1,61 @@
-<header class="sticky top-0 z-50 border-b border-neutral-200 bg-white/90 backdrop-blur">
+<header class="sticky top-0 z-40 bg-brand-teal">
   <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
     @if (variant() === 'blog') {
-      <a routerLink="/" class="text-lg font-semibold tracking-tight text-neutral-900">Decoded Frontend</a>
+      <a routerLink="/" class="flex items-center gap-2">
+        <span class="text-2xl font-bold text-brand-coral" aria-hidden="true">{{ '{' }} {{ '}' }}</span>
+        <span class="flex flex-col text-sm font-semibold uppercase leading-tight text-white">
+          <span>decoded</span>
+          <span>frontend</span>
+        </span>
+      </a>
 
-      <nav class="hidden items-center gap-8 text-sm font-medium text-neutral-600 md:flex">
-        <a href="https://youtube.com/DecodedFrontend" target="_blank" rel="noopener" class="transition-colors hover:text-orange-500">YouTube</a>
-        <a routerLink="/tutorials" class="transition-colors hover:text-orange-500">Blog</a>
-        <a routerLink="/courses" class="transition-colors hover:text-orange-500">Courses</a>
-        <a routerLink="/recommendations" class="transition-colors hover:text-orange-500">Recommendations</a>
+      <nav class="hidden items-center gap-1 text-[11px] font-semibold uppercase tracking-wider text-white md:flex">
+        <a
+          href="https://youtube.com/DecodedFrontend"
+          target="_blank"
+          rel="noopener"
+          class="rounded-full px-3 py-1.5 transition-colors hover:bg-brand-teal-light"
+        >
+          YouTube
+        </a>
+        <a
+          routerLink="/tutorials"
+          routerLinkActive="bg-brand-teal-light"
+          class="rounded-full px-3 py-1.5 transition-colors hover:bg-brand-teal-light"
+        >
+          Blog
+        </a>
+        <a
+          routerLink="/courses"
+          routerLinkActive="bg-brand-teal-light"
+          class="rounded-full px-3 py-1.5 transition-colors hover:bg-brand-teal-light"
+        >
+          Courses
+        </a>
+        <a
+          routerLink="/recommendations"
+          routerLinkActive="bg-brand-teal-light"
+          class="rounded-full px-3 py-1.5 transition-colors hover:bg-brand-teal-light"
+        >
+          Recommendations
+        </a>
       </nav>
     } @else {
-      <a routerLink="/courses" class="text-lg font-semibold tracking-tight text-neutral-900">Mezhenskyi Dmytro</a>
+      <a routerLink="/courses" class="text-lg font-semibold tracking-tight text-white">Mezhenskyi Dmytro</a>
 
-      <nav class="hidden items-center gap-8 text-sm font-medium text-neutral-600 md:flex">
-        <a routerLink="/courses" class="transition-colors hover:text-orange-500">All Courses</a>
-        <button type="button" disabled class="cursor-not-allowed rounded-full border border-neutral-300 px-4 py-1.5 text-neutral-400">Sign In</button>
+      <nav class="hidden items-center gap-8 text-[11px] font-semibold uppercase tracking-wider text-white md:flex">
+        <a routerLink="/courses" class="rounded-full px-3 py-1.5 transition-colors hover:bg-brand-teal-light">All Courses</a>
+        <button type="button" disabled class="cursor-not-allowed rounded-full border border-white/30 px-4 py-1.5 normal-case tracking-normal text-white/60">Sign In</button>
       </nav>
     }
 
     <button
       type="button"
-      class="inline-flex h-9 w-9 items-center justify-center rounded-md text-neutral-600 md:hidden"
+      class="inline-flex h-9 w-9 items-center justify-center rounded-md transition-colors"
+      [class.text-white]="variant() === 'blog'"
+      [class.text-neutral-600]="variant() !== 'blog'"
       aria-label="Toggle menu"
-      (click)="toggleMobileMenu()"
+      (click)="toggleMenu()"
     >
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-6 w-6">
         <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
@@ -30,17 +63,25 @@
     </button>
   </div>
 
-  @if (mobileMenuOpen()) {
+  @if (variant() === 'courses' && mobileMenuOpen()) {
     <nav class="flex flex-col gap-1 border-t border-neutral-200 bg-white px-4 py-3 text-sm font-medium text-neutral-600 md:hidden">
-      @if (variant() === 'blog') {
-        <a href="https://youtube.com/DecodedFrontend" target="_blank" rel="noopener" class="rounded px-2 py-2 hover:bg-neutral-50 hover:text-orange-500">YouTube</a>
-        <a routerLink="/tutorials" class="rounded px-2 py-2 hover:bg-neutral-50 hover:text-orange-500">Blog</a>
-        <a routerLink="/courses" class="rounded px-2 py-2 hover:bg-neutral-50 hover:text-orange-500">Courses</a>
-        <a routerLink="/recommendations" class="rounded px-2 py-2 hover:bg-neutral-50 hover:text-orange-500">Recommendations</a>
-      } @else {
-        <a routerLink="/courses" class="rounded px-2 py-2 hover:bg-neutral-50 hover:text-orange-500">All Courses</a>
-        <button type="button" disabled class="w-fit cursor-not-allowed rounded-full border border-neutral-300 px-4 py-1.5 text-left text-neutral-400">Sign In</button>
-      }
+      <a routerLink="/courses" class="rounded px-2 py-2 hover:bg-neutral-50 hover:text-brand-coral">All Courses</a>
+      <button type="button" disabled class="w-fit cursor-not-allowed rounded-full border border-neutral-300 px-4 py-1.5 text-left text-neutral-400">Sign In</button>
     </nav>
   }
 </header>
+
+@if (variant() === 'blog' && uiState.isMenuOpen()) {
+  <div class="fixed inset-0 z-50">
+    <div class="absolute inset-0 bg-black/50" (click)="uiState.close()"></div>
+    <div class="absolute right-0 top-0 h-full w-full max-w-sm overflow-y-auto bg-white p-6 shadow-xl sm:p-8">
+      <nav class="mb-8 flex flex-col gap-1 text-sm font-medium text-neutral-700 md:hidden">
+        <a href="https://youtube.com/DecodedFrontend" target="_blank" rel="noopener" class="rounded px-2 py-2 hover:bg-neutral-50 hover:text-brand-coral">YouTube</a>
+        <a routerLink="/tutorials" (click)="uiState.close()" class="rounded px-2 py-2 hover:bg-neutral-50 hover:text-brand-coral">Blog</a>
+        <a routerLink="/courses" (click)="uiState.close()" class="rounded px-2 py-2 hover:bg-neutral-50 hover:text-brand-coral">Courses</a>
+        <a routerLink="/recommendations" (click)="uiState.close()" class="rounded px-2 py-2 hover:bg-neutral-50 hover:text-brand-coral">Recommendations</a>
+      </nav>
+      <app-sidebar />
+    </div>
+  </div>
+}

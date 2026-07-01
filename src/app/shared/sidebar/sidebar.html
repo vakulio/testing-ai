@@ -1,16 +1,30 @@
 <aside class="flex flex-col gap-8">
+  <div class="flex items-center justify-between">
+    <h3 class="text-sm font-semibold uppercase tracking-wide text-brand-teal">Menu</h3>
+    <button
+      type="button"
+      (click)="uiState.close()"
+      aria-label="Close menu"
+      class="inline-flex h-8 w-8 items-center justify-center rounded-md text-neutral-500 transition-colors hover:text-brand-coral"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-5 w-5">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+
   <div>
-    <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-900">Search</h3>
+    <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-brand-teal">Search</h3>
     <form class="flex gap-2" (submit)="$event.preventDefault()">
       <input
         type="text"
         placeholder="Type here to search..."
-        class="w-full rounded-md border border-neutral-300 px-3 py-2 text-sm text-neutral-700 outline-none focus:border-orange-400"
+        class="w-full rounded-md border border-neutral-300 px-3 py-2 text-sm text-neutral-700 outline-none focus:border-brand-coral"
       />
       <button
         type="submit"
         (click)="onSearch()"
-        class="shrink-0 rounded-md bg-orange-500 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-orange-600"
+        class="shrink-0 rounded-md bg-brand-coral px-4 py-2 text-sm font-medium text-white transition-colors hover:opacity-90"
       >
         Search
       </button>
@@ -18,14 +32,15 @@
   </div>
 
   <div>
-    <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-900">Tags</h3>
+    <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-brand-teal">Tags</h3>
     <ul class="flex flex-wrap gap-2">
       @for (tag of tags; track tag.slug) {
         <li>
           <a
             [routerLink]="['/tutorials']"
             [queryParams]="{ tag: tag.slug }"
-            class="inline-block rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-xs font-medium text-neutral-600 transition-colors hover:border-orange-300 hover:text-orange-500"
+            (click)="uiState.close()"
+            class="inline-block rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-xs font-medium text-neutral-600 transition-colors hover:border-brand-coral hover:text-brand-coral"
           >
             {{ tag.label }} ({{ tag.count }})
           </a>

@@ -1,30 +1,25 @@
 <app-header />
 
-<main class="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-  <h1 class="mb-10 text-4xl font-bold tracking-tight text-neutral-900">Tutorials</h1>
+<main class="mx-auto max-w-3xl px-4 py-16 sm:px-6">
+  <div class="text-center">
+    <h1 class="text-xs font-semibold uppercase tracking-widest text-brand-teal">Tutorials</h1>
+    <div class="mx-auto mt-3 h-0.5 w-10 bg-brand-coral"></div>
+  </div>
 
-  <div class="grid grid-cols-1 gap-10 lg:grid-cols-3">
-    <div class="lg:col-span-2">
-      <div class="flex flex-col gap-6">
-        @for (t of tutorials(); track t.slug) {
-          <app-tutorial-card [tutorial]="t" />
-        }
-      </div>
+  <div class="mt-12 flex flex-col">
+    @for (t of tutorials(); track t.slug) {
+      <app-tutorial-card [tutorial]="t" />
+    }
+  </div>
 
-      <div class="mt-10 flex justify-center">
-        <button
-          type="button"
-          disabled
-          class="cursor-not-allowed rounded-full border border-neutral-300 px-6 py-2.5 text-sm font-medium text-neutral-400"
-        >
-          Load More
-        </button>
-      </div>
-    </div>
-
-    <div>
-      <app-sidebar />
-    </div>
+  <div class="mt-10 flex justify-center">
+    <button
+      type="button"
+      disabled
+      class="cursor-not-allowed bg-brand-teal px-6 py-2.5 text-sm font-medium uppercase tracking-wide text-white opacity-60"
+    >
+      Load More
+    </button>
   </div>
 </main>
 

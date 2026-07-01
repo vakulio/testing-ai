@@ -29,6 +29,9 @@ yarn-error.log
 !.vscode/mcp.json
 .history/*
 
+# Playwright MCP scratch output
+/.playwright-mcp/
+
 # Miscellaneous
 /.angular/cache
 .sass-cache/
