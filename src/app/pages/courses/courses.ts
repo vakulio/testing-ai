@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, ElementRef, signal, viewChild } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { HeaderComponent } from '../../shared/header/header';
 import { FooterComponent } from '../../shared/footer/footer';
@@ -15,4 +15,15 @@ import { TESTIMONIALS } from '../../data/testimonials';
 export class CoursesPageComponent {
   protected readonly courses = signal(COURSES);
   protected readonly testimonials = signal(TESTIMONIALS);
+  protected readonly track = viewChild<ElementRef<HTMLElement>>('track');
+
+  protected scrollPrev(): void {
+    const el = this.track()?.nativeElement;
+    el?.scrollBy({ left: -el.clientWidth, behavior: 'smooth' });
+  }
+
+  protected scrollNext(): void {
+    const el = this.track()?.nativeElement;
+    el?.scrollBy({ left: el.clientWidth, behavior: 'smooth' });
+  }
 }

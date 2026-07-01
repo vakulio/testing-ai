@@ -5,17 +5,18 @@ export interface Course {
   avgRating: number;
   lessons: number;
   price: string;
+  imageUrl: string;
   isBundle?: boolean;
 }
 
 export const COURSES: Course[] = [
-  { slug: 'advanced-angular-forms', title: 'Advanced Angular Forms', reviews: 84, avgRating: 5.0, lessons: 176, price: '€99,00' },
-  { slug: 'nx-workspaces', title: 'Nx Workspaces', reviews: 4, avgRating: 4.8, lessons: 86, price: '€99,00' },
-  { slug: 'conscious-angular-testing', title: 'Conscious Angular Testing', reviews: 8, avgRating: 5.0, lessons: 93, price: '€99,00' },
-  { slug: 'angular-interview-hacking', title: 'Angular Interview Hacking', reviews: 34, avgRating: 4.9, lessons: 52, price: '€59,99' },
-  { slug: 'angular-material-theming-workshop', title: 'Angular Material Theming Course (In-Depth)', reviews: 17, avgRating: 4.8, lessons: 66, price: '€59,99' },
-  { slug: 'performant-graphql-backend-just-in-few-days-with-hasura', title: 'Performant Graphql Backend in 1 Day by Using Hasura Engine', reviews: 5, avgRating: 5.0, lessons: 86, price: '€49,99' },
-  { slug: 'all-in-one-angular-bundle', title: 'All-in-One Bundle', reviews: 0, avgRating: 0, lessons: 0, price: '€220,00', isBundle: true },
+  { slug: 'advanced-angular-forms', title: 'Advanced Angular Forms', reviews: 84, avgRating: 5.0, lessons: 176, price: '€99,00', imageUrl: 'https://import.cdn.thinkific.com/420070/courses/1918572/rLtSIYN3Q6GD0tHJLQbJ_Final%402x.png' },
+  { slug: 'nx-workspaces', title: 'Nx Workspaces', reviews: 4, avgRating: 4.8, lessons: 86, price: '€99,00', imageUrl: 'https://import.cdn.thinkific.com/420070/cQtYJH6Q4OdoVQTsRonU_Nx%20Workspaces.png' },
+  { slug: 'conscious-angular-testing', title: 'Conscious Angular Testing', reviews: 8, avgRating: 5.0, lessons: 93, price: '€99,00', imageUrl: 'https://import.cdn.thinkific.com/420070/9bCSzYuBS5y50QTofX7D_Image_Angular_testing@2x.png' },
+  { slug: 'angular-interview-hacking', title: 'Angular Interview Hacking', reviews: 34, avgRating: 4.9, lessons: 52, price: '€59,99', imageUrl: 'https://import.cdn.thinkific.com/420070/courses/1488530/igYjADxiSReSuwgkY6id_Cover%20image3x.jpg' },
+  { slug: 'angular-material-theming-workshop', title: 'Angular Material Theming Course (In-Depth)', reviews: 17, avgRating: 4.8, lessons: 66, price: '€59,99', imageUrl: 'https://import.cdn.thinkific.com/420070/courses/1311752/vUQV9hJuRKe6Bmprxrtm_Cover.png' },
+  { slug: 'performant-graphql-backend-just-in-few-days-with-hasura', title: 'Performant Graphql Backend in 1 Day by Using Hasura Engine', reviews: 5, avgRating: 5.0, lessons: 86, price: '€49,99', imageUrl: 'https://import.cdn.thinkific.com/420070/courses/1092217/YTcokW59Rgay8bOPQAGV_Cover.png' },
+  { slug: 'all-in-one-angular-bundle', title: 'All-in-One Bundle', reviews: 0, avgRating: 0, lessons: 0, price: '€220,00', imageUrl: 'https://files.cdn.thinkific.com/bundles/bundle_card_image_000/332/839/1767274520.original.png', isBundle: true },
 ];
 
 export interface CourseDetail {

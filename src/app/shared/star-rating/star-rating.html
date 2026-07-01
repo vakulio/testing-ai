@@ -1,5 +1,5 @@
 <span class="inline-flex items-center gap-0.5" aria-label="Rating: {{ rating() }} out of 5">
   @for (filled of stars(); track $index) {
-    <span class="text-base leading-none" [class.text-yellow-400]="filled" [class.text-gray-300]="!filled">★</span>
+    <span class="text-base leading-none" [class]="filled ? filledClass() : 'text-gray-300'">★</span>
   }
 </span>

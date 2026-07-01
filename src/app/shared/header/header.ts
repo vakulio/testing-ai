@@ -10,6 +10,7 @@ import { SidebarComponent } from '../sidebar/sidebar';
 })
 export class HeaderComponent {
   variant = input<'blog' | 'courses'>('blog');
+  transparent = input(false);
 
   protected readonly uiState = inject(UiStateService);
   protected readonly mobileMenuOpen = signal(false);
