@@ -1,13 +1,14 @@
 <footer class="bg-brand-teal">
   <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
     @if (variant() === 'blog') {
-      <div class="flex flex-col items-center gap-3 text-center">
-        <span class="text-2xl font-bold text-brand-coral" aria-hidden="true">{{ '{' }} {{ '}' }}</span>
+      <div class="flex flex-col items-center gap-2 text-center">
+        <img src="/assets/icon.png" alt="Decoded Frontend" class="mb-1 h-[70px] w-[70px]" />
         <p class="text-sm text-neutral-300">
           Created by
           <a href="mailto:dmytro@decodedfrontend.io" class="font-medium text-brand-coral hover:opacity-80">Dmytro Mezhenskyi</a>
+          <br />
+          All rights reserved
         </p>
-        <p class="text-sm text-neutral-300">All rights reserved</p>
         <nav class="mt-2 flex flex-wrap items-center justify-center gap-4 text-sm text-brand-coral">
           <a routerLink="/terms" class="underline hover:opacity-80">Terms and Conditions</a>
           <a routerLink="/privacy" class="underline hover:opacity-80">Privacy Policy</a>
