@@ -1,45 +1,57 @@
-<div class="mx-auto max-w-3xl p-4">
+<div class="mx-auto max-w-3xl">
   @if (cartState.loading()) {
     <app-loading-spinner />
   } @else if (cartState.error()) {
     <app-error-message message="Failed to load cart. Please try again." />
   } @else if (cartState.value(); as cart) {
-    <h1 class="mb-2 text-2xl font-semibold">Cart #{{ cart.id }}</h1>
+    <div class="card p-6">
+      <span class="tab tab-carts">Crt</span>
+      <p class="call-number mb-4">Ticket No. {{ cart.id.toString().padStart(4, '0') }}</p>
+      <h1 class="font-display mb-4 text-lg text-ink">Order manifest</h1>
 
-    <div class="mb-4 grid grid-cols-2 gap-2 text-sm text-slate-600 sm:grid-cols-4">
-      <p>Total: {{ cart.total }}</p>
-      <p>Discounted total: {{ cart.discountedTotal }}</p>
-      <p>Total products: {{ cart.totalProducts }}</p>
-      <p>Total quantity: {{ cart.totalQuantity }}</p>
+      <div class="mb-5 grid grid-cols-2 gap-4 sm:grid-cols-4">
+        <div>
+          <p class="eyebrow">Total</p>
+          <p class="font-data text-sm text-ink">${{ cart.total }}</p>
+        </div>
+        <div>
+          <p class="eyebrow">Discounted</p>
+          <p class="font-data text-sm text-teal">${{ cart.discountedTotal }}</p>
+        </div>
+        <div>
+          <p class="eyebrow">Products</p>
+          <p class="font-data text-sm text-ink">{{ cart.totalProducts }}</p>
+        </div>
+        <div>
+          <p class="eyebrow">Quantity</p>
+          <p class="font-data text-sm text-ink">{{ cart.totalQuantity }}</p>
+        </div>
+      </div>
+
+      <div class="mb-5">
+        @if (ownerState.loading()) {
+          <app-loading-spinner />
+        } @else if (ownerState.error()) {
+          <app-error-message message="Failed to load cart owner." />
+        } @else if (ownerState.value(); as owner) {
+          <p class="text-sm text-ink-soft">
+            Filed under
+            <a [routerLink]="['/users', owner.id]" class="font-medium text-brass hover:underline">
+              {{ owner.firstName }} {{ owner.lastName }}
+            </a>
+          </p>
+        }
+      </div>
+
+      <p class="eyebrow mb-2">Contents</p>
+      <ul>
+        @for (product of cart.products; track product.id) {
+          <li class="ledger-row">
+            <a [routerLink]="['/products', product.id]" class="text-ink hover:text-teal">{{ product.title }}</a>
+            <span class="font-data text-ink-soft">{{ product.quantity }} × {{ product.price }} = {{ product.total }}</span>
+          </li>
+        }
+      </ul>
     </div>
-
-    <div class="mb-4">
-      @if (ownerState.loading()) {
-        <app-loading-spinner />
-      } @else if (ownerState.error()) {
-        <app-error-message message="Failed to load cart owner." />
-      } @else if (ownerState.value(); as owner) {
-        <p class="text-sm">
-          Owner:
-          <a [routerLink]="['/users', owner.id]" class="text-blue-600 hover:underline">
-            {{ owner.firstName }} {{ owner.lastName }}
-          </a>
-        </p>
-      }
-    </div>
-
-    <h2 class="mb-2 text-lg font-medium">Products</h2>
-    <ul class="divide-y divide-slate-200">
-      @for (product of cart.products; track product.id) {
-        <li class="flex items-center justify-between py-2">
-          <a [routerLink]="['/products', product.id]" class="text-blue-600 hover:underline">
-            {{ product.title }}
-          </a>
-          <span class="text-sm text-slate-600">
-            {{ product.quantity }} × {{ product.price }} = {{ product.total }}
-          </span>
-        </li>
-      }
-    </ul>
   }
 </div>

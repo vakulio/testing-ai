@@ -1,3 +1,115 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 @import 'tailwindcss';
+
+@theme {
+  /* Aged card-stock surfaces */
+  --color-paper: #e7e1d0;
+  --color-paper-raised: #f2ede0;
+  --color-paper-deep: #d9d0b8;
+
+  /* Ink */
+  --color-ink: #241f1b;
+  --color-ink-soft: #6b6154;
+  --color-rule: #c9bfa8;
+
+  /* Drawer-label accents, one per record type */
+  --color-brass: #9c7a3c;
+  --color-brass-dark: #7c5f2c;
+  --color-teal: #2f5d56;
+  --color-teal-dark: #21403b;
+  --color-brick: #8b3a2e;
+  --color-brick-dark: #6e2e24;
+  --color-slate: #445066;
+  --color-slate-dark: #333c4d;
+
+  --font-display: 'Special Elite', 'Courier New', monospace;
+  --font-body: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-data: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    background-image:
+      repeating-linear-gradient(
+        0deg,
+        rgb(36 31 27 / 3%) 0px,
+        rgb(36 31 27 / 3%) 1px,
+        transparent 1px,
+        transparent 3px
+      );
+  }
+
+  ::selection {
+    background-color: var(--color-brass);
+    color: var(--color-paper-raised);
+  }
+
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 2px solid var(--color-brass);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* A record card cut like a library index card, with a colored tab. */
+  .card {
+    @apply relative rounded-[3px] border border-rule bg-paper-raised transition-transform duration-200 ease-out;
+    box-shadow: 0 1px 0 rgb(36 31 27 / 8%);
+  }
+
+  .card-interactive:hover {
+    @apply -translate-y-0.5;
+    box-shadow: 0 10px 18px -10px rgb(36 31 27 / 45%);
+  }
+
+  .tab {
+    @apply absolute -top-[9px] left-4 rounded-t-[2px] px-2 py-[3px] font-data text-[10px] font-medium tracking-[0.12em] text-paper-raised uppercase;
+  }
+  .tab-products {
+    background-color: var(--color-teal);
+  }
+  .tab-users {
+    background-color: var(--color-brass);
+  }
+  .tab-posts {
+    background-color: var(--color-brick);
+  }
+  .tab-carts {
+    background-color: var(--color-slate);
+  }
+
+  .call-number {
+    @apply font-data text-[11px] tracking-tight text-ink-soft;
+  }
+
+  .eyebrow {
+    @apply font-display text-[11px] tracking-[0.18em] text-ink-soft uppercase;
+  }
+
+  .ledger-row {
+    @apply flex items-center justify-between gap-4 border-b border-rule py-2 text-sm last:border-b-0;
+  }
+
+  .stamp {
+    @apply font-data inline-flex items-center gap-1 rounded-full border-2 px-2 py-0.5 text-[10px] font-semibold tracking-wider uppercase;
+    transform: rotate(-3deg);
+  }
+}

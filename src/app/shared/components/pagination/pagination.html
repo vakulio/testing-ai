@@ -1,19 +1,19 @@
-<div class="flex items-center justify-center gap-4 py-4 text-sm">
+<div class="font-data mt-6 flex items-center justify-center gap-4 text-xs">
   <button
     type="button"
-    class="rounded border border-slate-300 px-3 py-1 disabled:opacity-40"
+    class="rounded-[2px] border border-ink px-3 py-1 tracking-wide text-ink uppercase transition-colors hover:bg-ink hover:text-paper-raised disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-ink"
     [disabled]="!canPrev()"
     (click)="prev()"
   >
-    Prev
+    « Prev
   </button>
-  <span class="text-slate-600">Page {{ currentPage() }} / {{ totalPages() }}</span>
+  <span class="text-ink-soft">Card {{ currentPage() }} of {{ totalPages() }}</span>
   <button
     type="button"
-    class="rounded border border-slate-300 px-3 py-1 disabled:opacity-40"
+    class="rounded-[2px] border border-ink px-3 py-1 tracking-wide text-ink uppercase transition-colors hover:bg-ink hover:text-paper-raised disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:text-ink"
     [disabled]="!canNext()"
     (click)="next()"
   >
-    Next
+    Next »
   </button>
 </div>

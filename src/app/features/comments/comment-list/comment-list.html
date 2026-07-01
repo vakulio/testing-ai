@@ -1,5 +1,6 @@
-<div class="mx-auto max-w-3xl px-4 py-6">
-  <h1 class="mb-4 text-xl font-semibold text-gray-900">Comments</h1>
+<div class="max-w-3xl">
+  <p class="eyebrow mb-1">The Archive · Filed notes</p>
+  <h1 class="font-display mb-5 text-xl text-ink">Comments</h1>
 
   @if (state.loading()) {
     <app-loading-spinner />
@@ -11,18 +12,15 @@
     } @else {
       <ul class="flex flex-col gap-3">
         @for (comment of response.comments; track comment.id) {
-          <li class="rounded border border-gray-200 p-3">
-            <p class="text-sm text-gray-800">{{ comment.body }}</p>
-            <p class="mt-1 text-xs text-gray-500">
-              👍 {{ comment.likes }} ·
-              <a
-                [routerLink]="['/users', comment.user.id]"
-                class="font-medium text-gray-700 hover:underline"
-              >
+          <li class="card p-4">
+            <p class="text-sm text-ink">{{ comment.body }}</p>
+            <p class="font-data mt-2 text-xs text-ink-soft">
+              +{{ comment.likes }} ·
+              <a [routerLink]="['/users', comment.user.id]" class="font-medium text-brass hover:underline">
                 {{ comment.user.fullName }}
               </a>
               · on
-              <a [routerLink]="['/posts', comment.postId]" class="font-medium text-gray-700 hover:underline">
+              <a [routerLink]="['/posts', comment.postId]" class="font-medium text-brass hover:underline">
                 post #{{ comment.postId }}
               </a>
             </p>

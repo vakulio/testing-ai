@@ -1,24 +1,26 @@
-<div class="mx-auto max-w-4xl p-4">
+<div class="mx-auto max-w-4xl">
   @if (userState.loading()) {
     <app-loading-spinner />
   } @else if (userState.error()) {
     <app-error-message message="Failed to load user profile. Please try again." />
   } @else if (userState.value(); as user) {
-    <div class="mb-6 flex items-center gap-4 rounded-lg border border-gray-200 p-4">
+    <div class="card mb-6 flex items-center gap-4 p-5">
+      <span class="tab tab-users">Usr</span>
       <img
         [src]="user.image"
         [alt]="user.firstName + ' ' + user.lastName"
-        class="h-16 w-16 rounded-full object-cover"
+        class="h-16 w-16 rounded-full border border-rule object-cover"
       />
       <div>
-        <h1 class="text-xl font-semibold text-gray-900">{{ user.firstName }} {{ user.lastName }}</h1>
-        <p class="text-sm text-gray-500">{{ user.email }}</p>
+        <h1 class="font-display text-lg text-ink">{{ user.firstName }} {{ user.lastName }}</h1>
+        <p class="call-number">Member No. {{ user.id.toString().padStart(4, '0') }}</p>
+        <p class="text-sm text-ink-soft">{{ user.email }}</p>
       </div>
     </div>
   }
 
   <section class="mb-6">
-    <h2 class="mb-2 text-lg font-semibold text-gray-900">Posts</h2>
+    <p class="eyebrow mb-2">Authored posts</p>
     @if (postsState.loading()) {
       <app-loading-spinner />
     } @else if (postsState.error()) {
@@ -30,10 +32,7 @@
         <ul class="flex flex-col gap-2">
           @for (post of postsRes.posts; track post.id) {
             <li>
-              <a
-                [routerLink]="['/posts', post.id]"
-                class="block rounded border border-gray-200 p-3 hover:border-gray-400"
-              >
+              <a [routerLink]="['/posts', post.id]" class="card card-interactive block px-4 py-3 text-sm text-ink">
                 {{ post.title }}
               </a>
             </li>
@@ -44,7 +43,7 @@
   </section>
 
   <section>
-    <h2 class="mb-2 text-lg font-semibold text-gray-900">Carts</h2>
+    <p class="eyebrow mb-2">Carts on file</p>
     @if (cartsState.loading()) {
       <app-loading-spinner />
     } @else if (cartsState.error()) {
@@ -56,11 +55,8 @@
         <ul class="flex flex-col gap-2">
           @for (cart of cartsRes.carts; track cart.id) {
             <li>
-              <a
-                [routerLink]="['/carts', cart.id]"
-                class="block rounded border border-gray-200 p-3 hover:border-gray-400"
-              >
-                Cart #{{ cart.id }} — {{ cart.totalProducts }} products, total ${{ cart.total }}
+              <a [routerLink]="['/carts', cart.id]" class="card card-interactive block px-4 py-3 text-sm text-ink">
+                Ticket No. {{ cart.id.toString().padStart(4, '0') }} — {{ cart.totalProducts }} products, total ${{ cart.total }}
               </a>
             </li>
           }

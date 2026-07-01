@@ -1,17 +1,18 @@
-<div class="mx-auto max-w-5xl px-4 py-6">
-  <h1 class="mb-4 text-xl font-semibold text-gray-900">Products</h1>
+<div>
+  <p class="eyebrow mb-1">The Archive · Catalog</p>
+  <h1 class="font-display mb-5 text-xl text-ink">Products</h1>
 
-  <div class="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center">
+  <div class="mb-6 flex flex-col gap-3 sm:flex-row sm:items-center">
     <div class="sm:max-w-xs sm:flex-1">
       <app-search-box
-        placeholder="Search products…"
+        placeholder="Search the catalog…"
         [query]="query()"
         (queryChange)="onQueryChange($event)"
       />
     </div>
 
     <select
-      class="rounded border border-slate-300 px-3 py-2 text-sm"
+      class="rounded-[2px] border border-rule bg-paper px-3 py-2 text-sm text-ink focus:border-brass focus:outline-none"
       [value]="category() ?? ''"
       (change)="onCategoryChange($any($event.target).value)"
     >
@@ -30,16 +31,24 @@
     @if (response.products.length === 0) {
       <app-empty-state message="No products match your search." />
     } @else {
-      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+      <div class="grid grid-cols-1 gap-x-4 gap-y-7 sm:grid-cols-2 md:grid-cols-3">
         @for (product of response.products; track product.id) {
-          <a
-            [routerLink]="['/products', product.id]"
-            class="flex flex-col gap-2 rounded-lg border border-gray-200 p-4 shadow-sm transition hover:shadow-md"
-          >
-            <img [src]="product.thumbnail" [alt]="product.title" class="h-32 w-full rounded object-cover" />
-            <h2 class="text-sm font-medium text-gray-900">{{ product.title }}</h2>
-            <p class="text-xs text-gray-500">{{ product.category }}</p>
-            <p class="text-sm font-semibold text-gray-900">${{ product.price }}</p>
+          <a [routerLink]="['/products', product.id]" class="card card-interactive group flex flex-col gap-2 p-4">
+            <span class="tab tab-products">Prd</span>
+            <p class="call-number">No. {{ product.id.toString().padStart(4, '0') }}</p>
+            <img
+              [src]="product.thumbnail"
+              [alt]="product.title"
+              class="h-32 w-full rounded-[2px] border border-rule object-cover"
+            />
+            <h2 class="text-sm font-semibold text-ink transition-colors group-hover:text-teal">
+              {{ product.title }}
+            </h2>
+            <p class="text-xs tracking-wide text-ink-soft uppercase">{{ product.category }}</p>
+            <div class="mt-auto flex items-center justify-between pt-2">
+              <p class="font-data text-sm font-semibold text-ink">${{ product.price }}</p>
+              <p class="font-data text-xs text-brass">★ {{ product.rating }}</p>
+            </div>
           </a>
         }
       </div>

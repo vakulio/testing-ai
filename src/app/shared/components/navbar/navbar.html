@@ -1,22 +1,57 @@
-<nav class="flex items-center justify-between gap-4 border-b border-gray-200 px-4 py-3">
-  <div class="flex items-center gap-4">
-    <a routerLink="/products" routerLinkActive="font-semibold" class="text-sm text-gray-700 hover:text-gray-900">Products</a>
-    <a routerLink="/carts" routerLinkActive="font-semibold" class="text-sm text-gray-700 hover:text-gray-900">Carts</a>
-    <a routerLink="/users" routerLinkActive="font-semibold" class="text-sm text-gray-700 hover:text-gray-900">Users</a>
-    <a routerLink="/posts" routerLinkActive="font-semibold" class="text-sm text-gray-700 hover:text-gray-900">Posts</a>
-  </div>
+<nav class="border-b-2 border-ink bg-paper-deep px-4 sm:px-6">
+  <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-3 py-3">
+    <div class="flex flex-wrap items-center gap-x-6 gap-y-2">
+      <a routerLink="/products" class="font-display text-sm tracking-[0.2em] text-ink uppercase whitespace-nowrap">
+        <span class="text-brass">▮▮</span> The Archive
+      </a>
 
-  @if (user(); as currentUser) {
-    <div class="flex items-center gap-3">
-      <img [src]="currentUser.image" [alt]="currentUser.username" class="h-8 w-8 rounded-full" />
-      <span class="text-sm text-gray-900">{{ currentUser.firstName }} {{ currentUser.lastName }}</span>
-      <button
-        type="button"
-        (click)="logout.emit()"
-        class="rounded border border-gray-300 px-3 py-1 text-sm text-gray-700 hover:bg-gray-100"
-      >
-        Logout
-      </button>
+      <div class="flex items-center gap-1 text-sm">
+        <a
+          routerLink="/products"
+          routerLinkActive="border-teal text-ink"
+          class="border-b-[3px] border-transparent px-2 py-1.5 font-medium text-ink-soft transition-colors hover:text-ink"
+          >Products</a
+        >
+        <a
+          routerLink="/carts"
+          routerLinkActive="border-slate text-ink"
+          class="border-b-[3px] border-transparent px-2 py-1.5 font-medium text-ink-soft transition-colors hover:text-ink"
+          >Carts</a
+        >
+        <a
+          routerLink="/users"
+          routerLinkActive="border-brass text-ink"
+          class="border-b-[3px] border-transparent px-2 py-1.5 font-medium text-ink-soft transition-colors hover:text-ink"
+          >Users</a
+        >
+        <a
+          routerLink="/posts"
+          routerLinkActive="border-brick text-ink"
+          class="border-b-[3px] border-transparent px-2 py-1.5 font-medium text-ink-soft transition-colors hover:text-ink"
+          >Posts</a
+        >
+      </div>
     </div>
-  }
+
+    @if (user(); as currentUser) {
+      <div class="card flex items-center gap-3 px-3 py-1.5">
+        <img
+          [src]="currentUser.image"
+          [alt]="currentUser.username"
+          class="h-7 w-7 rounded-full border border-rule object-cover"
+        />
+        <div class="leading-tight">
+          <p class="text-xs font-semibold text-ink">{{ currentUser.firstName }} {{ currentUser.lastName }}</p>
+          <p class="call-number">MEMBER No. {{ currentUser.id.toString().padStart(4, '0') }}</p>
+        </div>
+        <button
+          type="button"
+          (click)="logout.emit()"
+          class="font-data ml-2 rounded-[2px] border border-ink px-2 py-1 text-[11px] tracking-wide text-ink uppercase transition-colors hover:bg-ink hover:text-paper-raised"
+        >
+          Sign out
+        </button>
+      </div>
+    }
+  </div>
 </nav>

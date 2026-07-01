@@ -1,7 +1,8 @@
-<div class="mx-auto max-w-3xl px-4 py-6">
-  <h1 class="mb-4 text-xl font-semibold text-gray-900">Posts</h1>
+<div class="max-w-3xl">
+  <p class="eyebrow mb-1">The Archive · Periodicals</p>
+  <h1 class="font-display mb-5 text-xl text-ink">Posts</h1>
 
-  <div class="mb-4">
+  <div class="mb-6">
     <app-search-box
       placeholder="Search posts…"
       [query]="query()"
@@ -17,13 +18,15 @@
     @if (response.posts.length === 0) {
       <app-empty-state message="No posts found." />
     } @else {
-      <ul class="flex flex-col gap-3">
+      <ul class="flex flex-col gap-4">
         @for (post of response.posts; track post.id) {
-          <li class="rounded border border-gray-200 p-4 hover:bg-gray-50">
+          <li class="card card-interactive p-4">
             <a [routerLink]="['/posts', post.id]" class="block">
-              <h2 class="text-base font-medium text-gray-900">{{ post.title }}</h2>
-              <p class="mt-1 text-xs text-gray-500">
-                👍 {{ post.reactions.likes }} · 👎 {{ post.reactions.dislikes }} · {{ post.views }} views
+              <span class="tab tab-posts">Pst</span>
+              <p class="call-number mb-2">No. {{ post.id.toString().padStart(4, '0') }}</p>
+              <h2 class="text-base font-semibold text-ink">{{ post.title }}</h2>
+              <p class="font-data mt-2 text-xs text-ink-soft">
+                +{{ post.reactions.likes }} · −{{ post.reactions.dislikes }} · {{ post.views }} views
               </p>
             </a>
           </li>
