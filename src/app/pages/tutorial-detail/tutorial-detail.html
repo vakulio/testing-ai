@@ -2,9 +2,16 @@
 
 @if (tutorial && body) {
   <main class="mx-auto max-w-3xl px-4 py-16 sm:px-6">
-    <h1 class="text-4xl font-bold tracking-tight text-brand-teal">{{ tutorial.title }}</h1>
+    <a routerLink="/tutorials" matButton="text" class="-ml-3">
+      <mat-icon>chevron_left</mat-icon>
+      Back to tutorials
+    </a>
 
-    <p class="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-neutral-500">
+    <h1 class="mt-6 font-display text-4xl font-bold leading-tight tracking-tight text-brand-teal">
+      {{ tutorial.title }}
+    </h1>
+
+    <p class="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 font-mono text-xs uppercase tracking-wide text-neutral-500">
       <span>By {{ tutorial.author }}</span>
       <span>/</span>
       <span>In {{ tutorial.categories.join(', ') }}</span>
@@ -12,8 +19,6 @@
       <span>{{ tutorial.date }}</span>
       <span>/</span>
       <span>{{ tutorial.readTime }}</span>
-      <span>/</span>
-      <a href="#" class="text-brand-coral hover:opacity-80" (click)="$event.preventDefault()">Add Comment</a>
     </p>
 
     <figure
@@ -28,13 +33,22 @@
     <div class="flex flex-col gap-10">
       @for (section of body.sections; track section.heading) {
         <section>
-          <h3 class="text-2xl font-semibold text-brand-teal">{{ section.heading }}</h3>
+          <h3 class="font-display text-2xl font-semibold text-brand-teal">{{ section.heading }}</h3>
           <p class="mt-3 text-neutral-600">{{ section.paragraph }}</p>
           @if (section.code) {
-            <pre class="mt-4 overflow-x-auto rounded bg-gray-900 p-4 text-sm text-gray-100"><code>{{ section.code }}</code></pre>
+            <pre class="mt-4 overflow-x-auto rounded bg-gray-900 p-4 font-mono text-sm text-gray-100"><code>{{ section.code }}</code></pre>
           }
         </section>
       }
+    </div>
+
+    <hr class="my-10 border-neutral-200" />
+
+    <div class="flex justify-center">
+      <button matButton="tonal" type="button" (click)="$event.preventDefault()">
+        <mat-icon>chat_bubble_outline</mat-icon>
+        Add Comment
+      </button>
     </div>
   </main>
 } @else {

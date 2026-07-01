@@ -1,5 +1,7 @@
 import { Component, ElementRef, signal, viewChild } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { HeaderComponent } from '../../shared/header/header';
 import { FooterComponent } from '../../shared/footer/footer';
 import { CourseCardComponent } from '../../shared/course-card/course-card';
@@ -9,7 +11,15 @@ import { TESTIMONIALS } from '../../data/testimonials';
 
 @Component({
   selector: 'app-courses',
-  imports: [HeaderComponent, FooterComponent, CourseCardComponent, TestimonialCardComponent, RouterLink],
+  imports: [
+    HeaderComponent,
+    FooterComponent,
+    CourseCardComponent,
+    TestimonialCardComponent,
+    RouterLink,
+    MatButtonModule,
+    MatIconModule,
+  ],
   templateUrl: './courses.html',
 })
 export class CoursesPageComponent {

@@ -1,40 +1,39 @@
 <app-header variant="blog" />
 
 <main class="mx-auto max-w-3xl px-4 py-16 sm:px-6">
-  <h1 class="text-4xl font-normal text-brand-teal sm:text-5xl">I Recommend</h1>
+  <p class="font-mono text-xs tracking-widest text-brand-coral">// curated by me</p>
+  <h1 class="mt-2 font-display text-4xl font-semibold text-brand-teal sm:text-5xl">I Recommend</h1>
   <p class="mt-4 text-neutral-600">{{ recommendations().intro }}</p>
 
   @if (recommendations().events.length) {
     <section class="mt-14">
-      <h2 class="text-2xl font-normal text-brand-teal">Events</h2>
+      <p class="font-mono text-xs tracking-widest text-brand-coral">// events</p>
+      <h2 class="mt-2 font-display text-2xl font-semibold text-brand-teal">Events</h2>
 
-      <div class="mt-6 flex flex-col gap-10">
+      <div class="mt-6 flex flex-col gap-6">
         @for (event of recommendations().events; track event.title) {
-          <article>
-            <p class="text-neutral-600">
-              Get a unique chance to attend the world's leading event for developers with our exclusive discount code
-              <mark class="bg-transparent font-semibold text-brand-coral">&ldquo;{{ event.discountCode }}&rdquo;</mark>
-              for {{ event.discountText }}.
-            </p>
-
-            <a [href]="event.url" target="_blank" rel="noopener" class="mt-4 block" aria-label="{{ event.title }}">
-              <img [src]="event.imageUrl" [alt]="event.title" class="w-full rounded-lg" />
-            </a>
-
-            <p class="mt-4 text-neutral-600">
-              <span class="font-semibold text-brand-teal">{{ event.title }}</span>
-              {{ event.description }}
-            </p>
-
-            <p class="mt-3 text-neutral-600">{{ event.speakers }}</p>
-
-            <p class="mt-4 italic text-neutral-600">
-              Secure your spot at
-              <a [href]="event.url" target="_blank" rel="noopener" class="not-italic text-brand-coral underline hover:opacity-80">
-                {{ event.url }}
+          <mat-card appearance="outlined">
+            <mat-card-content>
+              <a [href]="event.url" target="_blank" rel="noopener" aria-label="{{ event.title }}">
+                <img [src]="event.imageUrl" [alt]="event.title" class="w-full rounded-lg" />
               </a>
-            </p>
-          </article>
+
+              <h3 class="mt-4 font-display text-lg font-semibold text-brand-ink">{{ event.title }}</h3>
+
+              <p class="mt-2 text-neutral-600">
+                Get a unique chance to attend the world's leading event for developers with our exclusive discount code
+                <mark class="bg-transparent font-mono font-semibold text-brand-coral">&ldquo;{{ event.discountCode }}&rdquo;</mark>
+                for {{ event.discountText }}. {{ event.description }}
+              </p>
+
+              <p class="mt-3 text-neutral-600">{{ event.speakers }}</p>
+
+              <a matButton="filled" color="tertiary" [href]="event.url" target="_blank" rel="noopener" class="mt-4">
+                Secure your spot
+                <mat-icon iconPositionEnd>open_in_new</mat-icon>
+              </a>
+            </mat-card-content>
+          </mat-card>
         }
       </div>
     </section>
@@ -42,21 +41,26 @@
 
   @if (recommendations().externalCourses.length) {
     <section class="mt-14">
-      <h2 class="text-2xl font-normal text-brand-teal">Courses</h2>
+      <p class="font-mono text-xs tracking-widest text-brand-coral">// courses</p>
+      <h2 class="mt-2 font-display text-2xl font-semibold text-brand-teal">Courses</h2>
 
-      <div class="mt-6 flex flex-col gap-8">
+      <div class="mt-6 flex flex-col gap-6">
         @for (item of recommendations().externalCourses; track item.title) {
-          <article class="flex flex-col gap-4 sm:flex-row sm:items-start">
-            <a [href]="item.url" target="_blank" rel="noopener" class="block w-full shrink-0 sm:w-2/5">
-              <img [src]="item.imageUrl" [alt]="item.title" class="aspect-video w-full rounded object-cover" />
-            </a>
-            <div>
-              <a [href]="item.url" target="_blank" rel="noopener" class="font-semibold text-brand-teal underline hover:text-brand-coral">
-                {{ item.title }}
+          <mat-card appearance="outlined">
+            <mat-card-content class="flex flex-col gap-4 sm:flex-row sm:items-start">
+              <a [href]="item.url" target="_blank" rel="noopener" class="block w-full shrink-0 sm:w-2/5">
+                <img [src]="item.imageUrl" [alt]="item.title" class="aspect-video w-full rounded object-cover" />
               </a>
-              <p class="mt-2 text-neutral-600">{{ item.description }}</p>
-            </div>
-          </article>
+              <div class="flex flex-1 flex-col items-start gap-2">
+                <h3 class="font-display text-lg font-semibold text-brand-ink">{{ item.title }}</h3>
+                <p class="text-neutral-600">{{ item.description }}</p>
+                <a matButton="outlined" [href]="item.url" target="_blank" rel="noopener">
+                  Visit site
+                  <mat-icon iconPositionEnd>open_in_new</mat-icon>
+                </a>
+              </div>
+            </mat-card-content>
+          </mat-card>
         }
       </div>
     </section>
@@ -64,21 +68,26 @@
 
   @if (recommendations().readings.length) {
     <section class="mt-14">
-      <h2 class="text-2xl font-normal text-brand-teal">Useful readings</h2>
+      <p class="font-mono text-xs tracking-widest text-brand-coral">// useful readings</p>
+      <h2 class="mt-2 font-display text-2xl font-semibold text-brand-teal">Useful readings</h2>
 
-      <div class="mt-6 flex flex-col gap-8">
+      <div class="mt-6 flex flex-col gap-6">
         @for (item of recommendations().readings; track item.title) {
-          <article class="flex flex-col gap-4 sm:flex-row sm:items-start">
-            <a [href]="item.url" target="_blank" rel="noopener" class="block w-full shrink-0 sm:w-2/5">
-              <img [src]="item.imageUrl" [alt]="item.title" class="aspect-video w-full rounded object-cover" />
-            </a>
-            <div>
-              <a [href]="item.url" target="_blank" rel="noopener" class="font-semibold text-brand-teal underline hover:text-brand-coral">
-                {{ item.title }}
+          <mat-card appearance="outlined">
+            <mat-card-content class="flex flex-col gap-4 sm:flex-row sm:items-start">
+              <a [href]="item.url" target="_blank" rel="noopener" class="block w-full shrink-0 sm:w-2/5">
+                <img [src]="item.imageUrl" [alt]="item.title" class="aspect-video w-full rounded object-cover" />
               </a>
-              <p class="mt-2 text-neutral-600">{{ item.description }}</p>
-            </div>
-          </article>
+              <div class="flex flex-1 flex-col items-start gap-2">
+                <h3 class="font-display text-lg font-semibold text-brand-ink">{{ item.title }}</h3>
+                <p class="text-neutral-600">{{ item.description }}</p>
+                <a matButton="outlined" [href]="item.url" target="_blank" rel="noopener">
+                  Visit site
+                  <mat-icon iconPositionEnd>open_in_new</mat-icon>
+                </a>
+              </div>
+            </mat-card-content>
+          </mat-card>
         }
       </div>
     </section>

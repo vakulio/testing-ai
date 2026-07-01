@@ -1,0 +1,79 @@
+// Decoded Frontend — Angular Material M3 theme
+// Palettes generated from brand primary #003b4a (teal) and tertiary #ff8888 (coral).
+@use '@angular/material' as mat;
+@use './theme-colors' as brand;
+
+html {
+  color-scheme: light;
+
+  @include mat.theme(
+    (
+      color: (
+        primary: brand.$primary-palette,
+        tertiary: brand.$tertiary-palette,
+        theme-type: light,
+      ),
+      typography: (
+        brand-family: 'Space Grotesk, Inter, sans-serif',
+        plain-family: 'Inter, sans-serif',
+        bold-weight: 700,
+        medium-weight: 500,
+        regular-weight: 400,
+      ),
+      density: 0,
+    )
+  );
+
+  // Visible keyboard focus everywhere (accessibility floor).
+  @include mat.strong-focus-indicators();
+}
+
+// --- Brand-tuned component overrides -------------------------------------
+// Keep Material components recognizably "Decoded Frontend" rather than stock MD3.
+html {
+  // Cards: flatter, tighter radius than MD3 default, brand ink title.
+  @include mat.card-overrides(
+    (
+      elevated-container-shape: 16px,
+      elevated-container-color: #ffffff,
+      title-text-font: 'Space Grotesk, Inter, sans-serif',
+      title-text-weight: 600,
+    )
+  );
+
+  // Buttons: pill CTAs with confident weight, mono-free but brand-shaped.
+  @include mat.button-overrides(
+    (
+      filled-container-shape: 9999px,
+      outlined-container-shape: 9999px,
+      protected-container-shape: 9999px,
+      filled-label-text-weight: 600,
+      outlined-label-text-weight: 600,
+      filled-label-text-tracking: 0.02em,
+    )
+  );
+
+  // Toolbar transparent by default; brand shells set their own background.
+  @include mat.toolbar-overrides(
+    (
+      container-background-color: transparent,
+      title-text-font: 'Space Grotesk, Inter, sans-serif',
+    )
+  );
+
+  // Chips: quiet, rounded, brand outline on hover handled in component styles.
+  @include mat.chips-overrides(
+    (
+      container-shape-radius: 9999px,
+      label-text-font: 'JetBrains Mono, ui-monospace, monospace',
+      label-text-size: 12px,
+    )
+  );
+
+  // Form fields (sidebar search): rounded, brand accent.
+  @include mat.form-field-overrides(
+    (
+      container-text-font: 'Inter, sans-serif',
+    )
+  );
+}

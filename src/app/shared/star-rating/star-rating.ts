@@ -1,8 +1,9 @@
 import { Component, computed, input } from '@angular/core';
+import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-star-rating',
-  imports: [],
+  imports: [MatIconModule],
   templateUrl: './star-rating.html',
 })
 export class StarRatingComponent {
@@ -17,11 +18,11 @@ export class StarRatingComponent {
   protected readonly filledClass = computed(() => {
     switch (this.color()) {
       case 'coral':
-        return 'text-brand-coral';
+        return '!text-brand-coral';
       case 'black':
-        return 'text-[#0C1721]';
+        return '!text-[#0C1721]';
       default:
-        return 'text-yellow-400';
+        return '!text-yellow-400';
     }
   });
 }

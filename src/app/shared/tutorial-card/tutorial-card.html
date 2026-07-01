@@ -1,12 +1,12 @@
 <article class="flex flex-col gap-6 py-10 sm:flex-row sm:gap-8">
   <div class="relative flex shrink-0 flex-col items-center pr-6 sm:w-36 sm:items-start sm:border-r sm:border-neutral-200">
-    <span class="text-5xl font-semibold leading-none text-brand-coral sm:text-6xl">{{ day() }}</span>
-    <span class="mt-2 text-xs font-medium uppercase tracking-wide text-neutral-500">{{ month() }}</span>
+    <span class="font-display text-5xl font-semibold leading-none text-brand-coral sm:text-6xl">{{ day() }}</span>
+    <span class="mt-2 font-mono text-xs uppercase tracking-wide text-neutral-500">{{ month() }}</span>
     <span class="absolute right-0 top-2 hidden h-2 w-2 -translate-x-1/2 translate-y-1 rounded-full bg-brand-coral sm:block"></span>
   </div>
 
   <div class="min-w-0 flex-1">
-    <h2 class="text-2xl font-bold text-brand-teal sm:text-3xl">
+    <h2 class="font-display text-2xl font-bold text-brand-teal sm:text-3xl">
       <a [routerLink]="['/tutorials', tutorial().slug]" class="hover:text-brand-coral">{{ tutorial().title }}</a>
     </h2>
 
@@ -16,21 +16,18 @@
 
     <p class="mt-4 text-neutral-600">{{ tutorial().excerpt }}</p>
 
-    <div class="mt-6 flex flex-wrap items-center gap-3 text-xs font-semibold tracking-wide">
-      <a
-        [routerLink]="['/tutorials', tutorial().slug]"
-        class="bg-brand-coral px-6 py-2.5 uppercase text-white transition-opacity hover:opacity-90"
-      >
+    <div class="mt-6 flex flex-wrap items-center gap-3">
+      <a matButton="filled" color="tertiary" [routerLink]="['/tutorials', tutorial().slug]">
         Read on
       </a>
       <a
+        matButton="outlined"
+        color="tertiary"
         href="#"
         (click)="$event.preventDefault()"
-        class="inline-flex items-center gap-1.5 border border-brand-coral px-6 py-2.5 uppercase text-brand-coral transition-colors hover:bg-brand-coral hover:text-white"
+        class="!inline-flex !items-center !gap-1.5"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-3.5 w-3.5">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M6 3h12a1 1 0 0 1 1 1v16l-7-4-7 4V4a1 1 0 0 1 1-1Z" />
-        </svg>
+        <mat-icon>bookmark_border</mat-icon>
         Read later
       </a>
     </div>

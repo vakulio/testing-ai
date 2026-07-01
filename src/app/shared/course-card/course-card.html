@@ -1,33 +1,35 @@
-<a [routerLink]="['/courses', course().slug]" class="flex flex-col overflow-hidden rounded-[20px] bg-[#ECEFF1]">
-  <div class="px-4 pb-4 pt-8">
-    <p class="mb-2 text-xs text-[#0C1721] opacity-60">All Courses</p>
+<a [routerLink]="['/courses', course().slug]" class="block h-full">
+  <mat-card appearance="outlined" class="flex h-full flex-col overflow-hidden !rounded-[20px]">
+    <div class="bg-[#ECEFF1] px-4 pb-4 pt-8">
+      <p class="mb-2 text-xs text-[#0C1721] opacity-60">All Courses</p>
 
-    @if (course().isBundle) {
-      <h3 class="text-lg font-bold text-[#0C1721]">All-in-One Bundle</h3>
-    } @else {
-      <h3 class="mb-4 text-lg font-bold text-[#0C1721]">{{ course().title }}</h3>
-      <div class="flex items-center gap-2 text-xs text-[#0C1721]">
-        <app-star-rating [rating]="course().avgRating" color="coral" />
-        <span>({{ course().reviews }})</span>
-        <span class="sr-only">{{ course().avgRating }} average rating</span>
-      </div>
-    }
-  </div>
+      @if (course().isBundle) {
+        <h3 class="font-display text-lg font-semibold text-[#0C1721]">All-in-One Bundle</h3>
+      } @else {
+        <h3 class="mb-4 font-display text-lg font-semibold text-[#0C1721]">{{ course().title }}</h3>
+        <div class="flex items-center gap-2 text-xs text-[#0C1721]">
+          <app-star-rating [rating]="course().avgRating" color="coral" />
+          <span class="font-mono">({{ course().reviews }})</span>
+          <span class="sr-only">{{ course().avgRating }} average rating</span>
+        </div>
+      }
+    </div>
 
-  <div class="relative h-[207px] bg-[#ECEFF1]">
-    <img [src]="course().imageUrl" [alt]="course().title" class="h-full w-full object-fill" />
+    <div class="relative h-[207px] bg-[#ECEFF1]">
+      <img [src]="course().imageUrl" [alt]="course().title" class="h-full w-full object-fill" />
 
-    @if (course().isBundle) {
-      <span class="absolute bottom-4 left-4 rounded-[5px] bg-[#ECEFF1] px-4 py-2 text-xs font-semibold text-[#0C1721]">
-        🗂️ 6 Courses
-      </span>
-    }
-  </div>
+      @if (course().isBundle) {
+        <span class="absolute bottom-4 left-4 rounded-[5px] bg-[#ECEFF1] px-4 py-2 font-mono text-xs font-semibold text-[#0C1721]">
+          🗂️ 6 Courses
+        </span>
+      }
+    </div>
 
-  <div class="flex items-stretch divide-x divide-neutral-300 bg-[#CFD8DC] text-sm text-[#0C1721]">
-    @if (!course().isBundle) {
-      <span class="flex-1 px-2 py-3"><strong class="font-bold">{{ course().lessons }} Lessons</strong></span>
-    }
-    <span class="flex-1 px-2 py-3"><strong class="font-bold">{{ course().price }}</strong></span>
-  </div>
+    <div class="flex items-stretch divide-x divide-neutral-300 bg-[#CFD8DC] text-sm text-[#0C1721]">
+      @if (!course().isBundle) {
+        <span class="flex-1 px-2 py-3 font-mono"><strong class="font-bold">{{ course().lessons }} Lessons</strong></span>
+      }
+      <span class="flex-1 px-2 py-3 font-mono"><strong class="font-bold">{{ course().price }}</strong></span>
+    </div>
+  </mat-card>
 </a>

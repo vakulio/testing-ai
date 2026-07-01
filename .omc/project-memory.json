@@ -1,0 +1,427 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1782918949679,
+  "projectRoot": "C:\\Users\\Power-PC\\testing-ai",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "@angular/core",
+        "version": "22.0.0",
+        "category": "frontend"
+      },
+      {
+        "name": "vitest",
+        "version": "4.0.8",
+        "category": "testing"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": "npm run build",
+    "testCommand": "npm test",
+    "lintCommand": null,
+    "devCommand": "npm run start",
+    "scripts": {
+      "ng": "ng",
+      "start": "ng serve",
+      "build": "ng build",
+      "watch": "ng build --watch --configuration development",
+      "test": "ng test"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": "ES modules",
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "docs",
+      "public",
+      "src"
+    ],
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 1,
+      "lastAccessed": 1782918949661,
+      "keyFiles": [
+        "CLONE_RECORDS.md"
+      ]
+    },
+    "public": {
+      "path": "public",
+      "purpose": "Public files",
+      "fileCount": 1,
+      "lastAccessed": 1782918949661,
+      "keyFiles": [
+        "favicon.ico"
+      ]
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 3,
+      "lastAccessed": 1782918949666,
+      "keyFiles": [
+        "index.html",
+        "main.ts",
+        "styles.css"
+      ]
+    },
+    "public\\assets": {
+      "path": "public\\assets",
+      "purpose": "Static assets",
+      "fileCount": 2,
+      "lastAccessed": 1782918949667,
+      "keyFiles": [
+        "icon.png",
+        "logo.png"
+      ]
+    },
+    "src\\app": {
+      "path": "src\\app",
+      "purpose": "Application code",
+      "fileCount": 6,
+      "lastAccessed": 1782918949667,
+      "keyFiles": [
+        "app.config.ts",
+        "app.css",
+        "app.html"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "src\\app\\shared\\testimonial-card\\testimonial-card.html",
+      "accessCount": 8,
+      "lastAccessed": 1782922377866,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\pages\\courses\\courses.html",
+      "accessCount": 7,
+      "lastAccessed": 1782921123975,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\shared\\footer\\footer.html",
+      "accessCount": 7,
+      "lastAccessed": 1782921216294,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\shared\\star-rating\\star-rating.html",
+      "accessCount": 7,
+      "lastAccessed": 1782922341928,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\shared\\header\\header.ts",
+      "accessCount": 6,
+      "lastAccessed": 1782921182951,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\shared\\header\\header.html",
+      "accessCount": 6,
+      "lastAccessed": 1782921188022,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\pages\\course-detail\\course-detail.html",
+      "accessCount": 6,
+      "lastAccessed": 1782922697797,
+      "type": "file"
+    },
+    {
+      "path": "docs\\DESIGN.md",
+      "accessCount": 5,
+      "lastAccessed": 1782920946926,
+      "type": "file"
+    },
+    {
+      "path": "src\\theme.scss",
+      "accessCount": 5,
+      "lastAccessed": 1782920996375,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\shared\\course-card\\course-card.html",
+      "accessCount": 5,
+      "lastAccessed": 1782921084912,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\pages\\home\\home.html",
+      "accessCount": 5,
+      "lastAccessed": 1782921094957,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\shared\\tutorial-card\\tutorial-card.html",
+      "accessCount": 5,
+      "lastAccessed": 1782921119851,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\shared\\star-rating\\star-rating.ts",
+      "accessCount": 5,
+      "lastAccessed": 1782922312103,
+      "type": "file"
+    },
+    {
+      "path": "src\\styles.css",
+      "accessCount": 4,
+      "lastAccessed": 1782920975458,
+      "type": "file"
+    },
+    {
+      "path": "src\\index.html",
+      "accessCount": 4,
+      "lastAccessed": 1782921070592,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\shared\\course-card\\course-card.ts",
+      "accessCount": 4,
+      "lastAccessed": 1782921075804,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\shared\\tutorial-card\\tutorial-card.ts",
+      "accessCount": 4,
+      "lastAccessed": 1782921109807,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\pages\\tutorial-detail\\tutorial-detail.html",
+      "accessCount": 4,
+      "lastAccessed": 1782921156511,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\shared\\sidebar\\sidebar.html",
+      "accessCount": 4,
+      "lastAccessed": 1782921237378,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\app.config.ts",
+      "accessCount": 3,
+      "lastAccessed": 1782920428519,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\shared\\ui-state.service.ts",
+      "accessCount": 3,
+      "lastAccessed": 1782920960777,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\pages\\courses\\courses.ts",
+      "accessCount": 3,
+      "lastAccessed": 1782921080636,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\pages\\home\\home.ts",
+      "accessCount": 3,
+      "lastAccessed": 1782921087582,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\shared\\testimonial-card\\testimonial-card.ts",
+      "accessCount": 3,
+      "lastAccessed": 1782921096202,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\pages\\tutorials\\tutorials.ts",
+      "accessCount": 3,
+      "lastAccessed": 1782921108590,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\pages\\tutorials\\tutorials.html",
+      "accessCount": 3,
+      "lastAccessed": 1782921114402,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\pages\\tutorial-detail\\tutorial-detail.ts",
+      "accessCount": 3,
+      "lastAccessed": 1782921129585,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\pages\\course-detail\\course-detail.ts",
+      "accessCount": 3,
+      "lastAccessed": 1782921164599,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\shared\\sidebar\\sidebar.ts",
+      "accessCount": 3,
+      "lastAccessed": 1782921228020,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\pages\\recommendations\\recommendations.ts",
+      "accessCount": 3,
+      "lastAccessed": 1782921253876,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\pages\\recommendations\\recommendations.html",
+      "accessCount": 3,
+      "lastAccessed": 1782921277848,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\pages\\legal\\legal-stub\\legal-stub.html",
+      "accessCount": 3,
+      "lastAccessed": 1782921286348,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\app.html",
+      "accessCount": 2,
+      "lastAccessed": 1782919670447,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\app.routes.ts",
+      "accessCount": 2,
+      "lastAccessed": 1782920067890,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\app.ts",
+      "accessCount": 2,
+      "lastAccessed": 1782920334588,
+      "type": "file"
+    },
+    {
+      "path": "angular.json",
+      "accessCount": 2,
+      "lastAccessed": 1782920416679,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 2,
+      "lastAccessed": 1782920924528,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\shared\\footer\\footer.ts",
+      "accessCount": 2,
+      "lastAccessed": 1782920960164,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\pages\\legal\\legal-stub\\legal-stub.ts",
+      "accessCount": 2,
+      "lastAccessed": 1782920970947,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\data\\tutorials.ts",
+      "accessCount": 2,
+      "lastAccessed": 1782920974443,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\data\\courses.ts",
+      "accessCount": 2,
+      "lastAccessed": 1782920980937,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\data\\recommendations.ts",
+      "accessCount": 2,
+      "lastAccessed": 1782920980947,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\data\\tutorial-content.ts",
+      "accessCount": 2,
+      "lastAccessed": 1782921070788,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\app.css",
+      "accessCount": 1,
+      "lastAccessed": 1782919667149,
+      "type": "file"
+    },
+    {
+      "path": "src\\main.ts",
+      "accessCount": 1,
+      "lastAccessed": 1782919671205,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\data\\testimonials.ts",
+      "accessCount": 1,
+      "lastAccessed": 1782919704099,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\data\\tags.ts",
+      "accessCount": 1,
+      "lastAccessed": 1782919705172,
+      "type": "file"
+    },
+    {
+      "path": "src_theme-colors.scss",
+      "accessCount": 1,
+      "lastAccessed": 1782920314916,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\pages",
+      "accessCount": 1,
+      "lastAccessed": 1782920976643,
+      "type": "directory"
+    },
+    {
+      "path": "src\\app",
+      "accessCount": 1,
+      "lastAccessed": 1782920988945,
+      "type": "directory"
+    }
+  ],
+  "userDirectives": []
+}

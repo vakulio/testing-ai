@@ -1,5 +1,7 @@
 import { Component, computed, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
 import { HeaderComponent } from '../../shared/header/header';
 import { FooterComponent } from '../../shared/footer/footer';
 import { TestimonialCardComponent } from '../../shared/testimonial-card/testimonial-card';
@@ -8,7 +10,7 @@ import { TESTIMONIALS } from '../../data/testimonials';
 
 @Component({
   selector: 'app-course-detail',
-  imports: [HeaderComponent, FooterComponent, TestimonialCardComponent],
+  imports: [HeaderComponent, FooterComponent, TestimonialCardComponent, MatButtonModule, MatCardModule],
   templateUrl: './course-detail.html',
 })
 export class CourseDetailPageComponent {

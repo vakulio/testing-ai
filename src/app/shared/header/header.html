@@ -1,5 +1,5 @@
 <header class="sticky top-0 z-40" [class.bg-brand-teal]="!transparent()" [class.bg-transparent]="transparent()">
-  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-6 sm:px-6 sm:py-7">
+  <mat-toolbar class="mx-auto flex !h-auto !min-h-0 max-w-6xl items-center justify-between !bg-transparent px-4 py-6 sm:px-6 sm:py-7">
     @if (variant() === 'blog') {
       <a routerLink="/" class="flex items-center">
         <img src="/assets/logo.png" alt="Decoded Frontend" class="h-11 w-auto sm:h-12" />
@@ -49,18 +49,17 @@
     }
 
     <button
+      mat-icon-button
       type="button"
-      class="inline-flex h-9 w-9 items-center justify-center rounded-md transition-colors"
+      class="transition-colors"
       [class.text-white]="variant() === 'blog'"
       [class.text-neutral-600]="variant() !== 'blog'"
       aria-label="Toggle menu"
       (click)="toggleMenu()"
     >
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-6 w-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-      </svg>
+      <mat-icon>menu</mat-icon>
     </button>
-  </div>
+  </mat-toolbar>
 
   @if (variant() === 'courses' && mobileMenuOpen()) {
     <nav class="flex flex-col gap-1 border-t border-neutral-200 bg-white px-4 py-3 text-sm font-medium text-neutral-600 md:hidden">
