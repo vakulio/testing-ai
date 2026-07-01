@@ -1,0 +1,47 @@
+<div class="mx-auto max-w-5xl p-4">
+  <h1 class="mb-4 text-xl font-semibold text-gray-900">Users</h1>
+
+  <app-search-box
+    placeholder="Search users…"
+    [query]="query()"
+    (queryChange)="onQueryChange($event)"
+  />
+
+  <div class="mt-4">
+    @if (state.loading()) {
+      <app-loading-spinner />
+    } @else if (state.error()) {
+      <app-error-message message="Failed to load users. Please try again." />
+    } @else if (state.value(); as res) {
+      @if (res.users.length === 0) {
+        <app-empty-state message="No users found." />
+      } @else {
+        <div class="grid grid-cols-1 gap-4 py-4 sm:grid-cols-2 md:grid-cols-3">
+          @for (user of res.users; track user.id) {
+            <a
+              [routerLink]="['/users', user.id]"
+              class="flex items-center gap-3 rounded-lg border border-gray-200 p-4 hover:border-gray-400"
+            >
+              <img
+                [src]="user.image"
+                [alt]="user.firstName + ' ' + user.lastName"
+                class="h-12 w-12 rounded-full object-cover"
+              />
+              <div>
+                <p class="font-medium text-gray-900">{{ user.firstName }} {{ user.lastName }}</p>
+                <p class="text-sm text-gray-500">{{ user.email }}</p>
+              </div>
+            </a>
+          }
+        </div>
+
+        <app-pagination
+          [total]="res.total"
+          [skip]="res.skip"
+          [limit]="res.limit"
+          (pageChange)="onPageChange($event)"
+        />
+      }
+    }
+  </div>
+</div>

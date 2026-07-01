@@ -1,0 +1,59 @@
+<div class="mx-auto max-w-3xl px-4 py-6">
+  @if (postState.loading()) {
+    <app-loading-spinner />
+  } @else if (postState.error()) {
+    <app-error-message message="Failed to load post. Please try again." />
+  } @else if (postState.value(); as post) {
+    <article>
+      <h1 class="text-2xl font-semibold text-gray-900">{{ post.title }}</h1>
+
+      <p class="mt-1 text-sm text-gray-500">
+        By
+        @if (authorState.value(); as author) {
+          <a [routerLink]="['/users', author.id]" class="font-medium text-gray-700 hover:underline">
+            {{ author.firstName }} {{ author.lastName }}
+          </a>
+        } @else if (authorState.loading()) {
+          <span>loading…</span>
+        }
+      </p>
+
+      <p class="mt-4 whitespace-pre-line text-gray-800">{{ post.body }}</p>
+
+      <p class="mt-4 text-xs text-gray-500">
+        👍 {{ post.reactions.likes }} · 👎 {{ post.reactions.dislikes }} · {{ post.views }} views
+      </p>
+    </article>
+
+    <section class="mt-8">
+      <h2 class="mb-3 text-lg font-semibold text-gray-900">Comments</h2>
+
+      @if (commentsState.loading()) {
+        <app-loading-spinner />
+      } @else if (commentsState.error()) {
+        <app-error-message message="Failed to load comments. Please try again." />
+      } @else if (commentsState.value(); as comments) {
+        @if (comments.comments.length === 0) {
+          <app-empty-state message="No comments yet." />
+        } @else {
+          <ul class="flex flex-col gap-3">
+            @for (comment of comments.comments; track comment.id) {
+              <li class="rounded border border-gray-200 p-3">
+                <p class="text-sm text-gray-800">{{ comment.body }}</p>
+                <p class="mt-1 text-xs text-gray-500">
+                  👍 {{ comment.likes }} ·
+                  <a
+                    [routerLink]="['/users', comment.user.id]"
+                    class="font-medium text-gray-700 hover:underline"
+                  >
+                    {{ comment.user.fullName }}
+                  </a>
+                </p>
+              </li>
+            }
+          </ul>
+        }
+      }
+    </section>
+  }
+</div>

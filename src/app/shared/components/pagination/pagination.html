@@ -1,0 +1,19 @@
+<div class="flex items-center justify-center gap-4 py-4 text-sm">
+  <button
+    type="button"
+    class="rounded border border-slate-300 px-3 py-1 disabled:opacity-40"
+    [disabled]="!canPrev()"
+    (click)="prev()"
+  >
+    Prev
+  </button>
+  <span class="text-slate-600">Page {{ currentPage() }} / {{ totalPages() }}</span>
+  <button
+    type="button"
+    class="rounded border border-slate-300 px-3 py-1 disabled:opacity-40"
+    [disabled]="!canNext()"
+    (click)="next()"
+  >
+    Next
+  </button>
+</div>

@@ -1,0 +1,71 @@
+<div class="mx-auto max-w-4xl p-4">
+  @if (userState.loading()) {
+    <app-loading-spinner />
+  } @else if (userState.error()) {
+    <app-error-message message="Failed to load user profile. Please try again." />
+  } @else if (userState.value(); as user) {
+    <div class="mb-6 flex items-center gap-4 rounded-lg border border-gray-200 p-4">
+      <img
+        [src]="user.image"
+        [alt]="user.firstName + ' ' + user.lastName"
+        class="h-16 w-16 rounded-full object-cover"
+      />
+      <div>
+        <h1 class="text-xl font-semibold text-gray-900">{{ user.firstName }} {{ user.lastName }}</h1>
+        <p class="text-sm text-gray-500">{{ user.email }}</p>
+      </div>
+    </div>
+  }
+
+  <section class="mb-6">
+    <h2 class="mb-2 text-lg font-semibold text-gray-900">Posts</h2>
+    @if (postsState.loading()) {
+      <app-loading-spinner />
+    } @else if (postsState.error()) {
+      <app-error-message message="Failed to load posts. Please try again." />
+    } @else if (postsState.value(); as postsRes) {
+      @if (postsRes.posts.length === 0) {
+        <app-empty-state message="This user has no posts." />
+      } @else {
+        <ul class="flex flex-col gap-2">
+          @for (post of postsRes.posts; track post.id) {
+            <li>
+              <a
+                [routerLink]="['/posts', post.id]"
+                class="block rounded border border-gray-200 p-3 hover:border-gray-400"
+              >
+                {{ post.title }}
+              </a>
+            </li>
+          }
+        </ul>
+      }
+    }
+  </section>
+
+  <section>
+    <h2 class="mb-2 text-lg font-semibold text-gray-900">Carts</h2>
+    @if (cartsState.loading()) {
+      <app-loading-spinner />
+    } @else if (cartsState.error()) {
+      <app-error-message message="Failed to load carts. Please try again." />
+    } @else if (cartsState.value(); as cartsRes) {
+      @if (cartsRes.carts.length === 0) {
+        <app-empty-state message="This user has no carts." />
+      } @else {
+        <ul class="flex flex-col gap-2">
+          @for (cart of cartsRes.carts; track cart.id) {
+            <li>
+              <a
+                [routerLink]="['/carts', cart.id]"
+                class="block rounded border border-gray-200 p-3 hover:border-gray-400"
+              >
+                Cart #{{ cart.id }} — {{ cart.totalProducts }} products, total ${{ cart.total }}
+              </a>
+            </li>
+          }
+        </ul>
+      }
+    }
+  </section>
+</div>

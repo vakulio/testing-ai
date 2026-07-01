@@ -1,0 +1,34 @@
+<div class="mx-auto max-w-5xl p-4">
+  <h1 class="mb-4 text-2xl font-semibold">Carts</h1>
+
+  @if (state.loading()) {
+    <app-loading-spinner />
+  } @else if (state.error()) {
+    <app-error-message message="Failed to load carts. Please try again." />
+  } @else if (state.value() && state.value()!.carts.length === 0) {
+    <app-empty-state message="No carts found." />
+  } @else if (state.value(); as data) {
+    <ul class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+      @for (cart of data.carts; track cart.id) {
+        <li>
+          <a
+            [routerLink]="['/carts', cart.id]"
+            class="block rounded border border-slate-200 p-4 hover:border-slate-400"
+          >
+            <p class="font-medium">Cart #{{ cart.id }}</p>
+            <p class="text-sm text-slate-600">{{ cart.totalProducts }} products</p>
+            <p class="text-sm text-slate-600">Total: {{ cart.total }}</p>
+            <p class="text-sm text-slate-600">Discounted total: {{ cart.discountedTotal }}</p>
+          </a>
+        </li>
+      }
+    </ul>
+
+    <app-pagination
+      [total]="data.total"
+      [skip]="data.skip"
+      [limit]="data.limit"
+      (pageChange)="onPageChange($event)"
+    />
+  }
+</div>

@@ -1,0 +1,41 @@
+<div class="mx-auto max-w-3xl px-4 py-6">
+  <h1 class="mb-4 text-xl font-semibold text-gray-900">Posts</h1>
+
+  <div class="mb-4">
+    <app-search-box
+      placeholder="Search posts…"
+      [query]="query()"
+      (queryChange)="onQueryChange($event)"
+    />
+  </div>
+
+  @if (state.loading()) {
+    <app-loading-spinner />
+  } @else if (state.error()) {
+    <app-error-message message="Failed to load posts. Please try again." />
+  } @else if (state.value(); as response) {
+    @if (response.posts.length === 0) {
+      <app-empty-state message="No posts found." />
+    } @else {
+      <ul class="flex flex-col gap-3">
+        @for (post of response.posts; track post.id) {
+          <li class="rounded border border-gray-200 p-4 hover:bg-gray-50">
+            <a [routerLink]="['/posts', post.id]" class="block">
+              <h2 class="text-base font-medium text-gray-900">{{ post.title }}</h2>
+              <p class="mt-1 text-xs text-gray-500">
+                👍 {{ post.reactions.likes }} · 👎 {{ post.reactions.dislikes }} · {{ post.views }} views
+              </p>
+            </a>
+          </li>
+        }
+      </ul>
+
+      <app-pagination
+        [total]="response.total"
+        [skip]="response.skip"
+        [limit]="response.limit"
+        (pageChange)="onPageChange($event)"
+      />
+    }
+  }
+</div>

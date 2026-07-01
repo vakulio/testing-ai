@@ -1,0 +1,7 @@
+<input
+  type="search"
+  class="w-full rounded border border-slate-300 px-3 py-2 text-sm"
+  [placeholder]="placeholder()"
+  [ngModel]="query()"
+  (ngModelChange)="onInput($event)"
+/>

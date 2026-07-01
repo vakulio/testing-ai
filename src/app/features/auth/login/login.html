@@ -1,0 +1,41 @@
+<div class="mx-auto mt-16 max-w-sm rounded-lg border border-gray-200 p-6 shadow-sm">
+  <h1 class="mb-1 text-xl font-semibold text-gray-900">Sign in</h1>
+  <p class="mb-4 text-xs text-gray-500">
+    Demo credentials: <span class="font-mono font-medium text-gray-700">emilys</span> /
+    <span class="font-mono font-medium text-gray-700">emilyspass</span>
+  </p>
+
+  <form [formGroup]="form" (ngSubmit)="submit()" class="flex flex-col gap-4">
+    <label class="flex flex-col gap-1 text-sm text-gray-700">
+      Username
+      <input
+        type="text"
+        formControlName="username"
+        autocomplete="username"
+        class="rounded border border-gray-300 px-3 py-2 text-sm focus:border-gray-500 focus:outline-none"
+      />
+    </label>
+
+    <label class="flex flex-col gap-1 text-sm text-gray-700">
+      Password
+      <input
+        type="password"
+        formControlName="password"
+        autocomplete="current-password"
+        class="rounded border border-gray-300 px-3 py-2 text-sm focus:border-gray-500 focus:outline-none"
+      />
+    </label>
+
+    @if (errorMessage(); as message) {
+      <p class="text-sm text-red-600" role="alert">{{ message }}</p>
+    }
+
+    <button
+      type="submit"
+      [disabled]="form.invalid || submitting()"
+      class="rounded bg-gray-900 px-4 py-2 text-sm font-medium text-white hover:bg-gray-800 disabled:opacity-50"
+    >
+      {{ submitting() ? 'Signing in…' : 'Sign in' }}
+    </button>
+  </form>
+</div>
