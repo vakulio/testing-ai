@@ -1,41 +1,37 @@
 <header class="sticky top-0 z-40 bg-brand-teal">
-  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-6 sm:px-6 sm:py-7">
     @if (variant() === 'blog') {
-      <a routerLink="/" class="flex items-center gap-2">
-        <span class="text-2xl font-bold text-brand-coral" aria-hidden="true">{{ '{' }} {{ '}' }}</span>
-        <span class="flex flex-col text-sm font-semibold uppercase leading-tight text-white">
-          <span>decoded</span>
-          <span>frontend</span>
-        </span>
+      <a routerLink="/" class="flex items-center">
+        <img src="/assets/logo.png" alt="Decoded Frontend" class="h-11 w-auto sm:h-12" />
       </a>
 
-      <nav class="hidden items-center gap-1 text-[11px] font-semibold uppercase tracking-wider text-white md:flex">
+      <nav class="hidden items-center text-[13px] font-semibold uppercase text-white md:flex">
         <a
           href="https://youtube.com/DecodedFrontend"
           target="_blank"
           rel="noopener"
-          class="rounded-full px-3 py-1.5 transition-colors hover:bg-brand-teal-light"
+          class="rounded-full px-3.5 py-2 transition-colors hover:bg-brand-teal-light"
         >
           YouTube
         </a>
         <a
           routerLink="/tutorials"
           routerLinkActive="bg-brand-teal-light"
-          class="rounded-full px-3 py-1.5 transition-colors hover:bg-brand-teal-light"
+          class="rounded-full px-3.5 py-2 transition-colors hover:bg-brand-teal-light"
         >
           Blog
         </a>
         <a
           routerLink="/courses"
           routerLinkActive="bg-brand-teal-light"
-          class="rounded-full px-3 py-1.5 transition-colors hover:bg-brand-teal-light"
+          class="rounded-full px-3.5 py-2 transition-colors hover:bg-brand-teal-light"
         >
           Courses
         </a>
         <a
           routerLink="/recommendations"
           routerLinkActive="bg-brand-teal-light"
-          class="rounded-full px-3 py-1.5 transition-colors hover:bg-brand-teal-light"
+          class="rounded-full px-3.5 py-2 transition-colors hover:bg-brand-teal-light"
         >
           Recommendations
         </a>
